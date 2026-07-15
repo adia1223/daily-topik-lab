@@ -448,7 +448,6 @@ export default function Home() {
       : [
           {
             id: entryId,
-            date: todayKey,
             date: activeReading.date,
             title: activeReading.title,
             topic: activeReading.topic,
@@ -630,6 +629,10 @@ export default function Home() {
             以 10 月考试为锚点：每天一篇高阶阅读，加上生词复习、错题归因、限时训练和写作 54 题输出。
           </p>
           <div className="hero-actions" aria-label="学习概览">
+            <a className="hero-exam-link" href="/exam-lab">
+              进入真题精练
+              <span aria-hidden="true">→</span>
+            </a>
             <span>{targetLevel}</span>
             <span>目标 {targetScore}</span>
             <span>约 {daysUntilTarget} 天</span>
@@ -685,6 +688,7 @@ export default function Home() {
           </div>
 
           <nav className="quick-nav" aria-label="页面区域">
+            <a className="private-link" href="/exam-lab">真题库</a>
             <a href="#sprint">冲刺</a>
             <a href="#reading">阅读</a>
             <a href="#vocab">词汇</a>
@@ -702,7 +706,10 @@ export default function Home() {
                 <p className="eyebrow dark">6급 Sprint</p>
                 <h2>10 月 6 级冲刺驾驶舱</h2>
               </div>
-              <div className="question-count">目标 {targetScore}</div>
+              <div className="sprint-heading-actions">
+                <a href="/exam-lab">真题精练</a>
+                <div className="question-count">目标 {targetScore}</div>
+              </div>
             </div>
 
             <div className="sprint-summary">

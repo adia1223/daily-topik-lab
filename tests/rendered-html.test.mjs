@@ -2,13 +2,13 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-async function render() {
+async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request("http://localhost/", {
+    new Request(`http://localhost${pathname}`, {
       headers: { accept: "text/html" },
     }),
     {
@@ -35,6 +35,19 @@ test("server-renders the TOPIK reading archive", async () => {
   assert.match(html, /도시의 조용한 변화/);
   assert.match(html, /2<!-- --> 篇文章/);
   assert.match(html, /打开全文/);
+});
+
+test("server-renders the interactive exam lab", async () => {
+  const response = await render("/exam-lab");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /真题精练工作台/);
+  assert.match(html, /PDF \+ MP3 自动拆分/);
+  assert.match(html, /逐句解析/);
+  assert.match(html, /选项分析/);
+  assert.match(html, />听力<\/button>/);
+  assert.match(html, /登录进入我的私人真题库/);
 });
 
 test("keeps complete archived reading data in the client", async () => {
