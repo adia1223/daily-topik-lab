@@ -486,7 +486,7 @@ const july17Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july18Reading: DailyReading = {
   id: "2026-07-18-subscription-economy",
   date: "2026-07-18",
   title: "편리함 뒤에 숨은 구독의 비용",
@@ -534,8 +534,58 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-07-19-digital-exhibition",
+  date: "2026-07-19",
+  title: "디지털 전시는 원작을 대신할 수 있는가",
+  level: "TOPIK II 5-6级",
+  topic: "文化 / 公共空间",
+  estimatedTime: "14 分钟",
+  korean:
+    "박물관과 미술관이 소장품을 고해상도 이미지와 가상 전시로 공개하면서 관람의 범위가 크게 넓어지고 있다. 거리가 멀거나 이동이 어려운 사람도 작품을 자세히 살펴볼 수 있고, 화면을 확대하면 전시장에서는 놓치기 쉬운 세부까지 확인할 수 있다. 그렇다고 해서 디지털 전시가 원작을 완전히 대신할 수 있는 것은 아니다. 작품의 크기와 재료가 주는 감각, 다른 작품과의 배치, 관람객이 공간을 이동하며 형성하는 해석은 화면만으로 전달되기 어렵기 때문이다. 반면 원작 경험만을 강조하면 문화 시설에 접근하기 어려운 사람들의 권리를 충분히 고려하지 못할 수 있다. 따라서 디지털 전시는 원작을 복제하는 수단에 머물기보다 관람 전에 배경지식을 제공하고 관람 후에는 해석을 확장하는 방식으로 설계되어야 한다. 문화 기관도 온라인 이용 횟수만 성과로 제시할 것이 아니라, 디지털 경험이 실제 관람과 학습으로 어떻게 이어지는지 지속적으로 평가해야 한다.",
+  chinese:
+    "随着博物馆和美术馆通过高清图像与虚拟展览公开馆藏，观展的范围正在大幅扩大。距离遥远或行动不便的人也能仔细欣赏作品；放大画面后，还能确认在展厅中容易错过的细节。即便如此，也不能说数字展览能够完全替代原作。作品的尺寸和材料带来的感受、与其他作品的陈列关系，以及观众在空间中移动时形成的解释，都很难仅靠屏幕传达。另一方面，如果只强调原作体验，也可能无法充分考虑难以进入文化设施的人们的权利。因此，数字展览不应停留在复制原作的手段上，而应被设计成在观展前提供背景知识、在观展后扩展理解的方式。文化机构也不应只把线上使用次数作为成果，而应持续评估数字体验如何连接到实际观展和学习。",
+  tokens: [
+    { korean: "소장품을", reading: "so-jang-pum-eul", meaning: "馆藏品（宾格）", note: "原形 소장품，名词；指出博物馆公开和展示的对象。" },
+    { korean: "고해상도", reading: "go-hae-sang-do", meaning: "高分辨率、高清", note: "名词/冠形用法；修饰 이미지，说明数字化展示的技术条件。" },
+    { korean: "넓어지고", reading: "neol-beo-ji-go", meaning: "正在变宽、扩大", grammar: "V-아/어지고 있다", note: "原形 넓어지다，动词；描述观展机会持续扩大的趋势。" },
+    { korean: "살펴볼", reading: "sal-pyeo-bol", meaning: "仔细查看、观察", grammar: "V-아/어 보다", note: "原形 살펴보다，动词；与 수 있다 连用，表示数字展览提供的可能性。" },
+    { korean: "확대하면", reading: "hwak-dae-ha-myeon", meaning: "如果放大", grammar: "V-(으)면", note: "原形 확대하다，动词；引出屏幕观看能够发现细节的条件。" },
+    { korean: "놓치기", reading: "not-chi-gi", meaning: "错过（名词化）", grammar: "V-기 쉽다", note: "原形 놓치다，动词；说明实体展厅中细节可能不易被注意到。" },
+    { korean: "대신할", reading: "dae-sin-hal", meaning: "替代、代替", grammar: "V-(으)ㄹ 수 있다", note: "原形 대신하다，动词；构成文章核心问题：数字展是否能替代原作。" },
+    { korean: "배치", reading: "bae-chi", meaning: "配置、陈列关系", note: "名词；指作品之间的位置关系，是线下观展体验的一部分。" },
+    { korean: "형성하는", reading: "hyeong-seong-ha-neun", meaning: "形成的", grammar: "V-는", note: "原形 형성하다，动词；修饰 해석，说明理解会在空间移动中生成。" },
+    { korean: "전달되기", reading: "jeon-dal-doe-gi", meaning: "被传达（名词化）", grammar: "피동 + V-기 어렵다", note: "原形 전달되다，被动动词；指出屏幕体验的限制。" },
+    { korean: "접근하기", reading: "jeop-geun-ha-gi", meaning: "接近、进入（名词化）", grammar: "V-기 어렵다", note: "原形 접근하다，动词；用于讨论文化设施可及性与权利。" },
+    { korean: "머물기보다", reading: "meo-mul-gi-bo-da", meaning: "与其停留在……", grammar: "V-기보다", note: "原形 머물다，动词；引出作者对数字展览定位的建议。" },
+    { korean: "이어지는지", reading: "i-eo-ji-neun-ji", meaning: "是否连接到、如何延伸到", grammar: "V-는지", note: "原形 이어지다，动词；用于评价数字体验是否带来真实学习效果。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-면서", meaning: "一边……一边……；随着……", example: "소장품을 공개하면서 관람의 범위가 넓어지고 있다.", note: "可表示两个动作同时进行，也可表示某变化伴随另一变化发生。" },
+    { pattern: "V-다고 해서 ... 것은 아니다", meaning: "不能因为……就说……", example: "디지털 전시가 편리하다고 해서 원작을 대신할 수 있는 것은 아니다.", note: "用于让步后反驳，TOPIK 高级阅读中常用来避免绝对判断。" },
+    { pattern: "V-기 때문이다", meaning: "因为……", example: "화면만으로 전달되기 어렵기 때문이다.", note: "用于说明前一句判断的理由，常见于论述文的因果展开。" },
+    { pattern: "V-기보다", meaning: "与其……不如……", example: "원작을 복제하는 데 머물기보다 해석을 확장해야 한다.", note: "用于提出更合适的方向，适合写作 54 题的对策段。" },
+  ],
+  quiz: [
+    { question: "文章认为数字展览扩大观展范围的原因是什么？", answer: "它让距离远或行动不便的人也能观看作品，并且可以通过放大画面观察展厅里容易错过的细节。" },
+    { question: "作者为什么说数字展览不能完全替代原作？", answer: "因为作品的尺寸、材料感、陈列关系，以及观众在空间移动中形成的解释，都很难只通过屏幕传达。" },
+    { question: "作者主张数字展览应发挥什么作用？", answer: "数字展览应在观展前提供背景知识、在观展后扩展解释，并被评估为是否能连接到实际观展和学习。" },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt: "문화 기관이 디지털 기술과 현장 관람을 어떻게 결합해야 하는지 쓰십시오. 디지털 전시의 장점과 한계를 설명하고, 관람 경험을 넓히기 위한 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["디지털 전시 현황", "장점", "한계", "결합 방안 2개", "평가 기준"],
+    sentenceBank: [
+      "디지털 전시는 관람의 기회를 넓힌다는 점에서 중요한 의미가 있다.",
+      "그렇다고 해서 원작이 주는 공간적 경험을 완전히 대신할 수 있는 것은 아니다.",
+      "따라서 관람 전후의 학습을 연결하는 방식으로 설계되어야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july18Reading,
   july17Reading,
   july16Reading,
   previousReading,
