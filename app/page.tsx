@@ -534,7 +534,7 @@ const july18Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july19Reading: DailyReading = {
   id: "2026-07-19-digital-exhibition",
   date: "2026-07-19",
   title: "디지털 전시는 원작을 대신할 수 있는가",
@@ -583,8 +583,59 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-07-20-algorithm-accountability",
+  date: "2026-07-20",
+  title: "알고리즘 추천은 누구의 책임인가",
+  level: "TOPIK II 5-6级",
+  topic: "科技 / 社会治理",
+  estimatedTime: "14 分钟",
+  korean:
+    "온라인 플랫폼은 이용자가 오래 머물도록 하기 위해 개인의 검색 기록과 클릭 패턴을 분석해 콘텐츠를 추천한다. 이러한 추천 기술은 필요한 정보를 빠르게 찾게 해 주고, 취향에 맞는 상품이나 뉴스를 발견하게 한다는 점에서 편리하다. 그러나 알고리즘이 어떤 기준으로 정보를 배열하는지 공개되지 않으면 이용자는 자신이 보고 있는 세계가 제한되어 있다는 사실을 알아차리기 어렵다. 특히 자극적인 콘텐츠가 더 오래 시선을 붙잡는다는 이유로 반복적으로 노출될 경우, 사회적 갈등이 실제보다 크게 느껴지거나 근거가 약한 주장이 널리 퍼질 수 있다. 문제는 이런 결과를 전적으로 이용자의 선택으로만 설명할 수 없다는 데 있다. 플랫폼이 추천 구조를 설계하고 광고 수익을 얻는 이상, 정보 배열이 사회에 미치는 영향도 함께 책임져야 한다. 따라서 정부는 알고리즘의 핵심 기준과 위험 평가 절차를 점검할 수 있는 제도를 마련하되, 표현의 자유를 지나치게 제한하지 않도록 투명성과 독립성을 갖춘 감독 방식을 찾아야 한다.",
+  chinese:
+    "网络平台为了让用户停留更久，会分析个人的搜索记录和点击模式并推荐内容。这种推荐技术能让人快速找到所需信息，也能发现符合个人兴趣的商品或新闻，因此具有便利性。然而，如果平台不公开算法依据什么标准排列信息，用户就很难意识到自己看到的世界其实受到了限制。尤其当刺激性内容因为更能抓住视线而被反复展示时，社会冲突可能被感觉得比实际更严重，依据薄弱的主张也可能广泛传播。问题在于，这类结果不能完全解释为用户自己的选择。既然平台设计推荐结构并从中获得广告收益，就也应对信息排列给社会造成的影响承担责任。因此，政府需要建立能够检查算法核心标准和风险评估程序的制度，同时也要寻找具备透明性和独立性的监管方式，避免过度限制表达自由。",
+  tokens: [
+    { korean: "머물도록", reading: "meo-mul-do-rok", meaning: "使之停留", grammar: "V-도록 하다", note: "原形 머물다，动词；说明平台设计推荐系统的目的。" },
+    { korean: "검색 기록", reading: "geom-saek gi-rok", meaning: "搜索记录", note: "名词词组；是算法分析用户偏好的基础数据。" },
+    { korean: "클릭 패턴을", reading: "keul-lik pae-teon-eul", meaning: "点击模式（宾格）", note: "名词词组；表示平台追踪和分析的行为规律。" },
+    { korean: "분석해", reading: "bun-seok-hae", meaning: "分析后", grammar: "V-아/어", note: "原形 분석하다，动词；连接数据处理与内容推荐两个动作。" },
+    { korean: "취향에 맞는", reading: "chwi-hyang-e mat-neun", meaning: "符合兴趣的", grammar: "N에 맞는", note: "原形 맞다，动词/形容动词用法；修饰商品和新闻，强调个性化便利。" },
+    { korean: "배열하는지", reading: "bae-yeol-ha-neun-ji", meaning: "如何排列", grammar: "V-는지", note: "原形 배열하다，动词；用于提出算法透明度问题。" },
+    { korean: "제한되어", reading: "je-han-doe-eo", meaning: "被限制", grammar: "피동", note: "原形 제한되다，被动动词；说明用户看到的信息范围并非中立完整。" },
+    { korean: "알아차리기", reading: "a-ra-cha-ri-gi", meaning: "察觉（名词化）", grammar: "V-기 어렵다", note: "原形 알아차리다，动词；指出算法影响不易被用户感知。" },
+    { korean: "자극적인", reading: "ja-geuk-jeo-gin", meaning: "刺激性的", note: "原形 자극적이다，形容词；修饰内容，说明容易获得注意力的内容类型。" },
+    { korean: "노출될", reading: "no-chul-doel", meaning: "被展示、被暴露", grammar: "피동 + V-(으)ㄹ 경우", note: "原形 노출되다，被动动词；描述内容被平台反复推送的情况。" },
+    { korean: "전적으로", reading: "jeon-jeok-eu-ro", meaning: "完全地、全然地", note: "副词；与 이용자의 선택으로만 搭配，反驳单一归因。" },
+    { korean: "책임져야", reading: "chae-gim-jyeo-ya", meaning: "必须负责", grammar: "V-아/어야 하다", note: "原形 책임지다，动词；表达平台应承担的社会责任。" },
+    { korean: "마련하되", reading: "ma-ryeon-ha-doe", meaning: "要建立，但……", grammar: "V-되", note: "原形 마련하다，动词；用于提出制度措施并补充限制条件。" },
+    { korean: "지나치게", reading: "ji-na-chi-ge", meaning: "过度地", note: "副词；修饰 제한하다，提醒监管不能过度侵犯表达自由。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-도록 하다", meaning: "使……；让……能够……", example: "이용자가 오래 머물도록 콘텐츠를 추천한다.", note: "表示某设计或措施要达成的目标，平台、教育、政策类文章常见。" },
+    { pattern: "V-는지", meaning: "是否……；如何……", example: "어떤 기준으로 정보를 배열하는지 공개되어야 한다.", note: "用于引出需要确认或说明的内容，适合讨论透明度问题。" },
+    { pattern: "N으로만 설명할 수 없다", meaning: "不能只用……来解释", example: "문제를 이용자의 선택으로만 설명할 수 없다.", note: "用于反驳单一原因，把论点推进到结构性责任。" },
+    { pattern: "V-되", meaning: "做……，但同时……", example: "제도를 마련하되 표현의 자유를 제한하지 않아야 한다.", note: "书面语连接词尾，用于提出对策时同时附加条件或界限。" },
+  ],
+  quiz: [
+    { question: "文章认为算法推荐给用户带来的便利是什么？", answer: "它能根据搜索记录和点击模式快速提供所需信息，并帮助用户发现符合个人兴趣的商品或新闻。" },
+    { question: "为什么作者认为算法推荐可能影响社会认知？", answer: "因为平台可能反复展示更能吸引注意力的刺激性内容，使社会冲突被感觉得更严重，依据薄弱的主张也更容易扩散。" },
+    { question: "作者对政府监管算法提出了什么平衡要求？", answer: "政府应建立检查算法核心标准和风险评估程序的制度，但监管方式必须透明、独立，避免过度限制表达自由。" },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt: "온라인 플랫폼의 알고리즘 추천이 사회에 미치는 영향을 설명하고, 플랫폼과 정부가 각각 어떤 책임을 져야 하는지 쓰십시오. 편리성과 위험성을 모두 언급하고 구체적인 대책을 두 가지 이상 제시하십시오.",
+    checklist: ["현상 제시", "편리성", "사회적 위험", "플랫폼 책임", "정부 대책"],
+    sentenceBank: [
+      "추천 기술은 이용자의 편의를 높인다는 점에서 긍정적이다.",
+      "그러나 정보 배열의 기준이 공개되지 않으면 이용자의 판단이 제한될 수 있다.",
+      "따라서 플랫폼의 책임과 표현의 자유 사이에서 균형 있는 제도가 필요하다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july19Reading,
   july18Reading,
   july17Reading,
   july16Reading,
