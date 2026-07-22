@@ -919,16 +919,14 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <section className="hero-section">
-        <div className="hero-media" aria-hidden="true">
-          <img src="/korean-study-hero.png" alt="" />
-        </div>
-        <div className="hero-overlay" />
         <div className="hero-content">
-          <p className="eyebrow">TOPIK II 6급 스프린트</p>
-          <h1>冲 6 级，训练要像考试一样具体。</h1>
-          <p className="hero-copy">
-            以 10 月考试为锚点：每天一篇高阶阅读，加上生词复习、错题归因、限时训练和写作 54 题输出。
-          </p>
+          <div>
+            <p className="eyebrow">TOPIK II 6급 스프린트</p>
+            <h1>冲 6 级，训练要像考试一样具体。</h1>
+            <p className="hero-copy">
+              每天一篇高阶阅读，配套生词、语法、测验和写作 54 题输出。
+            </p>
+          </div>
           <div className="hero-actions" aria-label="学习概览">
             <a className="hero-exam-link" href="/exam-lab">
               进入真题精练
