@@ -1387,6 +1387,9 @@ button {
 .sentence-analysis section > span,
 .source-card > span { display: block; margin-bottom: 9px; color: #708078; font-size: .7rem; font-weight: 900; }
 .sentence-analysis section > strong { color: #9d4f3d; font-size: .9rem; line-height: 1.6; }
+.analysis-detail-text { margin: 0; color: #58685f; font-size: .82rem; line-height: 1.75; white-space: pre-line; }
+.analysis-traps { display: grid; gap: 7px; }
+.analysis-traps p { margin: 0; border-left: 2px solid #e7c1b5; padding-left: 9px; color: #58685f; font-size: .8rem; line-height: 1.65; }
 .analysis-word-list { display: grid; gap: 6px; }
 .analysis-word-list button { min-height: 38px; border: 1px solid #d8d9d2; border-radius: 6px; padding: 0 10px; background: #fffdf8; color: #29443a; cursor: pointer; text-align: left; }
 .review-action,
@@ -1410,6 +1413,16 @@ button {
 .source-card small { display: block; }
 .source-card strong { font-size: .8rem; }
 .source-card small { margin: 5px 0 10px; color: #748077; font-size: .7rem; }
+.pdf-modal-backdrop { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 24px; background: rgba(23, 35, 31, .62); }
+.pdf-modal { width: min(940px, 100%); height: min(92vh, 920px); display: grid; grid-template-rows: auto 1fr; overflow: hidden; border: 1px solid #d7dbd2; border-radius: 9px; background: #fffdf8; box-shadow: 0 24px 80px rgba(16, 28, 23, .28); }
+.pdf-modal-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 16px; background: #173d32; color: #fffdf8; }
+.pdf-modal-header span,
+.pdf-modal-header strong { display: block; }
+.pdf-modal-header span { margin-bottom: 3px; color: #b7d5bd; font-size: .68rem; font-weight: 900; letter-spacing: .08em; }
+.pdf-modal-header strong { font-size: .86rem; }
+.pdf-modal-header button { width: 34px; height: 34px; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; background: transparent; color: #fffdf8; cursor: pointer; font-size: 1.3rem; line-height: 1; }
+.pdf-modal-page { min-height: 0; overflow: auto; padding: 18px; background: #e9ece7; text-align: center; }
+.pdf-modal-page img { display: block; width: min(100%, 720px); height: auto; margin: 0 auto; border: 1px solid #d7dbd2; box-shadow: 0 8px 24px rgba(23, 35, 31, .12); }
 
 @media (max-width: 1280px) {
   .exam-layout { grid-template-columns: 230px minmax(500px, 1fr) 330px; }
@@ -1443,4 +1456,6 @@ button {
   .audio-track { min-width: calc(100% - 52px); }
   .question-strip { flex-wrap: wrap; }
   .question-strip > div { order: 3; width: 100%; overflow-x: auto; }
+  .pdf-modal-backdrop { padding: 10px; }
+  .pdf-modal { height: 94vh; }
 }
