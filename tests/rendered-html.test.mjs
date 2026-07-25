@@ -31,6 +31,7 @@ test("server-renders the TOPIK reading archive", async () => {
   const html = await response.text();
   assert.match(html, /<title>Daily TOPIK Lab \| 韩语阅读训练<\/title>/i);
   assert.match(html, /每日文章归档/);
+  assert.match(html, /돌봄 노동의 가치는 어떻게 보상될 것인가/);
   assert.match(html, /지역 의료 공백은 어떻게 메울 것인가/);
   assert.match(html, /폭염 시대의 냉방권은 복지인가/);
   assert.match(html, /알고리즘 추천은 누구의 책임인가/);
@@ -40,7 +41,7 @@ test("server-renders the TOPIK reading archive", async () => {
   assert.match(html, /도시의 탄소 예산은 누구의 몫인가/);
   assert.match(html, /인공지능 시대의 질문하는 능력/);
   assert.match(html, /도시의 조용한 변화/);
-  assert.match(html, /9<!-- --> 篇文章/);
+  assert.match(html, /10<!-- --> 篇文章/);
   assert.match(html, /打开全文/);
 });
 
@@ -51,8 +52,8 @@ test("server-renders the interactive exam lab", async () => {
   const html = await response.text();
   assert.match(html, /真题精练工作台/);
   assert.match(html, /PDF \+ MP3 自动拆分/);
-  assert.match(html, /词汇语法/);
-  assert.match(html, /答案分析/);
+  assert.match(html, /逐句解析/);
+  assert.match(html, /选项分析/);
   assert.match(html, />听力<\/button>/);
   assert.match(html, /登录进入我的私人真题库/);
 });
