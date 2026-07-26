@@ -733,7 +733,7 @@ const july22Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july23Reading: DailyReading = {
   id: "2026-07-23-care-labor-value",
   date: "2026-07-23",
   title: "돌봄 노동의 가치는 어떻게 보상될 것인가",
@@ -798,8 +798,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-07-24-local-bookstore-policy",
+  date: "2026-07-24",
+  title: "지역 서점은 왜 문화 정책의 대상인가",
+  level: "TOPIK II 5-6级",
+  topic: "文化 / 公共政策",
+  estimatedTime: "16 分钟",
+  korean:
+    "온라인 플랫폼을 통해 책을 주문하는 일이 일상화되면서 지역 서점의 감소는 자연스러운 시장 변화처럼 보이기도 한다. 그러나 지역 서점은 단순히 책을 판매하는 가게가 아니라 주민들이 지식과 취향을 교환하고, 작은 강연이나 독서 모임을 통해 지역의 문화적 관계를 만들어 가는 공간이라는 점에서 공공적 의미를 지닌다. 문제는 이러한 가치를 인정하더라도 서점을 직접 지원하는 정책이 특정 업종을 보호하는 특혜로 비칠 수 있다는 데 있다. 그래서 일부 지방자치단체는 임대료를 보조하거나 도서 구입 예산을 배정하는 방식보다 학교, 도서관, 복지관과 서점을 연결하는 프로그램을 확대하고 있다. 이 경우 지원의 목적은 개별 가게의 매출을 보장하는 것이 아니라 주민이 생활권 안에서 다양한 책과 만날 기회를 유지하는 데 있다. 물론 모든 서점이 문화 공간의 역할을 자동으로 수행하는 것은 아니므로, 공공 지원을 받는 서점은 지역 독서 활동, 청소년 프로그램, 독립 출판물 소개 같은 구체적인 공헌을 제시해야 한다. 결국 지역 서점을 살리는 정책은 사라지는 상점을 붙잡는 일이 아니라, 지역 사회가 어떤 방식으로 지식과 대화를 공유할 것인가를 설계하는 일에 가깝다.",
+  chinese:
+    "随着通过线上平台订购图书成为日常，地方书店减少有时看起来像是自然的市场变化。然而，地方书店并不只是售卖图书的店铺；它也是居民交换知识与品味，并通过小型讲座或读书会形成地方文化关系的空间，因此具有公共意义。问题在于，即使承认这种价值，直接支持书店的政策也可能被视为保护特定行业的特殊优惠。因此，一些地方政府与其补贴租金或分配购书预算，更倾向于扩大把学校、图书馆、福利馆与书店连接起来的项目。在这种情况下，支持的目的不是保障某个店铺的销售额，而是维持居民在生活圈内接触多样书籍的机会。当然，并非所有书店都会自动承担文化空间的角色，因此接受公共支持的书店应提出具体贡献，例如地方阅读活动、青少年项目、独立出版物介绍等。归根结底，振兴地方书店的政策并不是挽留正在消失的店铺，而更接近于设计地方社会如何共享知识与对话。",
+  tokens: [
+    { korean: "일상화되면서", reading: "il-sang-hwa-doe-myeon-seo", meaning: "随着日常化", grammar: "V-면서", note: "原形 일상화되다，被动动词；用于说明线上购书成为背景趋势。" },
+    { korean: "감소는", reading: "gam-so-neun", meaning: "减少（主题）", note: "原形 감소，名词；指地方书店数量下降，是文章讨论对象。" },
+    { korean: "시장 변화처럼", reading: "si-jang byeon-hwa-cheo-reom", meaning: "像市场变化一样", grammar: "N처럼", note: "名词词组；提示一种看似自然、但文章会进一步反驳的理解。" },
+    { korean: "판매하는", reading: "pan-mae-ha-neun", meaning: "销售的", grammar: "V-는", note: "原形 판매하다，动词；修饰 가게，构成被否定的单一功能。" },
+    { korean: "교환하고", reading: "gyo-hwan-ha-go", meaning: "交换并且", grammar: "V-고", note: "原形 교환하다，动词；说明书店承担知识和品味流动的功能。" },
+    { korean: "문화적 관계를", reading: "mun-hwa-jeok gwan-gye-reul", meaning: "文化性关系（宾格）", note: "名词词组；说明书店不只是商业空间，也生产地方关系。" },
+    { korean: "공공적 의미를", reading: "gong-gong-jeok ui-mi-reul", meaning: "公共意义（宾格）", note: "名词词组；文章核心评价，支撑公共政策介入的理由。" },
+    { korean: "인정하더라도", reading: "in-jeong-ha-deo-ra-do", meaning: "即使承认", grammar: "V-더라도", note: "原形 인정하다，动词；让步后引出政策争议。" },
+    { korean: "특혜로", reading: "teuk-hye-ro", meaning: "作为特殊优惠、特权", note: "原形 특혜，名词；表示政策可能遭遇的反对理由。" },
+    { korean: "비칠 수", reading: "bi-chil su", meaning: "可能被看作", grammar: "V-(으)ㄹ 수 있다", note: "原形 비치다，动词；表示外界观感或社会评价。" },
+    { korean: "지방자치단체는", reading: "ji-bang-ja-chi-dan-che-neun", meaning: "地方自治团体、地方政府（主题）", note: "名词；政策执行主体，用于提出替代方案。" },
+    { korean: "연결하는", reading: "yeon-gyeol-ha-neun", meaning: "连接的", grammar: "V-는", note: "原形 연결하다，动词；说明从直接补贴转为网络型文化项目。" },
+    { korean: "생활권 안에서", reading: "saeng-hwal-kkwon an-e-seo", meaning: "在生活圈内", note: "名词词组；强调居民可及性，而不是抽象文化口号。" },
+    { korean: "유지하는 데", reading: "yu-ji-ha-neun de", meaning: "在维持……方面", grammar: "V-는 데", note: "原形 유지하다，动词；说明公共支持的目的所在。" },
+    { korean: "수행하는", reading: "su-haeng-ha-neun", meaning: "执行、履行的", grammar: "V-는", note: "原形 수행하다，动词；指出文化空间作用需要实际活动支撑。" },
+    { korean: "공헌을", reading: "gong-heon-eul", meaning: "贡献（宾格）", note: "原形 공헌，名词；接受公共支持时需要说明的具体社会回报。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-면서", meaning: "随着……；一边……一边……", example: "온라인 주문이 일상화되면서 지역 서점이 줄고 있다.", note: "用于交代背景趋势，并引出社会问题。" },
+    { pattern: "N이/가 아니라 ... N이다", meaning: "不是……而是……", example: "서점은 단순한 가게가 아니라 문화적 관계를 만드는 공간이다.", note: "用于重新定义对象，是 TOPIK 高级论述文常见主旨结构。" },
+    { pattern: "V-더라도", meaning: "即使……也……", example: "공공적 가치를 인정하더라도 지원 방식에는 논란이 있을 수 있다.", note: "先承认前提，再转向限制或争议，使论证更平衡。" },
+    { pattern: "V-는 데 있다", meaning: "在于做某事", example: "지원의 목적은 다양한 책과 만날 기회를 유지하는 데 있다.", note: "用于明确政策目的或问题核心，适合阅读题定位中心观点。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么认为地方书店具有公共意义？",
+      answer:
+        "因为地方书店不仅售卖图书，还提供居民交换知识和品味、举办讲座和读书会、形成地方文化关系的空间。",
+    },
+    {
+      question: "作者为什么不主张只用租金补贴或购书预算来支持书店？",
+      answer:
+        "直接补贴容易被看作保护特定行业的特惠，因此文章更强调把书店与学校、图书馆、福利馆连接起来，让支持服务于居民的文化可及性。",
+    },
+    {
+      question: "接受公共支持的书店需要承担什么责任？",
+      answer:
+        "它们需要提出具体公共贡献，例如地方阅读活动、青少年项目、独立出版物介绍等，不能自动被视为文化空间。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "지역 서점을 공공 정책으로 지원해야 하는지에 대해 쓰십시오. 온라인 시장 변화와 지역 문화 공간의 필요성을 모두 언급하고, 정부나 지방자치단체가 할 수 있는 구체적인 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["시장 변화", "문화 공간의 역할", "특혜 논란", "연계 프로그램", "공공 기여 기준"],
+    sentenceBank: [
+      "지역 서점은 단순히 책을 판매하는 장소에 그치지 않는다.",
+      "공공 지원은 개별 가게의 매출 보장이 아니라 주민의 문화 접근성을 높이는 방향이어야 한다.",
+      "따라서 지원을 받는 서점은 지역 사회에 대한 구체적인 공헌을 제시해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july23Reading,
   july22Reading,
   july21Reading,
   july20Reading,
