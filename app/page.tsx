@@ -928,7 +928,7 @@ const july25Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july26Reading: DailyReading = {
   id: "2026-07-26-data-center-water-use",
   date: "2026-07-26",
   title: "데이터 센터의 물 사용은 누구에게 설명되어야 하는가",
@@ -993,8 +993,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-07-27-secondhand-market",
+  date: "2026-07-27",
+  title: "중고 거래 시장은 소비 문화를 어떻게 바꾸는가",
+  level: "TOPIK II 5-6级",
+  topic: "经济 / 消费文化",
+  estimatedTime: "16 分钟",
+  korean:
+    "물가 상승과 환경 문제에 대한 관심이 커지면서 중고 거래 시장은 단순히 돈을 아끼기 위한 선택을 넘어 새로운 소비 문화로 자리 잡고 있다. 과거에는 중고 물건을 사는 일이 경제적으로 여유가 없는 사람들의 행동처럼 여겨지기도 했지만, 최근에는 필요한 물건을 합리적으로 구입하고 사용하지 않는 물건의 수명을 연장하는 실천으로 받아들여지고 있다. 특히 온라인 플랫폼은 판매자와 구매자를 빠르게 연결하고 거래 후기를 공개함으로써 낯선 사람 사이의 거래에 필요한 신뢰를 어느 정도 보완해 준다. 그러나 시장이 커질수록 사기 거래, 개인정보 노출, 품질 책임의 불명확성과 같은 문제도 함께 늘어난다. 개인 간 거래라는 이유로 모든 책임을 소비자에게만 맡기면 피해를 줄이기 어렵고, 지나친 규제는 자발적인 재사용 문화를 위축시킬 수 있다. 따라서 중고 거래 정책은 거래를 단순히 통제하는 방식보다 플랫폼의 정보 공개 의무, 분쟁 조정 절차, 안전 결제 장치 등을 통해 신뢰를 높이는 방향으로 설계되어야 한다. 결국 중고 거래의 확산은 값싼 물건을 사고파는 현상에 그치지 않고, 소비자가 소유와 사용의 의미를 다시 생각하게 만드는 변화로 이해될 수 있다.",
+  chinese:
+    "随着物价上涨和人们对环境问题的关注增加，二手交易市场已经超越单纯为了省钱的选择，逐渐成为一种新的消费文化。过去，购买二手物品有时被看作经济上不宽裕的人才会采取的行为，但最近它被接受为一种合理购买所需物品、延长闲置物品寿命的实践。尤其是线上平台通过快速连接卖家与买家，并公开交易评价，在一定程度上弥补了陌生人之间交易所需的信任。然而，市场越扩大，诈骗交易、个人信息泄露、品质责任不明确等问题也会随之增加。如果仅以个人之间交易为由把所有责任都交给消费者，就很难减少损害；而过度监管又可能使自发的再利用文化萎缩。因此，二手交易政策不应只是简单控制交易，而应通过平台信息公开义务、纠纷调解程序、安全支付装置等方式来提高信任。归根结底，二手交易的扩散不应只被理解为买卖便宜物品的现象，而是让消费者重新思考所有与使用意义的一种变化。",
+  tokens: [
+    { korean: "물가 상승과", reading: "mul-ga sang-seung-gwa", meaning: "物价上涨和", note: "原形 물가 상승，名词词组；与 환경 문제 并列，交代二手交易扩大的社会背景。" },
+    { korean: "관심이 커지면서", reading: "gwan-si-mi keo-ji-myeon-seo", meaning: "随着关注增加", grammar: "V-면서", note: "原形 커지다，动词；表示背景变化和后项现象同时推进。" },
+    { korean: "선택을 넘어", reading: "seon-tae-geul neo-meo", meaning: "超越选择", grammar: "N을/를 넘어", note: "原形 넘다，动词；说明二手交易不再只是省钱手段，而进入文化层面。" },
+    { korean: "자리 잡고 있다", reading: "ja-ri jap-go it-da", meaning: "正在确立、站稳位置", grammar: "V-고 있다", note: "原形 자리 잡다，动词；用于描述制度、观念或文化逐渐稳定下来。" },
+    { korean: "여겨지기도 했지만", reading: "yeo-gyeo-ji-gi-do haet-ji-man", meaning: "也曾被认为", grammar: "V-기도 하다", note: "原形 여겨지다，被动动词；回顾过去社会认知，再和 최근 的变化形成对比。" },
+    { korean: "합리적으로", reading: "ham-ni-jeo-geu-ro", meaning: "合理地", note: "原形 합리적이다，形容词；修饰 구입하다，表示购买方式有理性依据。" },
+    { korean: "수명을 연장하는", reading: "su-myeong-eul yeon-jang-ha-neun", meaning: "延长寿命的", grammar: "V-는", note: "原形 연장하다，动词；修饰 실천，说明闲置物品被继续使用的环境意义。" },
+    { korean: "받아들여지고 있다", reading: "ba-da-deu-ryeo-ji-go it-da", meaning: "正在被接受", grammar: "피동 + V-고 있다", note: "原形 받아들여지다，被动动词；表示社会评价正在变化。" },
+    { korean: "거래 후기를 공개함으로써", reading: "geo-rae hu-gi-reul gong-gae-ham-eu-ro-sseo", meaning: "通过公开交易评价", grammar: "V-ㅁ으로써", note: "原形 공개하다，动词；说明平台建立信任的具体方式。" },
+    { korean: "보완해 준다", reading: "bo-wan-hae jun-da", meaning: "弥补、补足", grammar: "V-아/어 주다", note: "原形 보완하다，动词；指出平台对陌生人交易信任不足的补充作用。" },
+    { korean: "커질수록", reading: "keo-jil-su-rok", meaning: "越扩大越", grammar: "V-(으)ㄹ수록", note: "原形 커지다，动词；引出市场扩大和问题增加之间的比例关系。" },
+    { korean: "개인정보 노출", reading: "gae-in-jeong-bo no-chul", meaning: "个人信息泄露", note: "名词词组；与 사기 거래、품질 책임 并列，是线上交易风险之一。" },
+    { korean: "불명확성과", reading: "bul-myeong-hwak-seong-gwa", meaning: "不明确性和", note: "原形 불명확성，名词；指出二手交易中品质责任边界模糊的问题。" },
+    { korean: "맡기면", reading: "mat-gi-myeon", meaning: "如果交给、委托给", grammar: "V-(으)면", note: "原形 맡기다，动词；构成条件句，批评把责任全推给消费者的做法。" },
+    { korean: "위축시킬 수 있다", reading: "wi-chuk-si-kil su it-da", meaning: "可能使萎缩", grammar: "V-(으)ㄹ 수 있다", note: "原形 위축시키다，使动词；说明过度监管的副作用。" },
+    { korean: "그치지 않고", reading: "geu-chi-ji an-ko", meaning: "不止于、不停留在", grammar: "N에 그치지 않고", note: "原形 그치다，动词；结论中把现象从买卖行为提升到消费观变化。" },
+  ],
+  grammarPoints: [
+    { pattern: "N을/를 넘어", meaning: "超越、不只停留在某范围", example: "중고 거래는 돈을 아끼기 위한 선택을 넘어 새로운 소비 문화가 되었다.", note: "常用于说明某现象意义扩大，是主旨题和结论句的高频结构。" },
+    { pattern: "V-(으)ㄹ수록", meaning: "越……越……", example: "시장이 커질수록 사기 거래와 책임 문제가 늘어난다.", note: "表达两个变化同步增强，适合分析社会现象的利弊。" },
+    { pattern: "V-ㅁ으로써", meaning: "通过做某事", example: "거래 후기를 공개함으로써 신뢰를 보완할 수 있다.", note: "正式书面语手段表达，比 -아서/어서 更偏论述文。" },
+    { pattern: "N에 그치지 않고", meaning: "不只停留在……", example: "중고 거래는 값싼 물건을 사고파는 현상에 그치지 않는다.", note: "先否定浅层理解，再引出作者真正的观点，可迁移到 TOPIK 写作 54 题。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么说二手交易已经成为新的消费文化？",
+      answer:
+        "因为它不再只是为了省钱，而被看作合理购买所需物品、延长闲置物品寿命的一种实践。",
+    },
+    {
+      question: "线上平台在二手交易中起什么作用，同时带来哪些问题？",
+      answer:
+        "平台通过连接买卖双方并公开评价来弥补信任不足，但市场扩大后也会出现诈骗、个人信息泄露和品质责任不明确等问题。",
+    },
+    {
+      question: "作者认为二手交易政策应该朝什么方向设计？",
+      answer:
+        "不应只靠简单控制交易，而应通过平台信息公开义务、纠纷调解程序和安全支付机制来提高交易信任。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "중고 거래 시장의 확대가 소비 문화에 어떤 영향을 미치는지에 대해 쓰십시오. 경제적 이익과 환경적 의미를 모두 언급하고, 안전한 거래를 위해 필요한 제도 두 가지 이상을 제시하십시오.",
+    checklist: ["중고 거래 확대 배경", "경제적 이익", "환경적 의미", "거래 안전", "플랫폼 책임"],
+    sentenceBank: [
+      "중고 거래는 필요한 물건을 합리적으로 구입할 수 있게 해 준다.",
+      "사용하지 않는 물건의 수명을 연장한다는 점에서 환경적 의미도 크다.",
+      "안전한 거래를 위해서는 정보 공개와 분쟁 조정 절차가 마련되어야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july26Reading,
   july25Reading,
   july24Reading,
   july23Reading,
