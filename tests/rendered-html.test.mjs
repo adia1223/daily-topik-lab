@@ -60,6 +60,7 @@ test("server-renders the interactive exam lab", async () => {
   assert.match(html, /词汇语法/);
   assert.match(html, /答案分析/);
   assert.match(html, /对照 PDF 原页/);
+  assert.match(html, /清空本地记录/);
   assert.match(html, /登录进入我的私人真题库/);
 });
 

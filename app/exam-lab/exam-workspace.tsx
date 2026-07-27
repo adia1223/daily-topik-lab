@@ -1,10 +1,19 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { topik102Questions } from "./topik102-data";
 
 type Props = { isPrivate?: boolean; displayName?: string };
 type AnalysisTab = "sentence" | "answer" | "notes";
+type ExamProgress = {
+  answers: Record<string, number>;
+  submitted: Record<string, boolean>;
+  notes: Record<string, string>;
+  flagged: number[];
+  updatedAt: string;
+};
+
+const examProgressStorageKey = "daily-topik-lab-topik-102-progress";
 
 const examSets = [
   ["第 102 回", "2025.10", 0, "待精读"],
@@ -96,17 +105,23 @@ function sourcePageForQuestion(number: number) {
 
 export default function ExamWorkspace({ isPrivate = false, displayName = "体验模式" }: Props) {
   const [selectedNumber, setSelectedNumber] = useState(1);
-  const [answer, setAnswer] = useState<number | null>(null);
-  const [submitted, setSubmitted] = useState(false);
+  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [submittedQuestions, setSubmittedQuestions] = useState<Record<number, boolean>>({});
   const [analysisTab, setAnalysisTab] = useState<AnalysisTab>("sentence");
   const [section, setSection] = useState<"reading" | "listening">("reading");
-  const [note, setNote] = useState("");
+  const [notes, setNotes] = useState<Record<number, string>>({});
   const [flagged, setFlagged] = useState<number[]>([]);
   const [showPdf, setShowPdf] = useState(false);
+  const [progressLoaded, setProgressLoaded] = useState(false);
   const selectedQuestion = topik102Questions[selectedNumber - 1];
   const detail = detailedNotes[selectedNumber];
-  const answeredCount = submitted ? 1 : 0;
-  const correctCount = submitted && answer === selectedQuestion.answer ? 1 : 0;
+  const answer = answers[selectedNumber] ?? null;
+  const submitted = Boolean(submittedQuestions[selectedNumber]);
+  const note = notes[selectedNumber] ?? "";
+  const answeredCount = topik102Questions.filter((question) => submittedQuestions[question.num]).length;
+  const correctScore = topik102Questions.reduce((score, question) => {
+    return submittedQuestions[question.num] && answers[question.num] === question.answer ? score + question.points : score;
+  }, 0);
   const answerLabel = String.fromCharCode(9311 + selectedQuestion.answer);
   const contextLines = cleanContext(selectedQuestion.context);
   const isVisual = selectedQuestion.type === "image";
@@ -114,12 +129,52 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
 
   const groupLabel = useMemo(() => selectedQuestion.group || "第 102 回 · 阅读练习", [selectedQuestion.group]);
 
+  useEffect(() => {
+    try {
+      const stored = window.localStorage.getItem(examProgressStorageKey);
+      if (stored) {
+        const progress = JSON.parse(stored) as Partial<ExamProgress>;
+        setAnswers((progress.answers || {}) as Record<number, number>);
+        setSubmittedQuestions((progress.submitted || {}) as Record<number, boolean>);
+        setNotes((progress.notes || {}) as Record<number, string>);
+        setFlagged(Array.isArray(progress.flagged) ? progress.flagged : []);
+      }
+    } catch {
+      window.localStorage.removeItem(examProgressStorageKey);
+    } finally {
+      setProgressLoaded(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!progressLoaded) return;
+    const progress: ExamProgress = {
+      answers: answers as Record<string, number>,
+      submitted: submittedQuestions as Record<string, boolean>,
+      notes: notes as Record<string, string>,
+      flagged,
+      updatedAt: new Date().toISOString(),
+    };
+    window.localStorage.setItem(examProgressStorageKey, JSON.stringify(progress));
+  }, [answers, flagged, notes, progressLoaded, submittedQuestions]);
+
   const selectQuestion = (number: number) => {
     setSelectedNumber(number);
-    setAnswer(null);
-    setSubmitted(false);
     setAnalysisTab("sentence");
-    setNote("");
+  };
+
+  const toggleFlagged = (number: number) => {
+    setFlagged((items) => items.includes(number) ? items.filter((item) => item !== number) : [...items, number]);
+  };
+
+  const clearLocalProgress = () => {
+    if (!window.confirm("清空第 102 回在本浏览器保存的答案、标记和笔记？")) return;
+    window.localStorage.removeItem(examProgressStorageKey);
+    setAnswers({});
+    setSubmittedQuestions({});
+    setNotes({});
+    setFlagged([]);
+    setAnalysisTab("sentence");
   };
 
   return (
@@ -165,7 +220,7 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
           <div className="workspace-toolbar">
             <div><span>第 102 回 · {section === "reading" ? "阅读" : "听力"}</span><strong>第 {selectedNumber} 题</strong></div>
             <div className="mode-switch"><button className={section === "reading" ? "is-active" : ""} onClick={() => setSection("reading")} type="button">阅读</button><button className={section === "listening" ? "is-active" : ""} onClick={() => setSection("listening")} type="button">听力</button></div>
-            <div className="workspace-actions"><button type="button">计时 70:00</button><button className={flagged.includes(selectedNumber) ? "is-flagged" : ""} onClick={() => setFlagged((items) => items.includes(selectedNumber) ? items.filter((item) => item !== selectedNumber) : [...items, selectedNumber])} type="button">{flagged.includes(selectedNumber) ? "已标记" : "标记"}</button></div>
+            <div className="workspace-actions"><button type="button">本机保存</button><button type="button">计时 70:00</button><button className={flagged.includes(selectedNumber) ? "is-flagged" : ""} onClick={() => toggleFlagged(selectedNumber)} type="button">{flagged.includes(selectedNumber) ? "已标记" : "标记"}</button><button onClick={clearLocalProgress} type="button">清空本地记录</button></div>
           </div>
 
           <article className="question-paper">
@@ -176,12 +231,12 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
               {isVisual ? <div className="visual-source"><strong>PDF 图文题</strong><span>原卷页面已识别为图文广告 / 图表题</span><small>选项保留在下方，适合先凭原图作答，再核对答案。</small></div> : contextLines.map((line, index) => <p key={`${line}-${index}`}>{line}</p>)}
             </div> : null}
             <div className="answer-options">
-              {selectedQuestion.options.map((option, index) => <button className={`${answer === index + 1 ? "is-selected" : ""} ${submitted && index + 1 === selectedQuestion.answer ? "is-correct" : ""} ${submitted && answer === index + 1 && index + 1 !== selectedQuestion.answer ? "is-wrong" : ""}`} key={option} onClick={() => { setAnswer(index + 1); setSubmitted(false); }} type="button"><span>{index + 1}</span><p lang="ko">{option}</p></button>)}
+              {selectedQuestion.options.map((option, index) => <button className={`${answer === index + 1 ? "is-selected" : ""} ${submitted && index + 1 === selectedQuestion.answer ? "is-correct" : ""} ${submitted && answer === index + 1 && index + 1 !== selectedQuestion.answer ? "is-wrong" : ""}`} key={option} onClick={() => { setAnswers((items) => ({ ...items, [selectedNumber]: index + 1 })); setSubmittedQuestions((items) => ({ ...items, [selectedNumber]: false })); }} type="button"><span>{index + 1}</span><p lang="ko">{option}</p></button>)}
             </div>
-            <div className="answer-footer"><span>{submitted ? (answer === selectedQuestion.answer ? "回答正确，已掌握本题判断路径。" : `正确答案是 ${answerLabel}，打开右侧看解析。`) : "选择答案后提交，可查看答案、依据和易错点。"}</span><button disabled={answer === null} onClick={() => { setSubmitted(true); setAnalysisTab("answer"); }} type="button">提交答案</button></div>
+            <div className="answer-footer"><span>{submitted ? (answer === selectedQuestion.answer ? "回答正确，已保存到本机记录。" : `正确答案是 ${answerLabel}，本机记录已更新。`) : "选择答案后提交，可查看答案、依据和易错点。"}</span><button disabled={answer === null} onClick={() => { setSubmittedQuestions((items) => ({ ...items, [selectedNumber]: true })); setAnalysisTab("answer"); }} type="button">提交答案</button></div>
           </article>
 
-          <div className="question-strip"><button onClick={() => selectQuestion(Math.max(1, selectedNumber - 1))} type="button">上一题</button><div>{topik102Questions.map((question) => <button className={`${question.num === selectedNumber ? "active" : ""} ${question.num < selectedNumber ? "done" : ""} ${flagged.includes(question.num) ? "flagged" : ""}`} onClick={() => selectQuestion(question.num)} key={question.num} type="button">{question.num}</button>)}</div><span>已答 {answeredCount}/50 · 得分 {correctCount * selectedQuestion.points}/100</span><button onClick={() => selectQuestion(Math.min(50, selectedNumber + 1))} type="button">下一题</button></div>
+          <div className="question-strip"><button onClick={() => selectQuestion(Math.max(1, selectedNumber - 1))} type="button">上一题</button><div>{topik102Questions.map((question) => <button className={`${question.num === selectedNumber ? "active" : ""} ${submittedQuestions[question.num] ? "done" : ""} ${flagged.includes(question.num) ? "flagged" : ""}`} onClick={() => selectQuestion(question.num)} key={question.num} type="button">{question.num}</button>)}</div><span>已答 {answeredCount}/50 · 得分 {correctScore}/100</span><button onClick={() => selectQuestion(Math.min(50, selectedNumber + 1))} type="button">下一题</button></div>
         </section>
 
         <aside className="exam-analysis" aria-label="题目解析">
@@ -199,9 +254,9 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
           {analysisTab === "answer" ? <div className="answer-analysis">
             <div className="correct-answer"><span>正确答案</span><strong>{answerLabel}</strong></div><h2>第 {selectedNumber} 题 · 判断依据</h2><p>{detail?.correctReason || detail?.note || "答案必须同时符合题干要求和原文信息。选项中只要出现原文没有支持的绝对化内容，就应优先排除。"}</p>
             <div className="trap-list">{selectedQuestion.options.map((option, index) => <article key={option}><span>{index + 1 === selectedQuestion.answer ? "✓" : index + 1}</span><div><strong>{index + 1 === selectedQuestion.answer ? "正确选项" : "干扰项"}</strong><p>{detail?.traps?.[index] || (index + 1 === selectedQuestion.answer ? "与原文 / 题干要求完全对应。" : "信息方向、范围或逻辑关系与原文不完全一致。")}</p></div></article>)}</div>
-            <button className="mistake-action" onClick={() => setFlagged((items) => items.includes(selectedNumber) ? items.filter((item) => item !== selectedNumber) : [...items, selectedNumber])} type="button">{flagged.includes(selectedNumber) ? "取消重点标记" : "记录错因：需要回看原文"}</button>
+            <button className="mistake-action" onClick={() => toggleFlagged(selectedNumber)} type="button">{flagged.includes(selectedNumber) ? "取消重点标记" : "记录错因：需要回看原文"}</button>
           </div> : null}
-          {analysisTab === "notes" ? <div className="note-panel"><label htmlFor="exam-note">这道题记住什么？</label><textarea id="exam-note" onChange={(event) => setNote(event.target.value)} placeholder="例如：온 지 表示经过的时间，后面接 일 년이 됐다。" value={note} /><div><span>{note.length}/300</span><button type="button">保存笔记</button></div></div> : null}
+          {analysisTab === "notes" ? <div className="note-panel"><label htmlFor="exam-note">这道题记住什么？</label><textarea id="exam-note" onChange={(event) => setNotes((items) => ({ ...items, [selectedNumber]: event.target.value.slice(0, 300) }))} placeholder="例如：온 지 表示经过的时间，后面接 일 년이 됐다。" value={note} /><div><span>{note.length}/300</span><button type="button">已自动保存</button></div></div> : null}
           <div className="source-card"><span>原始文件</span><strong>제102회 · 읽기 · 홀수형</strong><small>已载入项目原页图片 · 当前第 {selectedNumber} 题对应第 {sourcePage} 页</small><button onClick={() => setShowPdf(true)} type="button">对照 PDF 原页</button></div>
           {showPdf ? <div className="pdf-modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setShowPdf(false); }}><section className="pdf-modal" role="dialog" aria-label={`第 ${sourcePage} 页 PDF 原页`} aria-modal="true"><div className="pdf-modal-header"><div><span>原页对照</span><strong>第 {sourcePage} 页 · 第 {selectedNumber} 题</strong></div><button aria-label="关闭 PDF 原页" onClick={() => setShowPdf(false)} type="button">×</button></div><div className="pdf-modal-page"><img alt={`第 ${sourcePage} 页 PDF 原页`} src={`/exam-assets/topik-102/page-${String(sourcePage).padStart(2, "0")}.png`} /></div></section></div> : null}
         </aside>
