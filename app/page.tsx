@@ -993,7 +993,7 @@ const july26Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july27Reading: DailyReading = {
   id: "2026-07-27-secondhand-market",
   date: "2026-07-27",
   title: "중고 거래 시장은 소비 문화를 어떻게 바꾸는가",
@@ -1058,8 +1058,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-07-28-adult-reskilling",
+  date: "2026-07-28",
+  title: "성인 재교육은 누구의 책임인가",
+  level: "TOPIK II 5-6级",
+  topic: "教育 / 公共政策",
+  estimatedTime: "17 分钟",
+  korean:
+    "기술 변화가 빨라지면서 한 번 배운 지식만으로 평생 같은 일을 하기 어려운 시대가 되었다. 이에 따라 성인이 직업 능력을 다시 배우는 재교육은 개인의 선택을 넘어 사회가 함께 준비해야 할 과제가 되고 있다. 일부에서는 재교육을 노동자가 스스로 경쟁력을 높이기 위해 부담해야 하는 비용으로 보지만, 이러한 관점만으로는 산업 전환의 속도를 따라가기 어렵다. 기업이 새로운 기술을 도입해 생산성을 높이는 과정에서 기존 노동자의 업무가 사라지거나 크게 바뀐다면, 그 변화에 적응할 기회를 제공하는 책임도 일정 부분 기업에 있다. 또한 정부는 소득이나 지역에 따라 교육 기회가 달라지지 않도록 공공 훈련 체계를 마련해야 한다. 다만 재교육 정책이 단순히 수강권을 나누어 주는 데 그치면 실제 고용으로 이어지지 못할 가능성이 크다. 따라서 교육 내용은 지역 산업의 수요와 연결되어야 하며, 학습자가 훈련을 마친 뒤 어떤 일자리로 이동할 수 있는지에 대한 상담과 정보 제공도 함께 이루어져야 한다. 결국 성인 재교육은 개인의 노력만을 요구하는 제도가 아니라, 기술 변화로 생긴 부담을 개인, 기업, 국가가 어떻게 나눌 것인지 결정하는 사회적 장치로 이해되어야 한다.",
+  chinese:
+    "随着技术变化加快，只靠一次学到的知识终身从事同一工作的时代已经变得困难。因此，成年人重新学习职业能力的再教育，已经超越个人选择，成为社会需要共同准备的课题。有人把再教育看作劳动者为了提高自身竞争力而应自行承担的费用，但仅凭这种观点很难跟上产业转换的速度。如果企业在引入新技术、提高生产率的过程中使原有劳动者的工作消失或发生巨大变化，那么提供适应这种变化的机会，也在一定程度上属于企业的责任。此外，政府应建立公共培训体系，避免教育机会因收入或地区而产生差异。不过，如果再教育政策只是发放听课券，就很可能无法真正连接到就业。因此，教育内容应与地区产业需求相连，并且还应提供学习者完成培训后能够转向何种岗位的咨询和信息。归根结底，成人再教育不应被理解为只要求个人努力的制度，而应被理解为一种社会装置，用来决定个人、企业和国家如何分担技术变化带来的负担。",
+  tokens: [
+    { korean: "빨라지면서", reading: "ppal-la-ji-myeon-seo", meaning: "随着变快", grammar: "V-면서", note: "原形 빨라지다，动词；交代技术变化加速这一背景。" },
+    { korean: "평생 같은 일을", reading: "pyeong-saeng ga-teun i-reul", meaning: "一生同样的工作", note: "名词词组；说明旧职业模式的稳定性正在被打破。" },
+    { korean: "이에 따라", reading: "i-e tta-ra", meaning: "因此、随之", note: "连接副词；把前文社会变化和后文再教育需求连接起来。" },
+    { korean: "선택을 넘어", reading: "seon-tae-geul neo-meo", meaning: "超越选择", grammar: "N을/를 넘어", note: "原形 넘다，动词；说明再教育不只是个人问题，而是社会课题。" },
+    { korean: "부담해야 하는", reading: "bu-dam-hae-ya ha-neun", meaning: "必须承担的", grammar: "V-아/어야 하다", note: "原形 부담하다，动词；表示费用责任被归给劳动者。" },
+    { korean: "관점만으로는", reading: "gwan-jeom-ma-neu-ro-neun", meaning: "仅凭这种观点", grammar: "N만으로는", note: "原形 관점，名词；用于否定单一解释的充分性。" },
+    { korean: "산업 전환의 속도", reading: "san-eop jeon-hwan-ui sok-do", meaning: "产业转换的速度", note: "名词词组；是文章讨论再教育必要性的核心背景。" },
+    { korean: "도입해", reading: "do-i-pae", meaning: "引入", note: "原形 도입하다，动词；常与 기술、제도、정책 搭配。" },
+    { korean: "사라지거나", reading: "sa-ra-ji-geo-na", meaning: "消失或", grammar: "V-거나", note: "原形 사라지다，动词；列举技术变化对工作的两种影响之一。" },
+    { korean: "적응할 기회", reading: "jeog-eung-hal gi-hoe", meaning: "适应的机会", grammar: "V-(으)ㄹ", note: "原形 적응하다，动词；修饰 기회，是企业责任的具体内容。" },
+    { korean: "일정 부분", reading: "il-jeong bu-bun", meaning: "一定部分", note: "名词词组；避免绝对化，表示企业责任有范围。" },
+    { korean: "달라지지 않도록", reading: "dal-la-ji-ji an-to-rok", meaning: "为了不产生差异", grammar: "V-지 않도록", note: "原形 달라지다，动词；说明政府政策要防止机会不平等。" },
+    { korean: "마련해야 한다", reading: "ma-ryeon-hae-ya han-da", meaning: "必须建立、准备", grammar: "V-아/어야 하다", note: "原形 마련하다，动词；政策建议句中高频。" },
+    { korean: "그치면", reading: "geu-chi-myeon", meaning: "如果止于、停留在", grammar: "N에 그치다", note: "原形 그치다，动词；批评政策只停留在形式层面。" },
+    { korean: "이어지지 못할", reading: "i-eo-ji-ji mot-hal", meaning: "无法连接到", grammar: "V-지 못하다", note: "原形 이어지다，动词；指出课程和就业之间可能断裂。" },
+    { korean: "사회적 장치로", reading: "sa-hoe-jeok jang-chi-ro", meaning: "作为社会装置", note: "名词词组；结论中重新界定成人再教育的性质。" },
+  ],
+  grammarPoints: [
+    { pattern: "N을/를 넘어", meaning: "超越……、不只限于……", example: "재교육은 개인의 선택을 넘어 사회적 과제가 되었다.", note: "用于把现象从个人层面提升到社会或制度层面。" },
+    { pattern: "N만으로는", meaning: "仅凭……无法……", example: "개인의 노력만으로는 산업 전환의 속도를 따라가기 어렵다.", note: "常用于指出某个条件不充分，是论述文转折核心。" },
+    { pattern: "V-지 않도록", meaning: "为了不……", example: "교육 기회가 소득에 따라 달라지지 않도록 제도를 마련해야 한다.", note: "表示预防负面结果，常和 정책、제도、대책 搭配。" },
+    { pattern: "N에 그치다 / 그치지 않다", meaning: "停留在…… / 不止于……", example: "정책이 수강권 지급에 그치면 실제 고용으로 이어지기 어렵다.", note: "适合批评表面措施，引出更实质的解决方案。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么认为成人再教育不只是个人选择？",
+      answer:
+        "因为技术变化加快，旧知识难以支撑终身工作，产业转换带来的适应问题需要个人、企业和社会共同准备。",
+    },
+    {
+      question: "作者认为企业为什么也应承担一定责任？",
+      answer:
+        "因为企业引入新技术提高生产率时，可能导致原有劳动者的工作消失或发生巨大变化，因此应提供适应变化的机会。",
+    },
+    {
+      question: "文章指出再教育政策如果只发放听课券会有什么问题？",
+      answer:
+        "它可能只停留在形式上，无法与实际就业连接，因此需要把课程内容和地区产业需求、岗位咨询结合起来。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "기술 변화가 빠른 시대에 성인 재교육을 어떻게 운영해야 하는지에 대해 쓰십시오. 개인, 기업, 정부의 책임을 각각 언급하고, 재교육이 실제 취업으로 이어지기 위해 필요한 조건을 두 가지 이상 제시하십시오.",
+    checklist: ["기술 변화 배경", "개인의 노력", "기업 책임", "정부 역할", "고용 연계"],
+    sentenceBank: [
+      "기술 변화가 빨라질수록 기존 지식만으로는 직업 생활을 유지하기 어렵다.",
+      "기업은 기술 도입으로 업무가 바뀌는 노동자에게 적응 기회를 제공해야 한다.",
+      "재교육은 지역 산업의 수요와 연결될 때 실제 고용으로 이어질 수 있다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july27Reading,
   july26Reading,
   july25Reading,
   july24Reading,
