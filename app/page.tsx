@@ -1058,7 +1058,7 @@ const july27Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july28Reading: DailyReading = {
   id: "2026-07-28-adult-reskilling",
   date: "2026-07-28",
   title: "성인 재교육은 누구의 책임인가",
@@ -1123,8 +1123,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-07-29-local-festival-evaluation",
+  date: "2026-07-29",
+  title: "지역 축제의 성공은 방문객 수로 판단되는가",
+  level: "TOPIK II 5-6级",
+  topic: "文化 / 地方政策",
+  estimatedTime: "16 分钟",
+  korean:
+    "여러 지방자치단체가 지역 경제를 살리고 도시의 이미지를 알리기 위해 다양한 축제를 개최하고 있다. 축제의 성과를 평가할 때 가장 쉽게 제시되는 지표는 방문객 수와 소비 금액이다. 많은 사람이 찾아오고 숙박이나 음식 소비가 늘어나면 축제가 성공한 것처럼 보이기 때문이다. 그러나 이러한 숫자만으로 축제의 가치를 판단하면 정작 지역 주민의 삶과 문화가 어떤 방식으로 변화했는지는 놓치기 쉽다. 외부 관광객을 끌어들이는 데만 집중한 축제는 지역의 고유한 이야기를 단순한 볼거리로 소비하게 만들 수 있고, 준비 과정에서 주민이 배제되면 축제가 끝난 뒤에도 지역 사회에 남는 효과는 제한적일 수밖에 없다. 또한 방문객 수를 늘리기 위해 비슷한 공연과 판매 부스를 반복하면 축제는 어느 도시에서나 볼 수 있는 행사로 변해 버린다. 따라서 지역 축제의 평가는 단기간의 매출뿐만 아니라 주민 참여도, 지역 문화의 지속 가능성, 축제 이후 형성된 관계와 학습의 효과까지 함께 살펴보아야 한다. 결국 좋은 축제란 많은 사람이 지나가는 행사가 아니라, 지역이 스스로를 이해하고 외부와 의미 있게 만나는 장을 만드는 일이라고 할 수 있다.",
+  chinese:
+    "许多地方自治团体为了振兴地方经济、宣传城市形象，正在举办各种庆典。评价庆典成果时最容易提出的指标，是游客数量和消费金额。因为如果很多人到访，住宿或餐饮消费增加，庆典看起来就像成功了一样。然而，如果只用这些数字判断庆典价值，就很容易忽略当地居民的生活与文化以何种方式发生变化。只专注吸引外地游客的庆典，可能会把地方独有的故事变成单纯可观看的消费对象；如果居民在准备过程中被排除，庆典结束后留给地方社会的效果也只能是有限的。此外，为了增加游客数量而反复安排相似的演出和销售摊位，庆典就会变成在哪个城市都能看到的活动。因此，地方庆典的评价不应只看短期销售额，还应同时考察居民参与度、地方文化的可持续性，以及庆典结束后形成的关系和学习效果。归根结底，好的庆典不是许多人路过的活动，而是让地方理解自身，并与外部进行有意义相遇的场域。",
+  tokens: [
+    { korean: "지방자치단체가", reading: "ji-bang-ja-chi-dan-che-ga", meaning: "地方自治团体（主格）", note: "原形 지방자치단체，名词；说明举办地方庆典的主体。" },
+    { korean: "살리고", reading: "sal-li-go", meaning: "使恢复、振兴并", note: "原形 살리다，动词；与 지역 경제 搭配，表示振兴地方经济。" },
+    { korean: "개최하고 있다", reading: "gae-choe-ha-go it-da", meaning: "正在举办", grammar: "V-고 있다", note: "原形 개최하다，动词；用于正式说明活动或会议的举行。" },
+    { korean: "제시되는 지표", reading: "je-si-doe-neun ji-pyo", meaning: "被提出的指标", grammar: "피동 + V-는", note: "原形 제시되다，被动动词；修饰 지표，指出评价时常用的标准。" },
+    { korean: "늘어나면", reading: "neu-reo-na-myeon", meaning: "如果增加", grammar: "V-(으)면", note: "原形 늘어나다，动词；构成看似成功的条件。" },
+    { korean: "보이기 때문이다", reading: "bo-i-gi ttae-mun-i-da", meaning: "是因为看起来", grammar: "V-기 때문이다", note: "原形 보이다，动词；解释为什么人们依赖游客数和消费额。" },
+    { korean: "숫자만으로", reading: "sut-ja-ma-neu-ro", meaning: "仅凭数字", grammar: "N만으로", note: "原形 숫자，名词；批评单一量化评价的局限。" },
+    { korean: "놓치기 쉽다", reading: "not-chi-gi swip-da", meaning: "容易错过、忽略", grammar: "V-기 쉽다", note: "原形 놓치다，动词；指出只看数字会遗漏居民生活和文化变化。" },
+    { korean: "끌어들이는 데만", reading: "kkeu-reo-deu-ri-neun de-man", meaning: "只在吸引……上", grammar: "V-는 데만", note: "原形 끌어들이다，动词；批评庆典过度面向外部游客。" },
+    { korean: "고유한 이야기를", reading: "go-yu-han i-ya-gi-reul", meaning: "独有的故事（宾格）", note: "形容词词组；指地方文化中不可替代的内容。" },
+    { korean: "배제되면", reading: "bae-je-doe-myeon", meaning: "如果被排除", grammar: "피동 + V-(으)면", note: "原形 배제되다，被动动词；说明居民不参与会削弱庆典效果。" },
+    { korean: "제한적일 수밖에 없다", reading: "je-han-jeo-gil su-bak-e eop-da", meaning: "只能是有限的", grammar: "A/V-(으)ㄹ 수밖에 없다", note: "原形 제한적이다，形容词；表示结果不可避免地受限。" },
+    { korean: "반복하면", reading: "ban-bo-ka-myeon", meaning: "如果反复", grammar: "V-(으)면", note: "原形 반복하다，动词；引出内容同质化的问题。" },
+    { korean: "변해 버린다", reading: "byeon-hae beo-rin-da", meaning: "最终变成、变掉", grammar: "V-아/어 버리다", note: "原形 변하다，动词；强调不理想变化已经发生。" },
+    { korean: "지속 가능성", reading: "ji-sok ga-neung-seong", meaning: "可持续性", note: "名词；政策评价和环境、文化主题的高频词。" },
+    { korean: "의미 있게 만나는 장", reading: "ui-mi it-ge man-na-neun jang", meaning: "有意义相遇的场域", note: "名词词组；结论中重新定义好庆典的价值。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-기 때문이다", meaning: "是因为……", example: "소비가 늘어나면 축제가 성공한 것처럼 보이기 때문이다.", note: "用于解释前文判断的理由，正式论述文高频。" },
+    { pattern: "N만으로", meaning: "仅凭……", example: "방문객 수만으로 축제의 가치를 판단하기 어렵다.", note: "常用于指出评价标准或判断依据不充分。" },
+    { pattern: "A/V-(으)ㄹ 수밖에 없다", meaning: "只能……、不得不……", example: "주민이 배제되면 지역 사회에 남는 효과는 제한적일 수밖에 없다.", note: "表达某种结果在条件下不可避免，适合因果推论题。" },
+    { pattern: "V-아/어 버리다", meaning: "最终……掉、带有结果完成感", example: "비슷한 행사가 반복되면 축제의 개성이 사라져 버린다.", note: "在论述文中可表示不希望发生的变化已经完成。" },
+  ],
+  quiz: [
+    {
+      question: "文章认为为什么不能只用游客数量和消费金额评价地方庆典？",
+      answer:
+        "因为这些数字虽然容易显示短期成果，但无法充分反映居民生活、地方文化和庆典结束后留下的长期效果。",
+    },
+    {
+      question: "外部游客导向的庆典可能带来什么问题？",
+      answer:
+        "它可能把地方独有的故事变成单纯观光消费对象，并在居民被排除时使庆典对地方社会的实际效果变得有限。",
+    },
+    {
+      question: "作者认为好的地方庆典应具有什么特征？",
+      answer:
+        "它应让居民参与，保持地方文化的可持续性，并让地方理解自身、与外部形成有意义的关系。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "지역 축제의 성과를 어떻게 평가해야 하는지에 대해 쓰십시오. 방문객 수와 매출 중심 평가의 장단점을 언급하고, 지역 주민과 문화의 관점에서 필요한 평가 기준을 두 가지 이상 제시하십시오.",
+    checklist: ["방문객 수 지표", "매출 중심 평가 한계", "주민 참여", "지역 문화", "지속 가능성"],
+    sentenceBank: [
+      "방문객 수와 매출은 축제의 단기적 성과를 보여 주는 지표가 될 수 있다.",
+      "그러나 숫자만으로는 지역 문화가 어떻게 유지되는지 알기 어렵다.",
+      "따라서 주민 참여도와 축제 이후 지역 사회에 남는 효과를 함께 평가해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july28Reading,
   july27Reading,
   july26Reading,
   july25Reading,
