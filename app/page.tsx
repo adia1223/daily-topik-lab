@@ -1123,7 +1123,7 @@ const july28Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july29Reading: DailyReading = {
   id: "2026-07-29-local-festival-evaluation",
   date: "2026-07-29",
   title: "지역 축제의 성공은 방문객 수로 판단되는가",
@@ -1188,8 +1188,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-07-30-public-ai-service",
+  date: "2026-07-30",
+  title: "공공 서비스의 인공지능은 어디까지 결정해야 하는가",
+  level: "TOPIK II 5-6级",
+  topic: "科技 / 公共治理",
+  estimatedTime: "17 分钟",
+  korean:
+    "최근 여러 공공 기관은 민원 상담, 복지 대상자 선정, 교통 관리와 같은 영역에 인공지능 시스템을 도입하고 있다. 인공지능은 많은 자료를 빠르게 처리하고 반복적인 업무를 줄여 준다는 점에서 행정의 효율성을 높일 수 있다. 특히 담당 인력이 부족한 지역에서는 자동화된 분석이 필요한 서비스를 더 빨리 찾아내는 데 도움을 줄 수 있다. 그러나 공공 서비스에서 중요한 것은 빠른 결정만이 아니라 그 결정이 누구에게 어떤 이유로 내려졌는지를 설명할 수 있는 절차이다. 알고리즘이 특정 사람을 지원 대상에서 제외하거나 위험도가 높다고 분류했을 때, 당사자가 그 근거를 이해하지 못한다면 행정에 대한 신뢰는 약해질 수밖에 없다. 또한 과거 자료에 포함된 편견이 그대로 학습되면 인공지능은 객관적인 도구처럼 보이면서도 기존의 불평등을 반복할 가능성이 있다. 따라서 공공 영역의 인공지능은 최종 판단을 대신하는 장치가 아니라 공무원의 판단을 보조하고 시민이 이의를 제기할 수 있도록 근거를 공개하는 방식으로 운영되어야 한다. 기술의 도입은 행정을 편리하게 만들기 위한 수단이지만, 그 편리함이 설명 책임과 권리 구제를 약화시키는 이유가 되어서는 안 된다.",
+  chinese:
+    "最近，许多公共机构正在把人工智能系统引入民愿咨询、福利对象筛选、交通管理等领域。人工智能能够快速处理大量资料，并减少重复性业务，因此可以提高行政效率。特别是在负责人力不足的地区，自动化分析能够帮助更快发现需要服务的对象。然而，在公共服务中重要的不只是快速决定，还包括能够说明这一决定是因为什么理由、对谁做出的程序。当算法把某个人排除在支持对象之外，或将其归类为高风险时，如果当事人无法理解依据，对行政的信任就不可避免地会减弱。此外，如果过去资料中包含的偏见被原样学习，人工智能即使看起来像客观工具，也可能重复既有的不平等。因此，公共领域的人工智能不应作为替代最终判断的装置，而应作为辅助公务员判断、并公开依据以便市民提出异议的方式来运行。技术引入是为了让行政更便利的手段，但这种便利不应成为削弱说明责任和权利救济的理由。",
+  tokens: [
+    { korean: "공공 기관은", reading: "gong-gong gi-gwa-neun", meaning: "公共机构", note: "原形 공공 기관，名词词组；说明引入人工智能的主体。" },
+    { korean: "민원 상담", reading: "min-won sang-dam", meaning: "民愿咨询、政务咨询", note: "名词词组；公共服务场景高频表达。" },
+    { korean: "대상자 선정", reading: "dae-sang-ja seon-jeong", meaning: "对象者筛选、对象选定", note: "名词词组；福利政策中决定谁获得支持的关键环节。" },
+    { korean: "도입하고 있다", reading: "do-i-pa-go it-da", meaning: "正在引入", grammar: "V-고 있다", note: "原形 도입하다，动词；表示政策或技术应用正在进行。" },
+    { korean: "처리하고", reading: "cheo-ri-ha-go", meaning: "处理并", note: "原形 처리하다，动词；与 자료、업무 搭配，说明 AI 的效率优势。" },
+    { korean: "줄여 준다는 점에서", reading: "ju-ryeo jun-da-neun jeo-me-seo", meaning: "从减少这一点来看", grammar: "V-아/어 주다 + N다는 점에서", note: "原形 줄이다，动词；指出评价某技术优点的依据。" },
+    { korean: "담당 인력이 부족한", reading: "dam-dang in-nyeo-gi bu-jo-kan", meaning: "负责人员不足的", note: "形容词词组；说明自动化在地方行政中的现实背景。" },
+    { korean: "찾아내는 데", reading: "cha-ja-nae-neun de", meaning: "在找出……方面", grammar: "V-는 데", note: "原形 찾아내다，动词；表示 AI 可以帮助发现服务需求。" },
+    { korean: "빠른 결정만이 아니라", reading: "ppa-reun gyeol-jeong-ma-ni a-ni-ra", meaning: "不只是快速决定", grammar: "N만이 아니라", note: "用于转折提升论点，把重点从效率转到程序正当性。" },
+    { korean: "내려졌는지를", reading: "nae-ryeo-jeot-neun-ji-reul", meaning: "是否/如何被作出", grammar: "피동 + V-는지", note: "原形 내려지다，被动动词；修饰 결정，强调行政决定的形成依据。" },
+    { korean: "제외하거나", reading: "je-oe-ha-geo-na", meaning: "排除或", grammar: "V-거나", note: "原形 제외하다，动词；列举算法判断可能造成的影响。" },
+    { korean: "분류했을 때", reading: "bul-lyu-hae-sseul ttae", meaning: "分类时", grammar: "V-(으)ㄹ 때", note: "原形 분류하다，动词；描述算法给人贴上风险类别的场景。" },
+    { korean: "약해질 수밖에 없다", reading: "ya-kae-jil su-bak-e eop-da", meaning: "只能减弱、不可避免地减弱", grammar: "A/V-(으)ㄹ 수밖에 없다", note: "原形 약해지다，动词；说明缺乏解释会必然损害信任。" },
+    { korean: "편견이 그대로 학습되면", reading: "pyeon-gyeo-ni geu-dae-ro hak-seup-doe-myeon", meaning: "如果偏见被原样学习", grammar: "피동 + V-(으)면", note: "原形 학습되다，被动动词；指出历史数据偏差进入模型的风险。" },
+    { korean: "반복할 가능성이 있다", reading: "ban-bo-kal ga-neung-seong-i it-da", meaning: "有可能重复", grammar: "V-(으)ㄹ 가능성이 있다", note: "原形 반복하다，动词；表示不平等可能被技术复制。" },
+    { korean: "이의를 제기할 수 있도록", reading: "i-ui-reul je-gi-hal su it-do-rok", meaning: "为了能够提出异议", grammar: "V-(으)ㄹ 수 있도록", note: "原形 제기하다，动词；说明制度要保障市民申诉和纠错机会。" },
+  ],
+  grammarPoints: [
+    { pattern: "N만이 아니라", meaning: "不只是……", example: "공공 서비스에서 중요한 것은 빠른 결정만이 아니라 설명 가능한 절차이다.", note: "用于否定单一价值，再提出更重要的判断标准。" },
+    { pattern: "V-는지", meaning: "是否/怎样……", example: "결정이 어떤 이유로 내려졌는지를 설명해야 한다.", note: "把疑问内容名词化，常用于解释、确认、검토하다 等动词前。" },
+    { pattern: "A/V-(으)ㄹ 수밖에 없다", meaning: "只能……、不可避免地……", example: "근거를 이해하지 못하면 신뢰는 약해질 수밖에 없다.", note: "表达某结果在前项条件下必然发生，是推论题常见结构。" },
+    { pattern: "V-(으)ㄹ 수 있도록", meaning: "为了使……能够……", example: "시민이 이의를 제기할 수 있도록 근거를 공개해야 한다.", note: "说明措施要保障某种能力或权利，适合政策建议句。" },
+  ],
+  quiz: [
+    {
+      question: "文章承认人工智能在公共服务中有什么优点？",
+      answer:
+        "它能快速处理大量资料、减少重复业务，并在人员不足地区帮助更快发现需要服务的对象。",
+    },
+    {
+      question: "为什么作者强调公共服务中的解释程序？",
+      answer:
+        "因为公共决定会影响具体个人，如果当事人无法理解被排除或被分类的依据，行政信任会减弱。",
+    },
+    {
+      question: "作者认为公共领域人工智能应如何运行？",
+      answer:
+        "它不应代替最终判断，而应辅助公务员判断，并公开依据，让市民能够提出异议。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "공공 서비스에 인공지능을 도입하는 것에 대해 쓰십시오. 행정 효율성의 장점과 알고리즘 판단의 위험을 모두 언급하고, 시민의 권리를 보호하기 위해 필요한 조건을 두 가지 이상 제시하십시오.",
+    checklist: ["행정 효율성", "설명 책임", "자료 편견", "이의 제기", "최종 판단 책임"],
+    sentenceBank: [
+      "인공지능은 반복적인 행정 업무를 줄이고 필요한 대상을 빠르게 찾아낼 수 있다.",
+      "그러나 판단 근거가 공개되지 않으면 시민의 신뢰가 약해질 수밖에 없다.",
+      "따라서 공공 영역에서는 설명 책임과 이의 제기 절차가 함께 마련되어야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july29Reading,
   july28Reading,
   july27Reading,
   july26Reading,
