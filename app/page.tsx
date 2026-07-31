@@ -1188,7 +1188,7 @@ const july29Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july30Reading: DailyReading = {
   id: "2026-07-30-public-ai-service",
   date: "2026-07-30",
   title: "공공 서비스의 인공지능은 어디까지 결정해야 하는가",
@@ -1253,8 +1253,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-07-31-urban-rainwater-policy",
+  date: "2026-07-31",
+  title: "도시의 빗물은 버려지는 물인가",
+  level: "TOPIK II 5-6级",
+  topic: "环境 / 城市政策",
+  estimatedTime: "16 分钟",
+  korean:
+    "기후 변화로 짧은 시간에 많은 비가 내리는 일이 잦아지면서 도시의 배수 시설은 더 큰 부담을 안게 되었다. 그동안 도시는 빗물을 가능한 한 빨리 하천이나 바다로 흘려보내는 방식으로 침수를 막아 왔다. 그러나 포장된 도로와 건물이 늘어난 도시에서는 땅이 물을 흡수할 공간이 줄어들어, 집중호우가 발생하면 물이 한꺼번에 낮은 지역으로 몰리기 쉽다. 이 때문에 최근에는 빗물을 단순히 버려야 할 물이 아니라 도시 안에 머무르게 하고 다시 활용할 수 있는 자원으로 보려는 논의가 확대되고 있다. 예를 들어 공원과 학교 운동장에 빗물을 임시로 저장하는 공간을 만들거나, 건물 옥상과 도로 주변에 물이 스며들 수 있는 시설을 설치하면 침수 위험을 낮추는 동시에 도시의 열기를 완화할 수 있다. 다만 이러한 정책이 성공하려면 시설을 설치하는 것에 그치지 않고, 어느 지역이 반복적으로 침수되는지에 대한 자료를 공개하고 주민이 관리 과정에 참여할 수 있어야 한다. 결국 빗물 정책은 배수관을 더 크게 만드는 기술적 대응만이 아니라, 도시가 물의 흐름을 어떻게 받아들이고 공간을 다시 설계할 것인지에 관한 장기적인 선택이라고 할 수 있다.",
+  chinese:
+    "随着气候变化导致短时间内大量降雨的情况变得频繁，城市排水设施承受了更大的负担。过去，城市一直以尽可能快速地把雨水排入河流或大海的方式来防止积水。然而，在铺装道路和建筑不断增加的城市中，土地能够吸收水分的空间减少，一旦发生集中暴雨，水就容易一下子汇集到低洼地区。因此，最近关于雨水的讨论正在扩大：不再把它仅仅看作必须排走的水，而是看作可以留在城市内部并再次利用的资源。例如，在公园和学校操场建设临时储存雨水的空间，或在建筑屋顶和道路周边设置可渗水设施，就能降低积水风险，同时缓解城市热气。不过，要让这种政策成功，不能只停留在安装设施上，还必须公开哪些地区反复积水的数据，并让居民能够参与管理过程。归根结底，雨水政策不只是把排水管建得更大的技术应对，而是关于城市如何接受水的流动、如何重新设计空间的长期选择。",
+  tokens: [
+    { korean: "짧은 시간에", reading: "jjal-beun si-ga-ne", meaning: "在短时间内", note: "时间副词词组；说明极端降雨的发生方式。" },
+    { korean: "잦아지면서", reading: "ja-ja-ji-myeon-seo", meaning: "随着变频繁", grammar: "V-면서", note: "原形 잦아지다，动词；交代气候变化导致的新背景。" },
+    { korean: "배수 시설은", reading: "bae-su si-seo-reun", meaning: "排水设施", note: "名词词组；城市防灾政策中的核心设施。" },
+    { korean: "부담을 안게 되었다", reading: "bu-da-meul an-ge doe-eot-da", meaning: "承担起负担", grammar: "V-게 되다", note: "原形 안다，动词；表示在外部变化下形成的新结果。" },
+    { korean: "흘려보내는 방식으로", reading: "heul-lyeo-bo-nae-neun bang-si-geu-ro", meaning: "以排走的方式", grammar: "V-는 방식으로", note: "原形 흘려보내다，动词；概括传统城市排水思路。" },
+    { korean: "포장된 도로", reading: "po-jang-doen do-ro", meaning: "被铺装的道路", grammar: "피동 + V-(으)ㄴ", note: "原形 포장되다，被动动词；解释雨水无法渗透的原因之一。" },
+    { korean: "흡수할 공간", reading: "heup-su-hal gong-gan", meaning: "能够吸收的空间", grammar: "V-(으)ㄹ", note: "原形 흡수하다，动词；修饰 공간，说明土地功能。" },
+    { korean: "한꺼번에", reading: "han-kkeo-beo-ne", meaning: "一下子、同时", note: "副词；强调暴雨时雨水集中流动的危险。" },
+    { korean: "몰리기 쉽다", reading: "mol-li-gi swip-da", meaning: "容易聚集", grammar: "V-기 쉽다", note: "原形 몰리다，被动/自动词；说明低洼地区积水机制。" },
+    { korean: "머무르게 하고", reading: "meo-mu-reu-ge ha-go", meaning: "使停留并", grammar: "V-게 하다", note: "原形 머무르다，动词；表示政策从“排走”转向“留住”。" },
+    { korean: "활용할 수 있는", reading: "hwal-yong-hal su it-neun", meaning: "可以利用的", grammar: "V-(으)ㄹ 수 있다", note: "原形 활용하다，动词；修饰 자원，重新定义雨水价值。" },
+    { korean: "임시로 저장하는", reading: "im-si-ro jeo-jang-ha-neun", meaning: "临时储存的", grammar: "V-는", note: "原形 저장하다，动词；说明公园、操场的新功能。" },
+    { korean: "스며들 수 있는", reading: "seu-myeo-deul su it-neun", meaning: "可以渗入的", grammar: "V-(으)ㄹ 수 있다", note: "原形 스며들다，动词；描述透水设施的作用。" },
+    { korean: "완화할 수 있다", reading: "wan-hwa-hal su it-da", meaning: "可以缓解", grammar: "V-(으)ㄹ 수 있다", note: "原形 완화하다，动词；指出雨水设施兼具防灾和降温效果。" },
+    { korean: "설치하는 것에 그치지 않고", reading: "seol-chi-ha-neun geo-se geu-chi-ji an-ko", meaning: "不止于安装", grammar: "N에 그치지 않고", note: "原形 설치하다 / 그치다；强调政策不能只停留在硬件建设。" },
+    { korean: "장기적인 선택", reading: "jang-gi-jeo-gin seon-taek", meaning: "长期选择", note: "形容词词组；结论中把雨水政策提升到城市规划层面。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-게 되다", meaning: "变得……、形成……结果", example: "배수 시설은 더 큰 부담을 안게 되었다.", note: "表示由于外部情况变化而产生的新状态。" },
+    { pattern: "V-기 쉽다", meaning: "容易……", example: "집중호우가 발생하면 물이 낮은 지역으로 몰리기 쉽다.", note: "用于说明某种风险或倾向，常见于说明文。" },
+    { pattern: "V-게 하다", meaning: "使……", example: "빗물을 도시 안에 머무르게 해야 한다.", note: "使动结构，可用于政策措施说明。" },
+    { pattern: "N에 그치지 않고", meaning: "不止停留在……", example: "시설 설치에 그치지 않고 주민 참여도 필요하다.", note: "先否定表面措施，再提出更完整的制度条件。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么认为传统排水方式面临局限？",
+      answer:
+        "因为铺装道路和建筑增加后，土地吸水空间减少，集中暴雨时雨水容易迅速汇集到低洼地区。",
+    },
+    {
+      question: "把雨水视为资源的政策可以带来哪些效果？",
+      answer:
+        "通过临时储水和透水设施，可以降低积水风险，同时缓解城市热气。",
+    },
+    {
+      question: "作者认为雨水政策成功还需要哪些条件？",
+      answer:
+        "不能只安装设施，还应公开反复积水地区的数据，并让居民参与管理过程。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "기후 변화 시대에 도시의 빗물을 어떻게 관리해야 하는지에 대해 쓰십시오. 기존 배수 방식의 한계와 빗물 재활용의 장점을 모두 언급하고, 정책이 성공하기 위한 조건을 두 가지 이상 제시하십시오.",
+    checklist: ["집중호우 증가", "기존 배수 한계", "빗물 저장", "침수 자료 공개", "주민 참여"],
+    sentenceBank: [
+      "집중호우가 잦아지면서 기존 배수 시설만으로는 침수를 막기 어려워지고 있다.",
+      "빗물을 도시 안에 저장하면 침수 위험을 낮추고 열기를 완화할 수 있다.",
+      "정책의 효과를 높이기 위해서는 침수 자료 공개와 주민 참여가 함께 필요하다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july30Reading,
   july29Reading,
   july28Reading,
   july27Reading,
