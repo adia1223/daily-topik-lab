@@ -1253,7 +1253,7 @@ const july30Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const july31Reading: DailyReading = {
   id: "2026-07-31-urban-rainwater-policy",
   date: "2026-07-31",
   title: "도시의 빗물은 버려지는 물인가",
@@ -1318,8 +1318,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-01-workplace-silence",
+  date: "2026-08-01",
+  title: "직장에서 침묵은 언제 문제가 되는가",
+  level: "TOPIK II 5-6级",
+  topic: "职场 / 组织治理",
+  estimatedTime: "17 分钟",
+  korean:
+    "조직에서 회의가 많아도 중요한 문제가 제때 드러나지 않는 경우가 있다. 겉으로는 구성원들이 의견을 자유롭게 말할 수 있는 분위기처럼 보이지만, 실제로는 불이익을 걱정해 문제를 알고도 침묵하는 일이 반복되기 때문이다. 직장에서의 침묵은 단순히 말수가 적은 개인의 성향으로만 이해해서는 안 된다. 직원이 위험한 절차나 비효율적인 방식에 대해 말하지 않는다면, 그 침묵은 개인의 선택이라기보다 조직이 의견을 받아들이는 방식에 대한 평가일 수 있다. 특히 과거에 문제를 제기한 사람이 협조적이지 않다는 평가를 받았거나, 상사가 반대 의견을 자신의 권위에 대한 도전으로 받아들인 경험이 있다면 구성원들은 점차 안전한 침묵을 선택하게 된다. 이러한 분위기에서는 작은 실수가 제때 수정되지 못하고, 결국 더 큰 비용으로 돌아올 가능성이 크다. 따라서 조직은 익명 제보 창구를 마련하는 데 그치지 않고, 제기된 의견이 어떻게 검토되었는지와 그 결과가 무엇인지 투명하게 공유해야 한다. 좋은 조직 문화란 모두가 항상 같은 목소리를 내는 상태가 아니라, 불편한 의견도 처벌의 두려움 없이 논의될 수 있는 구조를 갖춘 상태라고 할 수 있다.",
+  chinese:
+    "在组织中，即使会议很多，重要问题也有时无法及时暴露。表面上看，成员似乎可以自由表达意见，但实际上，因为担心不利后果，即使知道问题也保持沉默的情况会反复出现。职场中的沉默不能只被理解为个人话少的性格。如果员工不谈危险流程或低效方式，那么这种沉默与其说是个人选择，不如说可能是对组织接纳意见方式的一种评价。特别是过去提出问题的人曾被评价为不配合，或上级曾把反对意见理解为对自身权威的挑战时，成员就会逐渐选择安全的沉默。在这种氛围中，小错误无法被及时修正，最终很可能变成更大的成本。因此，组织不能只停留在设置匿名举报渠道上，还应透明共享被提出的意见如何得到审查以及结果是什么。所谓良好的组织文化，并不是所有人总是发出同一种声音，而是拥有一种结构，使令人不舒服的意见也能在没有惩罚恐惧的情况下被讨论。",
+  tokens: [
+    { korean: "제때 드러나지 않는", reading: "je-ttae deu-reo-na-ji an-neun", meaning: "没有及时显现的", grammar: "V-지 않다", note: "原形 드러나다，动词；说明问题没有在合适时间暴露。" },
+    { korean: "겉으로는", reading: "geo-teu-ro-neun", meaning: "表面上", note: "副词；与 실제로는 形成对比，是论述文常见结构。" },
+    { korean: "불이익을 걱정해", reading: "bu-ri-i-geul geok-jeong-hae", meaning: "担心不利后果而", note: "原形 걱정하다，动词；说明沉默产生的心理原因。" },
+    { korean: "침묵하는 일이", reading: "chim-mu-ka-neun i-ri", meaning: "保持沉默的事情", grammar: "V-는", note: "原形 침묵하다，动词；修饰 일이，概括组织中的反复现象。" },
+    { korean: "성향으로만", reading: "seong-hyang-eu-ro-man", meaning: "仅作为倾向", grammar: "N으로만", note: "原形 성향，名词；否定把沉默只归因于个人性格的观点。" },
+    { korean: "이해해서는 안 된다", reading: "i-hae-hae-seo-neun an doen-da", meaning: "不应该理解为", grammar: "V-아/어서는 안 되다", note: "原形 이해하다，动词；用于提出作者的判断边界。" },
+    { korean: "위험한 절차", reading: "wi-heom-han jeol-cha", meaning: "危险的流程", note: "形容词词组；是员工应该提出意见的问题类型之一。" },
+    { korean: "개인의 선택이라기보다", reading: "gae-in-ui seon-tae-gi-ra-gi-bo-da", meaning: "与其说是个人选择", grammar: "N이라기보다", note: "用来修正原因判断，把论点转向组织责任。" },
+    { korean: "받아들이는 방식", reading: "ba-da-deu-ri-neun bang-sik", meaning: "接纳的方式", grammar: "V-는", note: "原形 받아들이다，动词；说明组织如何处理意见。" },
+    { korean: "협조적이지 않다는", reading: "hyeop-jo-jeo-gi-ji an-ta-neun", meaning: "不配合的", grammar: "A-지 않다 + 다는", note: "原形 협조적이다，形容词；表现提意见者可能遭受的负面评价。" },
+    { korean: "권위에 대한 도전", reading: "gwo-ni-e dae-han do-jeon", meaning: "对权威的挑战", note: "名词词组；说明上级误读反对意见的方式。" },
+    { korean: "선택하게 된다", reading: "seon-tae-ka-ge doen-da", meaning: "最终会选择", grammar: "V-게 되다", note: "原形 선택하다，动词；表示组织氛围导致成员行为变化。" },
+    { korean: "수정되지 못하고", reading: "su-jeong-doe-ji mot-ha-go", meaning: "没能被修正并", grammar: "피동 + V-지 못하다", note: "原形 수정되다，被动动词；说明小问题未被处理。" },
+    { korean: "비용으로 돌아올", reading: "bi-yong-eu-ro do-ra-ol", meaning: "作为成本返回", grammar: "V-(으)ㄹ", note: "原形 돌아오다，动词；表示组织最终承担沉默的后果。" },
+    { korean: "마련하는 데 그치지 않고", reading: "ma-ryeon-ha-neun de geu-chi-ji an-ko", meaning: "不止于设置", grammar: "N에 그치지 않고", note: "原形 마련하다 / 그치다；指出制度不能只停留在形式上。" },
+    { korean: "투명하게 공유해야", reading: "tu-myeong-ha-ge gong-yu-hae-ya", meaning: "必须透明共享", grammar: "V-아/어야 하다", note: "原形 공유하다，动词；提出组织反馈机制的必要条件。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-아/어서는 안 되다", meaning: "不应该做某事", example: "침묵을 개인의 성향으로만 이해해서는 안 된다.", note: "用于明确否定某种错误解释或行为。" },
+    { pattern: "N이라기보다", meaning: "与其说是……不如说……", example: "그 침묵은 개인의 선택이라기보다 조직에 대한 평가일 수 있다.", note: "高级原因修正结构，常用于主旨题和写作 54 题。" },
+    { pattern: "V-게 되다", meaning: "最终变得……、结果会……", example: "구성원들은 점차 안전한 침묵을 선택하게 된다.", note: "表示外部环境导致行为或状态变化。" },
+    { pattern: "N에 그치지 않고", meaning: "不止停留在……", example: "익명 제보 창구 마련에 그치지 않고 결과를 공유해야 한다.", note: "用于批评形式化措施，并引出更实质的改进。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么认为职场沉默不能只看作个人性格？",
+      answer:
+        "因为员工沉默可能源于担心不利后果，也可能反映组织接纳意见的方式存在问题。",
+    },
+    {
+      question: "哪些经历会让成员选择‘安全的沉默’？",
+      answer:
+        "过去提出问题的人被评价为不配合，或上级把反对意见视为对权威的挑战，都会让成员逐渐选择沉默。",
+    },
+    {
+      question: "作者认为组织应如何处理被提出的意见？",
+      answer:
+        "组织不应只设置匿名渠道，还应透明共享意见如何被审查以及最终结果。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "직장에서 구성원이 문제를 알고도 침묵하는 현상에 대해 쓰십시오. 침묵이 발생하는 원인과 조직에 미치는 영향을 설명하고, 이를 줄이기 위한 제도적 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["침묵의 원인", "불이익 우려", "조직 비용", "의견 검토 절차", "투명한 피드백"],
+    sentenceBank: [
+      "직장에서의 침묵은 개인의 성향만으로 설명하기 어렵다.",
+      "불편한 의견이 처벌로 이어진다고 느끼면 구성원은 문제를 알고도 말하지 않게 된다.",
+      "조직은 제기된 의견의 검토 과정과 결과를 투명하게 공유해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  july31Reading,
   july30Reading,
   july29Reading,
   july28Reading,
