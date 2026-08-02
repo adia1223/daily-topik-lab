@@ -1318,7 +1318,7 @@ const july31Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august1Reading: DailyReading = {
   id: "2026-08-01-workplace-silence",
   date: "2026-08-01",
   title: "직장에서 침묵은 언제 문제가 되는가",
@@ -1383,8 +1383,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-02-night-safety-policy",
+  date: "2026-08-02",
+  title: "밤길 안전은 누구의 책임인가",
+  level: "TOPIK II 5-6级",
+  topic: "社会 / 公共安全",
+  estimatedTime: "16 分钟",
+  korean:
+    "도시에서 밤늦게 이동하는 사람들의 안전 문제는 오랫동안 개인의 주의와 연결되어 논의되어 왔다. 그러나 늦은 시간에 일하거나 공부하는 사람이 늘어나면서 밤길 안전은 더 이상 개인이 조심하면 해결되는 문제가 아니라 도시가 어떻게 설계되고 운영되는지와 관련된 공공 과제가 되었다. 어두운 골목, 드문 대중교통, 관리되지 않는 빈 건물은 특정 개인의 불안만을 만드는 것이 아니라 도시 공간의 이용 가능성을 제한한다. 특히 여성, 청소년, 야간 노동자는 같은 길을 이용하더라도 더 큰 위험을 느낄 수 있으며, 이런 불안은 실제 범죄 발생 여부와 별개로 이동의 자유를 줄이는 결과를 낳는다. 일부 지방자치단체는 가로등을 늘리고 순찰을 강화하는 방식으로 대응하고 있지만, 조명과 감시만으로 안전한 도시가 만들어지는 것은 아니다. 주민이 위험하다고 느끼는 지점을 지속적으로 신고하고, 행정이 그 자료를 공개해 개선 과정을 확인할 수 있게 해야 한다. 또한 심야 교통, 상점의 영업 시간, 공공 시설의 배치처럼 사람의 흐름을 만드는 요소를 함께 고려해야 한다. 결국 밤길 안전은 범죄를 막는 문제에 그치지 않고, 누구나 도시를 동등하게 이용할 수 있도록 공간의 조건을 조정하는 정책이라고 할 수 있다.",
+  chinese:
+    "在城市中，深夜出行者的安全问题长期以来都被放在个人注意义务的框架下讨论。然而，随着深夜工作或学习的人增加，夜路安全已不再是个人只要小心就能解决的问题，而成为与城市如何设计和运行相关的公共课题。昏暗的小巷、稀少的公共交通、无人管理的空置建筑，并不只是制造某些个人的不安，也会限制城市空间的可使用性。尤其是女性、青少年、夜间劳动者即使使用同一条道路，也可能感受到更大的危险；这种不安无论实际犯罪是否发生，都会导致移动自由减少。一些地方自治团体通过增加路灯、强化巡逻来应对，但仅靠照明和监视并不能建成安全城市。居民应能持续申报感到危险的地点，行政部门也应公开相关资料，使改善过程可以被确认。此外，还必须一并考虑深夜交通、店铺营业时间、公共设施布局等创造人流的因素。归根结底，夜路安全不只是防止犯罪的问题，而是一项调整空间条件、让所有人都能平等使用城市的政策。",
+  tokens: [
+    { korean: "밤늦게 이동하는", reading: "bam-neut-ge i-dong-ha-neun", meaning: "深夜移动的", grammar: "V-는", note: "原形 이동하다，动词；修饰 사람들，指出政策对象。" },
+    { korean: "개인의 주의와", reading: "gae-in-ui ju-ui-wa", meaning: "与个人注意", note: "名词词组；说明过去讨论夜路安全时的传统框架。" },
+    { korean: "연결되어 논의되어 왔다", reading: "yeon-gyeol-doe-eo non-ui-doe-eo wat-da", meaning: "一直被联系起来讨论", grammar: "피동 + V-아/어 오다", note: "原形 연결되다 / 논의되다；表示某种讨论方式持续到现在。" },
+    { korean: "더 이상", reading: "deo i-sang", meaning: "不再", note: "副词；与 아니라 搭配，转向新的问题定义。" },
+    { korean: "설계되고 운영되는지", reading: "seol-gye-doe-go un-yeong-doe-neun-ji", meaning: "如何被设计和运营", grammar: "피동 + V-는지", note: "原形 설계되다 / 운영되다；把城市结构作为问题核心。" },
+    { korean: "공공 과제가 되었다", reading: "gong-gong gwa-je-ga doe-eot-da", meaning: "成为公共课题", grammar: "N이/가 되다", note: "说明夜路安全从个人问题转化为公共政策问题。" },
+    { korean: "관리되지 않는", reading: "gwal-li-doe-ji an-neun", meaning: "未被管理的", grammar: "피동 + V-지 않다", note: "原形 관리되다，被动动词；修饰 빈 건물，指出空间风险来源。" },
+    { korean: "이용 가능성을 제한한다", reading: "i-yong ga-neung-seong-eul je-han-han-da", meaning: "限制使用可能性", note: "原形 제한하다，动词；强调不安全会影响城市空间使用。" },
+    { korean: "같은 길을 이용하더라도", reading: "ga-teun gi-reul i-yong-ha-deo-ra-do", meaning: "即使使用同一条路", grammar: "V-더라도", note: "原形 이용하다，动词；引出不同群体感受差异。" },
+    { korean: "별개로", reading: "byeol-gae-ro", meaning: "另当别论、无关地", note: "名词/副词；说明不安即使不等同于实际犯罪，也会产生影响。" },
+    { korean: "이동의 자유를 줄이는", reading: "i-dong-ui ja-yu-reul ju-ri-neun", meaning: "减少移动自由的", grammar: "V-는", note: "原形 줄이다，动词；说明恐惧带来的实际结果。" },
+    { korean: "순찰을 강화하는", reading: "sun-cha-reul gang-hwa-ha-neun", meaning: "强化巡逻的", grammar: "V-는", note: "原形 강화하다，动词；说明常见行政应对方式。" },
+    { korean: "만들어지는 것은 아니다", reading: "man-deu-reo-ji-neun geo-seun a-ni-da", meaning: "并不是会被建成", grammar: "V-는 것은 아니다", note: "原形 만들어지다，被动动词；否定照明和监视的充分性。" },
+    { korean: "지속적으로 신고하고", reading: "ji-sok-jeo-geu-ro sin-go-ha-go", meaning: "持续申报并", note: "原形 신고하다，动词；居民参与安全治理的方式。" },
+    { korean: "개선 과정을 확인할 수 있게", reading: "gae-seon gwa-jeong-eul hwak-in-hal su it-ge", meaning: "使能够确认改善过程", grammar: "V-(으)ㄹ 수 있게", note: "原形 확인하다，动词；强调行政透明性。" },
+    { korean: "동등하게 이용할 수 있도록", reading: "dong-deung-ha-ge i-yong-hal su it-do-rok", meaning: "为了能够平等使用", grammar: "V-(으)ㄹ 수 있도록", note: "原形 이용하다，动词；结论中说明政策目标。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-아/어 오다", meaning: "一直……到现在", example: "안전 문제는 개인의 주의와 연결되어 논의되어 왔다.", note: "表示某种行为或状态从过去持续到现在。" },
+    { pattern: "V-더라도", meaning: "即使……也……", example: "같은 길을 이용하더라도 느끼는 위험은 다를 수 있다.", note: "让步结构，用于比较同一条件下的不同结果。" },
+    { pattern: "V-는 것은 아니다", meaning: "并不是……", example: "조명과 감시만으로 안전한 도시가 만들어지는 것은 아니다.", note: "用于否定简单结论或单一解决方案。" },
+    { pattern: "V-(으)ㄹ 수 있도록", meaning: "为了使……能够……", example: "누구나 도시를 동등하게 이용할 수 있도록 공간을 조정해야 한다.", note: "说明政策措施要保障某种权利或可能性。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么认为夜路安全不应只被看作个人注意问题？",
+      answer:
+        "因为深夜工作和学习的人增加后，安全与城市设计、交通、空间管理等公共条件密切相关。",
+    },
+    {
+      question: "夜路不安全会对不同群体造成什么影响？",
+      answer:
+        "女性、青少年和夜间劳动者等群体可能感到更大危险，这种不安会减少他们的移动自由。",
+    },
+    {
+      question: "作者认为地方政府除了增加照明和巡逻，还应做什么？",
+      answer:
+        "应让居民持续申报危险地点，公开资料和改善过程，并综合考虑深夜交通、人流和公共设施配置。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "도시의 밤길 안전을 높이기 위해 어떤 정책이 필요한지에 대해 쓰십시오. 개인의 주의에만 맡기는 방식의 한계와 도시 공간 설계의 중요성을 언급하고, 구체적인 개선 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["개인 책임의 한계", "도시 설계", "야간 교통", "위험 지점 신고", "자료 공개"],
+    sentenceBank: [
+      "밤길 안전은 개인이 조심하는 것만으로 해결되기 어렵다.",
+      "어두운 골목과 부족한 심야 교통은 도시 이용의 자유를 제한할 수 있다.",
+      "따라서 위험 지점 자료를 공개하고 주민 참여를 바탕으로 공간을 개선해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august1Reading,
   july31Reading,
   july30Reading,
   july29Reading,
