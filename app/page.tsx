@@ -1383,7 +1383,7 @@ const august1Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august2Reading: DailyReading = {
   id: "2026-08-02-night-safety-policy",
   date: "2026-08-02",
   title: "밤길 안전은 누구의 책임인가",
@@ -1448,8 +1448,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-03-small-subscription-cost",
+  date: "2026-08-03",
+  title: "작은 자동 결제는 왜 큰 부담이 되는가",
+  level: "TOPIK II 5-6级",
+  topic: "经济 / 家庭消费",
+  estimatedTime: "17 分钟",
+  korean:
+    "디지털 서비스가 일상화되면서 음악, 영상, 저장 공간, 학습 앱과 같은 서비스를 매달 일정 금액으로 이용하는 사람이 많아졌다. 구독 서비스는 처음에는 큰돈을 한꺼번에 내지 않아도 된다는 점에서 소비자의 부담을 줄여 주는 방식처럼 보인다. 그러나 여러 서비스에 가입한 뒤 사용 여부를 제대로 확인하지 않으면 작은 자동 결제가 모여 예상보다 큰 고정 지출이 될 수 있다. 특히 무료 체험 기간이 끝난 뒤 자동으로 유료 전환되는 구조에서는 소비자가 실제 필요성을 다시 판단하기 전에 결제가 시작되기 쉽다. 문제는 이러한 지출이 한 번에 크게 느껴지지 않기 때문에 가계 예산에서 우선적으로 점검되지 않는다는 데 있다. 기업은 낮은 월 이용료를 강조하지만, 해지 절차를 복잡하게 만들거나 이용 내역을 눈에 잘 띄지 않게 제공하면 소비자는 자신의 소비 규모를 정확히 파악하기 어렵다. 따라서 구독 경제에서 소비자를 보호하려면 가격 표시만 명확히 하는 데 그치지 않고, 자동 결제 전 알림, 쉬운 해지 절차, 누적 이용 금액 공개와 같은 장치가 필요하다. 결국 편리한 소비 방식일수록 소비자가 스스로 통제하고 있다고 느낄 수 있도록 정보와 선택권이 충분히 제공되어야 한다.",
+  chinese:
+    "随着数字服务日常化，越来越多人以每月固定金额使用音乐、视频、存储空间、学习应用等服务。订阅服务最初看起来像是一种减轻消费者负担的方式，因为不需要一次性支付大笔费用。然而，如果加入多个服务后没有认真确认是否仍在使用，小额自动扣款就会累积成比预想更大的固定支出。尤其是在免费体验期结束后自动转为付费的结构中，消费者很容易在重新判断实际必要性之前就开始被扣费。问题在于，这类支出单次金额并不显得很大，因此往往不会在家庭预算中被优先检查。企业强调低月费，但如果把取消流程设计得复杂，或让使用明细不够醒目，消费者就很难准确把握自己的消费规模。因此，在订阅经济中保护消费者，不能只停留在明确标价上，还需要自动扣费前提醒、简便取消流程、公开累计使用金额等装置。归根结底，越是便利的消费方式，越应充分提供信息和选择权，让消费者能够感到自己仍在掌控消费。",
+  tokens: [
+    { korean: "일상화되면서", reading: "il-sang-hwa-doe-myeon-seo", meaning: "随着日常化", grammar: "V-면서", note: "原形 일상화되다，被动动词；交代订阅服务普及的背景。" },
+    { korean: "일정 금액으로", reading: "il-jeong geum-ae-geu-ro", meaning: "以固定金额", note: "名词词组；说明订阅模式的支付特征。" },
+    { korean: "한꺼번에", reading: "han-kkeo-beo-ne", meaning: "一次性地", note: "副词；与 내다 搭配，说明订阅减轻当下支付压力。" },
+    { korean: "줄여 주는", reading: "ju-ryeo ju-neun", meaning: "帮忙减少的", grammar: "V-아/어 주다", note: "原形 줄이다，动词；表示订阅服务看似给消费者带来的好处。" },
+    { korean: "사용 여부를", reading: "sa-yong yeo-bu-reul", meaning: "是否使用（宾格）", note: "名词词组；检查订阅必要性时的核心判断对象。" },
+    { korean: "고정 지출이 될 수 있다", reading: "go-jeong ji-chu-ri doel su it-da", meaning: "可能成为固定支出", grammar: "V-(으)ㄹ 수 있다", note: "原形 되다，动词；说明小额支出累积后的结果。" },
+    { korean: "유료 전환되는", reading: "yu-ryo jeon-hwan-doe-neun", meaning: "转为付费的", grammar: "피동 + V-는", note: "原形 전환되다，被动动词；修饰 구조，指出免费体验后的风险。" },
+    { korean: "판단하기 전에", reading: "pan-dan-ha-gi jeo-ne", meaning: "在判断之前", grammar: "V-기 전에", note: "原形 판단하다，动词；强调扣费先于消费者重新评估。" },
+    { korean: "시작되기 쉽다", reading: "si-jak-doe-gi swip-da", meaning: "容易开始", grammar: "V-기 쉽다", note: "原形 시작되다，被动动词；指出自动扣费结构的倾向。" },
+    { korean: "크게 느껴지지 않기 때문에", reading: "keu-ge neu-kkyeo-ji-ji an-ki ttae-mu-ne", meaning: "因为不觉得很大", grammar: "V-지 않기 때문에", note: "原形 느껴지다，被动动词；解释小额支出容易被忽略的原因。" },
+    { korean: "우선적으로 점검되지 않는다는 데", reading: "u-seon-jeo-geu-ro jeom-geom-doe-ji an-neun-da-neun de", meaning: "在于没有被优先检查", grammar: "N에 있다", note: "原形 점검되다，被动动词；点出家庭预算管理中的问题所在。" },
+    { korean: "해지 절차를", reading: "hae-ji jeol-cha-reul", meaning: "取消流程（宾格）", note: "名词词组；消费者保护主题中常见表达。" },
+    { korean: "눈에 잘 띄지 않게", reading: "nu-ne jal ttui-ji an-ke", meaning: "不醒目地", grammar: "V-지 않게", note: "原形 띄다，动词；说明企业可能降低信息可见性。" },
+    { korean: "파악하기 어렵다", reading: "pa-ak-ha-gi eo-ryeop-da", meaning: "难以把握", grammar: "V-기 어렵다", note: "原形 파악하다，动词；指出消费者理解总支出的困难。" },
+    { korean: "명확히 하는 데 그치지 않고", reading: "myeong-hwa-ki ha-neun de geu-chi-ji an-ko", meaning: "不止于使明确", grammar: "N에 그치지 않고", note: "原形 명확히 하다 / 그치다；引出比标价更完整的保护措施。" },
+    { korean: "선택권이 충분히 제공되어야 한다", reading: "seon-taek-kwo-ni chung-bun-hi je-gong-doe-eo-ya han-da", meaning: "选择权必须被充分提供", grammar: "피동 + V-아/어야 하다", note: "原形 제공되다，被动动词；结论中强调消费者控制权。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-기 전에", meaning: "在……之前", example: "필요성을 다시 판단하기 전에 결제가 시작되기 쉽다.", note: "用于指出时间顺序问题，常见于制度风险分析。" },
+    { pattern: "V-기 쉽다", meaning: "容易……", example: "작은 자동 결제는 가계 예산에서 빠지기 쉽다.", note: "表达某种倾向或风险，适合说明文。" },
+    { pattern: "N에 있다", meaning: "问题/核心在于……", example: "문제는 지출이 우선적으로 점검되지 않는다는 데 있다.", note: "高级论述文中常用来明确文章焦点。" },
+    { pattern: "N에 그치지 않고", meaning: "不止停留在……", example: "가격 표시만 명확히 하는 데 그치지 않고 해지 절차도 쉬워야 한다.", note: "先否定不足措施，再提出更完整方案。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么认为小额自动扣款可能成为大负担？",
+      answer:
+        "因为多个服务的小额月费会累积成固定支出，而且消费者往往没有及时确认是否仍需要这些服务。",
+    },
+    {
+      question: "免费体验后的自动转付费有什么风险？",
+      answer:
+        "消费者可能还没重新判断实际必要性，扣费就已经开始，因此容易产生非主动选择的支出。",
+    },
+    {
+      question: "作者认为保护订阅服务消费者需要哪些措施？",
+      answer:
+        "需要自动扣费前提醒、简单的取消流程，以及公开累计使用金额等措施，而不只是明确标价。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "구독 서비스가 가계 소비에 미치는 영향에 대해 쓰십시오. 구독 서비스의 편리함과 자동 결제의 위험을 모두 언급하고, 소비자를 보호하기 위한 제도적 장치를 두 가지 이상 제시하십시오.",
+    checklist: ["구독 서비스 편리함", "소액 자동 결제", "가계 예산 부담", "해지 절차", "결제 전 알림"],
+    sentenceBank: [
+      "구독 서비스는 한꺼번에 큰돈을 내지 않아도 된다는 장점이 있다.",
+      "그러나 작은 자동 결제가 반복되면 예상보다 큰 고정 지출이 될 수 있다.",
+      "소비자를 보호하기 위해서는 결제 전 알림과 쉬운 해지 절차가 필요하다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august2Reading,
   august1Reading,
   july31Reading,
   july30Reading,
