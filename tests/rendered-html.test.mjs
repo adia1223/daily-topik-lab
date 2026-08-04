@@ -70,6 +70,9 @@ test("server-renders the interactive exam lab", async () => {
   assert.match(html, /对照 PDF 原页/);
   assert.match(html, /清空本地记录/);
   assert.match(html, /登录进入我的私人真题库/);
+  assert.doesNotMatch(html, /导入一套真题/);
+  assert.doesNotMatch(html, /第 99 回/);
+  assert.doesNotMatch(html, /已导入 15 套/);
 });
 
 test("keeps complete archived reading data in the client", async () => {

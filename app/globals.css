@@ -1238,26 +1238,7 @@ button {
   font-weight: 800;
 }
 
-.import-button {
-  width: 100%;
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border: 1px dashed #709684;
-  border-radius: 7px;
-  padding: 12px;
-  background: #e2ece2;
-  color: #173d32;
-  cursor: pointer;
-  text-align: left;
-}
-.import-button > span { font-size: 1.6rem; }
-.import-button strong,
-.import-button small { display: block; }
-.import-button small { margin-top: 4px; color: #62746b; }
-
-.import-status { margin: 12px 0 16px; border: 1px solid #ded8cc; border-radius: 7px; padding: 11px; background: #fffaf2; }
+.import-status { margin: 0 0 16px; border: 1px solid #ded8cc; border-radius: 7px; padding: 11px; background: #fffaf2; }
 .import-status > div:first-child { display: flex; justify-content: space-between; font-size: .76rem; }
 .import-status > div:first-child span { color: #aa5a45; font-weight: 900; }
 .import-status small { color: #727a74; font-size: .68rem; line-height: 1.4; }

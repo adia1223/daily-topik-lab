@@ -17,9 +17,6 @@ const examProgressStorageKey = "daily-topik-lab-topik-102-progress";
 
 const examSets = [
   ["第 102 回", "2025.10", 0, "待精读"],
-  ["第 99 回", "2025.04", 68, "精读中"],
-  ["第 98 回", "2024.10", 100, "已完成"],
-  ["第 96 回", "2024.07", 31, "练习中"],
 ] as const;
 
 type DetailedNote = {
@@ -201,7 +198,6 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
       <div className="exam-layout">
         <aside className="exam-library" aria-label="真题目录">
           <div className="library-heading"><div><span>MY ARCHIVE</span><h1>我的真题</h1></div><button type="button">筛选</button></div>
-          <button className="import-button" type="button"><span>＋</span><div><strong>导入一套真题</strong><small>PDF + MP3 自动拆分</small></div></button>
           <div className="import-status">
             <div><span>已提取</span><strong>第 102 回</strong></div>
             <div className="thin-progress"><span style={{ width: "100%" }} /></div>
@@ -213,7 +209,7 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
               <div className="exam-set-progress"><i style={{ width: `${exam[2]}%` }} /></div>
             </button>)}
           </div>
-          <div className="library-summary"><span>已导入 15 套</span><strong>第 102 回 · 50 题</strong></div>
+          <div className="library-summary"><span>已整理 1 套</span><strong>第 102 回 · 50 题</strong></div>
         </aside>
 
         <section className="question-workspace">
