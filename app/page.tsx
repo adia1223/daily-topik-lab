@@ -1448,7 +1448,7 @@ const august2Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august3Reading: DailyReading = {
   id: "2026-08-03-small-subscription-cost",
   date: "2026-08-03",
   title: "작은 자동 결제는 왜 큰 부담이 되는가",
@@ -1513,8 +1513,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-04-out-of-school-youth",
+  date: "2026-08-04",
+  title: "학교 밖 청소년 지원은 왜 지역의 일이 되는가",
+  level: "TOPIK II 5-6级",
+  topic: "教育 / 社会支持",
+  estimatedTime: "17 分钟",
+  korean:
+    "학교를 그만둔 청소년에 대한 논의는 흔히 개인의 적응 문제나 가정의 책임으로 좁혀지기 쉽다. 그러나 학교 밖 청소년이 겪는 어려움은 학업 중단이라는 한 가지 사건으로만 설명되지 않는다. 이들은 학습 기회를 잃는 동시에 또래 관계, 진로 정보, 상담 지원과 같은 여러 사회적 연결에서 멀어질 가능성이 크다. 특히 지역 안에 이용할 수 있는 교육 기관이나 상담 공간이 부족하면 청소년은 다시 배우고 일상으로 돌아갈 계기를 찾기 어렵다. 따라서 학교 밖 청소년 지원은 단순히 학교 복귀를 권유하는 방식에 머물러서는 안 된다. 어떤 청소년에게는 검정고시 준비가 필요할 수 있고, 또 다른 청소년에게는 직업 체험, 심리 상담, 생활비 지원이 더 시급할 수 있다. 중요한 것은 청소년을 문제를 일으킨 대상으로 보는 것이 아니라, 각자가 처한 조건에 맞게 다시 선택할 수 있는 통로를 마련하는 일이다. 이를 위해 지방자치단체는 학교, 복지 기관, 지역 기업을 연결해 학습과 일 경험이 끊기지 않도록 해야 한다. 결국 학교 밖 청소년 정책은 한 사람을 다시 교실로 돌려보내는 데 그치지 않고, 지역 사회가 청소년의 실패와 회복을 함께 책임질 수 있는 구조를 만드는 과정이라고 할 수 있다.",
+  chinese:
+    "关于离开学校的青少年的讨论，常常容易被缩小为个人适应问题或家庭责任。然而，校外青少年所经历的困难，并不能只用“学业中断”这一件事来说明。他们在失去学习机会的同时，也很可能远离同龄人关系、升学就业信息、咨询支持等多种社会连接。尤其是如果地区内部缺少可利用的教育机构或咨询空间，青少年就很难找到重新学习并回到日常生活的契机。因此，对校外青少年的支持不应停留在单纯劝其返校的方式上。对某些青少年来说，准备学历认定考试可能更必要；而对另一些青少年来说，职业体验、心理咨询、生活费支持可能更加紧急。重要的不是把青少年看作制造问题的对象，而是根据每个人所处的条件，建立让他们能够重新选择的通道。为此，地方自治团体应连接学校、福利机构和地区企业，避免学习与工作经验中断。归根结底，校外青少年政策不只是把一个人送回教室，而是地方社会共同承担青少年的失败与恢复、建立相应结构的过程。",
+  tokens: [
+    { korean: "학교를 그만둔", reading: "hak-gyo-reul geu-man-dun", meaning: "停止上学的、退学的", grammar: "V-(으)ㄴ", note: "原形 그만두다，动词；修饰 청소년，说明政策对象。" },
+    { korean: "좁혀지기 쉽다", reading: "jop-hyeo-ji-gi swip-da", meaning: "容易被缩小", grammar: "피동 + V-기 쉽다", note: "原形 좁혀지다，被动动词；指出社会讨论容易过度简化。" },
+    { korean: "겪는 어려움은", reading: "gyeok-neun eo-ryeo-u-meun", meaning: "所经历的困难", grammar: "V-는", note: "原形 겪다，动词；修饰 어려움，概括当事人的处境。" },
+    { korean: "학업 중단", reading: "ha-geop jung-dan", meaning: "学业中断", note: "名词词组；教育政策与青少年议题中的核心词。" },
+    { korean: "동시에", reading: "dong-si-e", meaning: "同时", note: "副词；连接学习机会丧失和社会关系断裂两个层面。" },
+    { korean: "사회적 연결에서 멀어질", reading: "sa-hoe-jeok yeon-gyeo-re-seo meo-reo-jil", meaning: "可能远离社会连接", grammar: "V-(으)ㄹ 가능성이 크다", note: "原形 멀어지다，动词；说明支持缺失的长期风险。" },
+    { korean: "이용할 수 있는", reading: "i-yong-hal su it-neun", meaning: "可以利用的", grammar: "V-(으)ㄹ 수 있다", note: "原形 이용하다，动词；修饰 교육 기관、상담 공간。" },
+    { korean: "계기를 찾기 어렵다", reading: "gye-gi-reul chat-gi eo-ryeop-da", meaning: "难以找到契机", grammar: "V-기 어렵다", note: "原形 찾다，动词；说明重新进入日常的困难。" },
+    { korean: "권유하는 방식에 머물러서는 안 된다", reading: "gwon-yu-ha-neun bang-si-ge meo-mul-leo-seo-neun an doen-da", meaning: "不应停留在劝告方式上", grammar: "V-아/어서는 안 되다", note: "原形 머무르다，动词；否定单一化返校政策。" },
+    { korean: "검정고시 준비", reading: "geom-jeong-go-si jun-bi", meaning: "学历认定考试准备", note: "名词词组；韩国校外青少年继续取得学历的重要途径。" },
+    { korean: "더 시급할 수 있다", reading: "deo si-geu-pal su it-da", meaning: "可能更紧急", grammar: "A/V-(으)ㄹ 수 있다", note: "原形 시급하다，形容词；比较不同支持需求的优先级。" },
+    { korean: "문제를 일으킨 대상으로", reading: "mun-je-reul i-reu-kin dae-sang-eu-ro", meaning: "作为造成问题的对象", grammar: "V-(으)ㄴ", note: "原形 일으키다，动词；作者否定的污名化视角。" },
+    { korean: "조건에 맞게", reading: "jo-geo-ne mat-ge", meaning: "符合条件地", grammar: "N에 맞게", note: "原形 맞다，动词；强调支持方案需要个别化。" },
+    { korean: "통로를 마련하는", reading: "tong-no-reul ma-ryeon-ha-neun", meaning: "建立通道的", grammar: "V-는", note: "原形 마련하다，动词；表示制度提供重新选择的路径。" },
+    { korean: "끊기지 않도록", reading: "kkeun-ki-ji an-to-rok", meaning: "为了不中断", grammar: "V-지 않도록", note: "原形 끊기다，被动/自动词；说明地方合作的目标。" },
+    { korean: "함께 책임질 수 있는 구조", reading: "ham-kke chae-gim-jil su it-neun gu-jo", meaning: "能够共同负责的结构", grammar: "V-(으)ㄹ 수 있는", note: "原形 책임지다，动词；结论中定义地方社会的责任。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-기 쉽다", meaning: "容易……", example: "논의는 개인의 책임으로 좁혀지기 쉽다.", note: "用于说明社会认知或政策判断中的倾向。" },
+    { pattern: "V-아/어서는 안 되다", meaning: "不应……", example: "지원은 학교 복귀를 권유하는 방식에 머물러서는 안 된다.", note: "常用于明确否定不足或错误的政策做法。" },
+    { pattern: "N에 맞게", meaning: "符合……、根据……", example: "각자가 처한 조건에 맞게 지원해야 한다.", note: "用于个别化、差异化支持方案。" },
+    { pattern: "V-지 않도록", meaning: "为了不……", example: "학습과 일 경험이 끊기지 않도록 지역 기관을 연결해야 한다.", note: "说明政策措施要预防负面结果。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么认为校外青少年的困难不能只用学业中断解释？",
+      answer:
+        "因为他们不仅失去学习机会，还可能远离同龄人关系、职业信息和咨询支持等社会连接。",
+    },
+    {
+      question: "作者为什么反对只劝校外青少年返校？",
+      answer:
+        "因为不同青少年的需求不同，有的人需要考试准备，有的人更需要职业体验、心理咨询或生活支持。",
+    },
+    {
+      question: "地方自治团体在这一政策中应承担什么作用？",
+      answer:
+        "应连接学校、福利机构和地区企业，让青少年的学习和工作经验不中断，并提供重新选择的通道。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "학교 밖 청소년을 지원하기 위해 지역 사회가 어떤 역할을 해야 하는지에 대해 쓰십시오. 학교 복귀 중심 지원의 한계와 청소년의 다양한 필요를 언급하고, 지역 차원의 지원 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["학업 중단", "사회적 연결", "개별 필요", "지역 기관 협력", "진로 지원"],
+    sentenceBank: [
+      "학교 밖 청소년의 어려움은 학업 중단만으로 설명되기 어렵다.",
+      "청소년마다 필요한 지원이 다르기 때문에 획일적인 복귀 권유만으로는 충분하지 않다.",
+      "지역 사회는 교육 기관과 복지 기관, 기업을 연결해 지속적인 지원 구조를 마련해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august3Reading,
   august2Reading,
   august1Reading,
   july31Reading,
