@@ -1343,6 +1343,36 @@ button {
 .question-prompt p { margin: 0; font-size: 1.05rem; font-weight: 900; }
 .question-prompt small { display: block; margin-top: 6px; color: #788179; }
 
+.inline-exam-visual {
+  margin: 22px 0;
+  overflow: hidden;
+  border: 1px solid #d7dbd2;
+  border-radius: 8px;
+  background: #f4f3ee;
+}
+.inline-exam-visual figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #d7dbd2;
+  background: #fffdf8;
+  color: #5f6e66;
+  font-size: .75rem;
+}
+.inline-exam-visual figcaption span {
+  color: #56806f;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.inline-exam-visual figcaption strong { color: #173d32; }
+.inline-exam-visual img {
+  display: block;
+  width: min(100%, 760px);
+  height: auto;
+  margin: 0 auto;
+}
+
 .extracted-passage { margin: 24px 0; border-left: 3px solid #d5e3d5; padding-left: 17px; }
 .extracted-passage p { margin: 0 0 12px; color: #273a32; font-size: 1rem; line-height: 1.8; }
 .extracted-passage p:last-child { margin-bottom: 0; }

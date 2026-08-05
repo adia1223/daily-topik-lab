@@ -91,3 +91,14 @@ test("keeps complete archived reading data in the client", async () => {
   assert.match(page, /activeReading\.quiz/);
   assert.match(page, /activeReading\.writingDrill/);
 });
+
+test("embeds original PDF page images for early visual exam questions", async () => {
+  const workspace = await readFile(
+    new URL("../app/exam-lab/exam-workspace.tsx", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(workspace, /selectedNumber >= 5 && selectedNumber <= 10/);
+  assert.match(workspace, /inline-exam-visual/);
+  assert.match(workspace, /\/exam-assets\/topik-102\/page-/);
+});
