@@ -129,6 +129,36 @@ test("keeps detailed explanations for early visual exam questions", async () => 
   assert.match(workspace, /가격 48 > 다양성 25 > 회사 규모 16 > 이용 후기 9 > 기타 2/);
 });
 
+test("keeps detailed explanations for mid exam questions", async () => {
+  const workspace = await readFile(
+    new URL("../app/exam-lab/exam-workspace.tsx", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(workspace, /우표 박물관/);
+  assert.match(workspace, /김 경위는 휴일에 산을 오르던 중 발견했고 신고也是他打的/);
+  assert.match(workspace, /正确顺序是 \(나\)-\(라\)-\(가\)-\(다\)/);
+  assert.match(workspace, /밤새 -> 아침에/);
+  assert.match(workspace, /现象 -> 问题 -> 问题加深 -> 对策/);
+  assert.match(workspace, /먹잇감에 몰래 다가갈/);
+  assert.match(workspace, /운전자와 방문객 간에 다투는 일도 잦아지고 있다/);
+});
+
+test("maps TOPIK questions to the correct original PDF page image", async () => {
+  const workspace = await readFile(
+    new URL("../app/exam-lab/exam-workspace.tsx", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(workspace, /if \(number <= 10\) return 5;/);
+  assert.match(workspace, /if \(number <= 12\) return 6;/);
+  assert.match(workspace, /if \(number <= 15\) return 7;/);
+  assert.match(workspace, /if \(number <= 18\) return 8;/);
+  assert.match(workspace, /if \(number <= 22\) return 10;/);
+  assert.match(workspace, /if \(number <= 47\) return 22;/);
+  assert.match(workspace, /return 23;/);
+});
+
 test("keeps the exam workspace height-bound with scrollable panels", async () => {
   const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
 
