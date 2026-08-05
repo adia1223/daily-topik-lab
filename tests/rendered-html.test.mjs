@@ -128,3 +128,12 @@ test("keeps detailed explanations for early visual exam questions", async () => 
   assert.match(workspace, /그림책 읽어 주는 자원봉사자 모집/);
   assert.match(workspace, /가격 48 > 다양성 25 > 회사 규모 16 > 이용 후기 9 > 기타 2/);
 });
+
+test("keeps the exam workspace height-bound with scrollable panels", async () => {
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+
+  assert.match(css, /\.exam-layout \{[\s\S]*height: calc\(100vh - 72px\)/);
+  assert.match(css, /\.exam-analysis \{[\s\S]*overflow-y: auto/);
+  assert.match(css, /\.question-workspace \{[\s\S]*height: 100%/);
+  assert.match(css, /\.question-paper \{[\s\S]*overflow: auto/);
+});

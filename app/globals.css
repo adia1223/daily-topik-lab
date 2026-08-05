@@ -1203,18 +1203,22 @@ button {
 .exam-layout {
   --library-width: 270px;
   --analysis-width: 390px;
-  min-height: calc(100vh - 72px);
+  height: calc(100vh - 72px);
+  min-height: 0;
   display: grid;
   grid-template-columns: var(--library-width) minmax(540px, 1fr) var(--analysis-width);
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .exam-layout.is-library-collapsed { --library-width: 58px; }
 .exam-layout.is-analysis-collapsed { --analysis-width: 58px; }
-.demo-banner + .exam-layout { min-height: calc(100vh - 114px); }
+.demo-banner + .exam-layout { height: calc(100vh - 114px); }
 
 .exam-library,
 .exam-analysis {
+  min-height: 0;
+  overflow-y: auto;
   padding: 22px 18px;
   background: #f8f7f2;
 }
@@ -1307,7 +1311,16 @@ button {
 .exam-set-progress i { background: #5c8d72; }
 .library-summary { justify-content: space-between; margin-top: 18px; border-top: 1px solid #d7dbd2; padding-top: 14px; color: #6b786f; font-size: .74rem; }
 
-.question-workspace { min-width: 0; padding: 0 22px 20px; background: #eef0eb; }
+.question-workspace {
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 22px 20px;
+  background: #eef0eb;
+}
 .workspace-toolbar { justify-content: space-between; gap: 18px; min-height: 76px; }
 .workspace-toolbar > div:first-child span,
 .workspace-toolbar > div:first-child strong { display: block; }
@@ -1336,7 +1349,16 @@ button {
 .audio-track > div span { display: block; height: 100%; background: #e77b63; }
 .audio-track small { display: block; margin-top: 4px; color: #647169; font-size: .66rem; }
 
-.question-paper { border: 1px solid #d8dbd4; border-radius: 8px; padding: clamp(22px, 3vw, 42px); background: #fffdf8; box-shadow: 0 12px 28px rgba(44, 57, 49, .06); }
+.question-paper {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  border: 1px solid #d8dbd4;
+  border-radius: 8px;
+  padding: clamp(22px, 3vw, 42px);
+  background: #fffdf8;
+  box-shadow: 0 12px 28px rgba(44, 57, 49, .06);
+}
 .question-group-label { margin-bottom: 16px; color: #56806f; font-size: .72rem; font-weight: 900; line-height: 1.5; }
 .question-prompt { display: grid; grid-template-columns: auto 1fr; gap: 12px; border-bottom: 1px solid #e1ddd4; padding-bottom: 20px; }
 .question-prompt > span { color: #173d32; font-size: 1.4rem; font-weight: 900; }
@@ -1413,7 +1435,7 @@ button {
 .answer-footer button { min-height: 42px; border: 0; border-radius: 6px; padding: 0 18px; background: #173d32; color: white; cursor: pointer; font-weight: 900; }
 .answer-footer button:disabled { opacity: .35; cursor: default; }
 
-.question-strip { justify-content: space-between; gap: 10px; margin-top: 12px; }
+.question-strip { flex: 0 0 auto; justify-content: space-between; gap: 10px; margin-top: 12px; }
 .question-strip > div { gap: 5px; min-width: 0; overflow-x: auto; padding-bottom: 3px; }
 .question-strip > div button { width: 32px; height: 32px; border: 1px solid #d4d9d1; border-radius: 5px; background: #fffdf8; color: #53645b; cursor: pointer; font-size: .72rem; font-weight: 900; }
 .question-strip > div button.correct {
@@ -1511,7 +1533,9 @@ button {
   .exam-primary-nav { order: 3; width: 100%; justify-content: flex-start; overflow-x: auto; }
   .exam-primary-nav a { flex: 0 0 auto; }
   .demo-banner { align-items: flex-start; flex-direction: column; gap: 4px; }
-  .exam-layout { display: block; }
+  .exam-layout { height: auto; display: block; overflow: visible; }
+  .question-workspace { height: auto; overflow: visible; }
+  .question-paper { overflow: visible; }
   .exam-library { border-right: 0; border-bottom: 1px solid #d7dbd2; }
   .exam-library.is-collapsed,
   .exam-analysis.is-collapsed { padding: 10px 12px; }
