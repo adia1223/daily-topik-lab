@@ -240,6 +240,94 @@ function cleanContext(context: string | string[]) {
   return Array.isArray(context) ? context : context ? [context] : [];
 }
 
+function buildGeneratedDetail(question: (typeof topik102Questions)[number]): DetailedNote {
+  const answerText = question.options[question.answer - 1];
+  const answerLabel = String.fromCharCode(9311 + question.answer);
+  const baseWords = ["정답 근거 正确依据", "선택지 함정 选项陷阱", "문맥 文脉", "범위 范围", "일치하다 一致"];
+
+  if (question.type === "order") {
+    return {
+      translation: "排序题先不要急着翻选项，先看四个句子的功能：主题引入、原因说明、结果承接、补充说明或结论。",
+      words: ["순서 배열 排序", "주제 도입 主题引入", "연결어 连接词", "그래서 因此", "따라서 因此", "그런데 但是", ...baseWords],
+      note: "这题的关键不是记住答案，而是判断每个分句在段落里的位置。先找能独立介绍对象的句子，再用连接词和指代关系把后续句子接上。",
+      breakdown: "做题顺序：先找主题句，再找承接词；그래서/따라서 前面必须有原因或问题，그런데 后面通常进入转折或问题，것도 表示前面已经出现过同类信息。",
+      correctReason: `正确答案是 ${answerLabel}：${answerText}。这个顺序能让主题、原因、结果和补充信息连成完整段落。`,
+      traps: question.options.map((option, index) => index + 1 === question.answer ? `正确：${option} 的前后逻辑最完整。` : `${option}：至少有一处连接词、时间线或指代关系接不上。`),
+      examTip: "排序题要把连接词当作路标，而不是四个句子平均用力硬读。",
+    };
+  }
+
+  if (question.type === "insert") {
+    return {
+      translation: "插入句题要先判断给定句的作用：补充原因、承接转折、总结前文，还是引出后文。",
+      words: ["주어진 문장 给定句", "들어갈 곳 插入位置", "앞문장 前句", "뒷문장 后句", "하지만 但是", "이에 因此、于是", ...baseWords],
+      note: "给定句不能只和前一句顺，还必须能自然接住后一句。尤其要看 하지만、이에、오히려 这类连接词前后是否有足够铺垫。",
+      breakdown: `给定句：${question.insert_sentence || "题干给定句"}。先看它是否补足前后逻辑，再判断放在 ${question.options.join(", ")} 的哪一处最顺。`,
+      correctReason: `正确位置是 ${answerLabel}：${answerText}。放在这里时，前一句的内容能引出给定句，后一句也能自然继续。`,
+      traps: question.options.map((option, index) => index + 1 === question.answer ? `正确：${option} 前后衔接完整。` : `${option}：放在这里会让转折、因果或指代关系变突兀。`),
+      examTip: "插入句题不要只看前一句；一定同时检查“前一句 + 插入句 + 后一句”三句是否连贯。",
+    };
+  }
+
+  if (question.question.includes("심정")) {
+    return {
+      translation: "心情题要抓动作和心理描写，不要只按事件本身判断。题目问的是人物在划线部分表现出的当下情绪。",
+      words: ["심정 心情", "설레다 激动期待", "당황스럽다 慌张", "아쉽다 可惜", "그립다 想念", ...baseWords],
+      note: "先定位划线附近的心理词和动作描写，再判断情绪方向是期待、紧张、失落还是愤怒。",
+      breakdown: "如果出现 가슴이 뛰다、잠이 오지 않다，多为期待兴奋；머릿속이 새하얘지다、얼어붙다，多为惊讶慌张。",
+      correctReason: `正确答案是 ${answerLabel}：${answerText}。它最能概括人物在该场景里的即时反应。`,
+      traps: question.options.map((option, index) => index + 1 === question.answer ? `正确：${option} 与心理描写方向一致。` : `${option}：情绪方向或强度和原文描写不一致。`),
+      examTip: "心情题先判正负，再判具体：期待、害怕、尴尬、遗憾、怀念不要混在一起。",
+    };
+  }
+
+  if (question.question.includes("주제") || question.question.includes("목적") || question.question.includes("태도")) {
+    return {
+      translation: "主旨、目的、态度题要看全文中心，不要选只覆盖一个例子或一个细节的选项。",
+      words: ["주제 主题", "목적 目的", "태도 态度", "핵심 주장 核心主张", "근거 依据", "예시 例子", ...baseWords],
+      note: "先找作者最后落到的观点，再回看例子是不是为这个观点服务。正确选项通常能概括问题、理由和作者立场。",
+      breakdown: "做题顺序：排除只重复细节的选项；排除原文没说的扩大项；保留能覆盖全文结论和作者态度的选项。",
+      correctReason: `正确答案是 ${answerLabel}：${answerText}。它覆盖了文章的核心判断，而不是只抓住局部信息。`,
+      traps: question.options.map((option, index) => index + 1 === question.answer ? `正确：${option} 能概括全文中心。` : `${option}：要么范围太窄，要么把作者态度说反，要么加入了原文没有的主张。`),
+      examTip: "主旨题里的例子是证据，不是答案本身；最后一两句常常藏着作者真正想说的话。",
+    };
+  }
+
+  if (question.question.includes("제목")) {
+    return {
+      translation: "标题解释题要把新闻标题里的省略表达补完整，特别注意比喻、惯用语和带引号的关键词。",
+      words: ["신문 기사 新闻报道", "제목 标题", "방영 효과 播出效果", "메달 가뭄 奖牌荒", "솜방망이 处罚过轻", ...baseWords],
+      note: "标题常把因果和评价压缩成短语。先还原标题含义，再和选项逐项对照有没有添加不存在的信息。",
+      breakdown: `标题原句：${cleanContext(question.context).join(" ")}。正确解释要保留标题的核心因果或评价，不额外加原因、对策或结果。`,
+      correctReason: `正确答案是 ${answerLabel}：${answerText}。它把标题压缩的信息展开得最准确。`,
+      traps: question.options.map((option, index) => index + 1 === question.answer ? `正确：${option} 与标题含义一致。` : `${option}：添加了标题没有说的内容，或把评价方向改错。`),
+      examTip: "新闻标题题要特别小心“问题发生了”和“问题严重但处罚轻”这种评价差异。",
+    };
+  }
+
+  if (question.question.includes("내용과 같은")) {
+    return {
+      translation: "内容一致题要回原文逐项验证。正确项必须被原文直接支持，不能靠常识补出来。",
+      words: ["내용 일치 内容一致", "직접 근거 直接依据", "반대 표현 反向表达", "과장 夸大", "누락 遗漏", ...baseWords],
+      note: "先找选项里的主语、时间、程度和 가능/불가능，再回原文核对。只要有一个限制词不一致，就排除。",
+      breakdown: "同一篇文章的第二题通常考最后一句或核心事实的改写；不要因为某个词眼熟就选，要看整句是否完整对应。",
+      correctReason: `正确答案是 ${answerLabel}：${answerText}。它和原文事实方向一致，且没有多加限制。`,
+      traps: question.options.map((option, index) => index + 1 === question.answer ? `正确：${option} 可以在原文中找到直接依据。` : `${option}：和原文在主语、时间、程度或可能性上不一致。`),
+      examTip: "一致题的错项常见套路：把 늘다 改成 줄다，把 가능 改成 불가능，把 일부 改成 전체。",
+    };
+  }
+
+  return {
+    translation: "填空题要先判断空格所在句子的功能：原因、结果、目的、追加说明，还是对前文的概括。",
+    words: ["빈칸 填空", "앞뒤 문맥 前后文脉", "원인 原因", "결과 结果", "목적 目的", "핵심어 关键词", ...baseWords],
+    note: "先读空格前后各一句，抓住重复出现的关键词。正确答案通常能同时接住前面的原因，也能解释后面的结果。",
+    breakdown: "如果空格后出现 때문에，空格内容多半是原因；如果空格前有 위해서이다，要找目的；如果前后列举两个效果，要找追加或概括表达。",
+    correctReason: `正确答案是 ${answerLabel}：${answerText}。它最符合空格前后的语义关系。`,
+    traps: question.options.map((option, index) => index + 1 === question.answer ? `正确：${option} 能顺畅接住上下文。` : `${option}：语义方向、搭配对象或逻辑关系与上下文不合。`),
+    examTip: "填空题不要把选项单独翻译得通就选，要把它放回原句读一遍。",
+  };
+}
+
 function sourcePageForQuestion(number: number) {
   if (number <= 4) return 3;
   if (number <= 8) return 4;
@@ -277,7 +365,8 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
   const [isAnalysisOpen, setIsAnalysisOpen] = useState(false);
   const [progressLoaded, setProgressLoaded] = useState(false);
   const selectedQuestion = topik102Questions[selectedNumber - 1];
-  const detail = detailedNotes[selectedNumber];
+  const generatedDetail = useMemo(() => buildGeneratedDetail(selectedQuestion), [selectedQuestion]);
+  const detail = detailedNotes[selectedNumber] ?? generatedDetail;
   const answer = answers[selectedNumber] ?? null;
   const submitted = Boolean(submittedQuestions[selectedNumber]);
   const note = notes[selectedNumber] ?? "";
