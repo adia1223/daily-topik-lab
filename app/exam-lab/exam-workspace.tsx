@@ -125,7 +125,7 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
   const contextLines = cleanContext(selectedQuestion.context);
   const isVisual = selectedQuestion.type === "image";
   const sourcePage = sourcePageForQuestion(selectedNumber);
-  const inlineVisualPage = selectedNumber >= 5 && selectedNumber <= 10 ? sourcePage : null;
+  const inlineVisualQuestion = selectedNumber >= 5 && selectedNumber <= 10 ? String(selectedNumber).padStart(2, "0") : null;
 
   const groupLabel = useMemo(() => selectedQuestion.group || "第 102 回 · 阅读练习", [selectedQuestion.group]);
 
@@ -234,11 +234,11 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
 
           <article className="question-paper">
             <div className="question-group-label">{groupLabel}</div>
-            <div className="question-prompt"><span>{selectedQuestion.num}.</span><div><p>{selectedQuestion.question}</p><small>{inlineVisualPage ? `图文题已内嵌原卷第 ${inlineVisualPage} 页，可直接看图作答。` : "先独立作答，再打开右侧解析。"}</small></div></div>
+            <div className="question-prompt"><span>{selectedQuestion.num}.</span><div><p>{selectedQuestion.question}</p><small>{inlineVisualQuestion ? "图文材料已截出，可直接看图作答。" : "先独立作答，再打开右侧解析。"}</small></div></div>
             {selectedQuestion.insert_sentence ? <div className="insert-sentence"><span>待插入句</span>{selectedQuestion.insert_sentence}</div> : null}
-            {inlineVisualPage ? <figure className="inline-exam-visual">
-              <figcaption><span>原卷图文</span><strong>第 {inlineVisualPage} 页 · 第 {selectedNumber} 题所在页</strong></figcaption>
-              <img alt={`第 ${inlineVisualPage} 页原卷图文，第 ${selectedNumber} 题所在页`} src={`/exam-assets/topik-102/page-${String(inlineVisualPage).padStart(2, "0")}.png`} />
+            {inlineVisualQuestion ? <figure className="inline-exam-visual">
+              <figcaption><span>原卷图文</span><strong>第 {selectedNumber} 题材料</strong></figcaption>
+              <img alt={`第 ${selectedNumber} 题原卷图文材料`} src={`/exam-assets/topik-102/questions/question-${inlineVisualQuestion}.png`} />
             </figure> : null}
             {contextLines.length ? <div className={`extracted-passage ${isVisual ? "is-visual" : ""}`} lang="ko">
               {isVisual ? <div className="visual-source"><strong>PDF 图文题</strong><span>原卷页面已识别为图文广告 / 图表题</span><small>选项保留在下方，适合先凭原图作答，再核对答案。</small></div> : contextLines.map((line, index) => <p key={`${line}-${index}`}>{line}</p>)}

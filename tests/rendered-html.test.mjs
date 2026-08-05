@@ -100,5 +100,5 @@ test("embeds original PDF page images for early visual exam questions", async ()
 
   assert.match(workspace, /selectedNumber >= 5 && selectedNumber <= 10/);
   assert.match(workspace, /inline-exam-visual/);
-  assert.match(workspace, /\/exam-assets\/topik-102\/page-/);
+  assert.match(workspace, /\/exam-assets\/topik-102\/questions\/question-/);
 });
