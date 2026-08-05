@@ -1416,9 +1416,18 @@ button {
 .question-strip { justify-content: space-between; gap: 10px; margin-top: 12px; }
 .question-strip > div { gap: 5px; min-width: 0; overflow-x: auto; padding-bottom: 3px; }
 .question-strip > div button { width: 32px; height: 32px; border: 1px solid #d4d9d1; border-radius: 5px; background: #fffdf8; color: #53645b; cursor: pointer; font-size: .72rem; font-weight: 900; }
-.question-strip > div button.done { background: #dce9dd; color: #173d32; }
+.question-strip > div button.correct {
+  border-color: #7baa88;
+  background: #dce9dd;
+  color: #173d32;
+}
+.question-strip > div button.wrong {
+  border-color: #d36851;
+  background: #ffe2d8;
+  color: #9d3f2e;
+}
 .question-strip > div button.active { border-color: #173d32; background: #173d32; color: white; }
-.question-strip > div button.flagged { border-color: #e77b63; color: #b7533e; }
+.question-strip > div button.flagged { box-shadow: inset 0 0 0 2px #e77b63; }
 .question-strip > span { color: #6e7b73; font-size: .74rem; }
 
 .analysis-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; border-bottom: 1px solid #d7dbd2; padding-bottom: 12px; }

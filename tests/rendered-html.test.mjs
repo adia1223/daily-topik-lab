@@ -102,3 +102,15 @@ test("embeds original PDF page images for early visual exam questions", async ()
   assert.match(workspace, /inline-exam-visual/);
   assert.match(workspace, /\/exam-assets\/topik-102\/questions\/question-/);
 });
+
+test("distinguishes correct and wrong submitted questions in answer strip", async () => {
+  const workspace = await readFile(
+    new URL("../app/exam-lab/exam-workspace.tsx", import.meta.url),
+    "utf8",
+  );
+  const css = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+
+  assert.match(workspace, /answers\[question\.num\] === question\.answer \? "correct" : "wrong"/);
+  assert.match(css, /\.question-strip > div button\.correct/);
+  assert.match(css, /\.question-strip > div button\.wrong/);
+});

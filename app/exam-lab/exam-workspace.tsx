@@ -249,7 +249,11 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
             <div className="answer-footer"><span>{submitted ? (answer === selectedQuestion.answer ? "回答正确，已保存到本机记录。" : `正确答案是 ${answerLabel}，本机记录已更新。`) : "选择答案后提交，可查看答案、依据和易错点。"}</span><button disabled={answer === null} onClick={() => { setSubmittedQuestions((items) => ({ ...items, [selectedNumber]: true })); setAnalysisTab("answer"); }} type="button">提交答案</button></div>
           </article>
 
-          <div className="question-strip"><button onClick={() => selectQuestion(Math.max(1, selectedNumber - 1))} type="button">上一题</button><div>{topik102Questions.map((question) => <button className={`${question.num === selectedNumber ? "active" : ""} ${submittedQuestions[question.num] ? "done" : ""} ${flagged.includes(question.num) ? "flagged" : ""}`} onClick={() => selectQuestion(question.num)} key={question.num} type="button">{question.num}</button>)}</div><span>已答 {answeredCount}/50 · 得分 {correctScore}/100</span><button onClick={() => selectQuestion(Math.min(50, selectedNumber + 1))} type="button">下一题</button></div>
+          <div className="question-strip"><button onClick={() => selectQuestion(Math.max(1, selectedNumber - 1))} type="button">上一题</button><div>{topik102Questions.map((question) => {
+            const isSubmitted = Boolean(submittedQuestions[question.num]);
+            const answerState = isSubmitted ? (answers[question.num] === question.answer ? "correct" : "wrong") : "";
+            return <button className={`${question.num === selectedNumber ? "active" : ""} ${answerState} ${flagged.includes(question.num) ? "flagged" : ""}`} onClick={() => selectQuestion(question.num)} key={question.num} type="button">{question.num}</button>;
+          })}</div><span>已答 {answeredCount}/50 · 得分 {correctScore}/100</span><button onClick={() => selectQuestion(Math.min(50, selectedNumber + 1))} type="button">下一题</button></div>
         </section>
 
         <aside className={`exam-analysis ${isAnalysisOpen ? "" : "is-collapsed"}`} aria-label="题目解析">
