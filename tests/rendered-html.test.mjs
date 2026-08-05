@@ -114,3 +114,17 @@ test("distinguishes correct and wrong submitted questions in answer strip", asyn
   assert.match(css, /\.question-strip > div button\.correct/);
   assert.match(css, /\.question-strip > div button\.wrong/);
 });
+
+test("keeps detailed explanations for early visual exam questions", async () => {
+  const workspace = await readFile(
+    new URL("../app/exam-lab/exam-workspace.tsx", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(workspace, /발이 편하다、가볍다、디자인/);
+  assert.match(workspace, /더러워진 옷、새 옷처럼、두꺼운 이불/);
+  assert.match(workspace, /달리기 是行为，활기찬 내일 是目的/);
+  assert.match(workspace, /날짜\/인원 선택 -> 다음 -> 좌석 선택 -> 결제/);
+  assert.match(workspace, /그림책 읽어 주는 자원봉사자 모집/);
+  assert.match(workspace, /가격 48 > 다양성 25 > 회사 규모 16 > 이용 후기 9 > 기타 2/);
+});
