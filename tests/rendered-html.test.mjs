@@ -65,12 +65,14 @@ test("server-renders the interactive exam lab", async () => {
   const html = await response.text();
   assert.match(html, /真题精练工作台/);
   assert.match(html, /第 102 回/);
-  assert.match(html, /阅读 50\/50 题/);
-  assert.match(html, /词汇语法/);
-  assert.match(html, /答案分析/);
-  assert.match(html, /对照 PDF 原页/);
+  assert.match(html, /目录/);
+  assert.match(html, /解析/);
   assert.match(html, /清空本地记录/);
   assert.match(html, /登录进入我的私人真题库/);
+  assert.doesNotMatch(html, /阅读 50\/50 题/);
+  assert.doesNotMatch(html, /词汇语法/);
+  assert.doesNotMatch(html, /答案分析/);
+  assert.doesNotMatch(html, /对照 PDF 原页/);
   assert.doesNotMatch(html, /导入一套真题/);
   assert.doesNotMatch(html, /第 99 回/);
   assert.doesNotMatch(html, /已导入 15 套/);

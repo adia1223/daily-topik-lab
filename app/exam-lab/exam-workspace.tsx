@@ -109,6 +109,8 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
   const [notes, setNotes] = useState<Record<number, string>>({});
   const [flagged, setFlagged] = useState<number[]>([]);
   const [showPdf, setShowPdf] = useState(false);
+  const [isLibraryOpen, setIsLibraryOpen] = useState(false);
+  const [isAnalysisOpen, setIsAnalysisOpen] = useState(false);
   const [progressLoaded, setProgressLoaded] = useState(false);
   const selectedQuestion = topik102Questions[selectedNumber - 1];
   const detail = detailedNotes[selectedNumber];
@@ -195,21 +197,31 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
 
       {!isPrivate ? <div className="demo-banner"><span>第 102 回阅读：已整理 50 题，答案与题型均可交互练习。</span><a href="/vault">登录进入我的私人真题库</a></div> : null}
 
-      <div className="exam-layout">
-        <aside className="exam-library" aria-label="真题目录">
-          <div className="library-heading"><div><span>MY ARCHIVE</span><h1>我的真题</h1></div><button type="button">筛选</button></div>
-          <div className="import-status">
-            <div><span>已提取</span><strong>第 102 回</strong></div>
-            <div className="thin-progress"><span style={{ width: "100%" }} /></div>
-            <small>阅读 50/50 题 · 解析工作台已就绪</small>
-          </div>
-          <div className="exam-set-list">
-            {examSets.map((exam, index) => <button className={index === 0 ? "is-active" : ""} key={exam[0]} type="button">
-              <div><strong>{exam[0]}</strong><small>{exam[1]} · TOPIK II</small></div><span>{exam[3]}</span>
-              <div className="exam-set-progress"><i style={{ width: `${exam[2]}%` }} /></div>
-            </button>)}
-          </div>
-          <div className="library-summary"><span>已整理 1 套</span><strong>第 102 回 · 50 题</strong></div>
+      <div className={`exam-layout ${isLibraryOpen ? "" : "is-library-collapsed"} ${isAnalysisOpen ? "" : "is-analysis-collapsed"}`}>
+        <aside className={`exam-library ${isLibraryOpen ? "" : "is-collapsed"}`} aria-label="真题目录">
+          <button
+            aria-expanded={isLibraryOpen}
+            className="side-collapse-toggle"
+            onClick={() => setIsLibraryOpen((open) => !open)}
+            type="button"
+          >
+            <span>{isLibraryOpen ? "收起" : "目录"}</span>
+          </button>
+          {isLibraryOpen ? <>
+            <div className="library-heading"><div><span>MY ARCHIVE</span><h1>我的真题</h1></div><button type="button">筛选</button></div>
+            <div className="import-status">
+              <div><span>已提取</span><strong>第 102 回</strong></div>
+              <div className="thin-progress"><span style={{ width: "100%" }} /></div>
+              <small>阅读 50/50 题 · 解析工作台已就绪</small>
+            </div>
+            <div className="exam-set-list">
+              {examSets.map((exam, index) => <button className={index === 0 ? "is-active" : ""} key={exam[0]} type="button">
+                <div><strong>{exam[0]}</strong><small>{exam[1]} · TOPIK II</small></div><span>{exam[3]}</span>
+                <div className="exam-set-progress"><i style={{ width: `${exam[2]}%` }} /></div>
+              </button>)}
+            </div>
+            <div className="library-summary"><span>已整理 1 套</span><strong>第 102 回 · 50 题</strong></div>
+          </> : null}
         </aside>
 
         <section className="question-workspace">
@@ -235,25 +247,35 @@ export default function ExamWorkspace({ isPrivate = false, displayName = "体验
           <div className="question-strip"><button onClick={() => selectQuestion(Math.max(1, selectedNumber - 1))} type="button">上一题</button><div>{topik102Questions.map((question) => <button className={`${question.num === selectedNumber ? "active" : ""} ${submittedQuestions[question.num] ? "done" : ""} ${flagged.includes(question.num) ? "flagged" : ""}`} onClick={() => selectQuestion(question.num)} key={question.num} type="button">{question.num}</button>)}</div><span>已答 {answeredCount}/50 · 得分 {correctScore}/100</span><button onClick={() => selectQuestion(Math.min(50, selectedNumber + 1))} type="button">下一题</button></div>
         </section>
 
-        <aside className="exam-analysis" aria-label="题目解析">
-          <div className="analysis-tabs"><button className={analysisTab === "sentence" ? "is-active" : ""} onClick={() => setAnalysisTab("sentence")} type="button">词汇语法</button><button className={analysisTab === "answer" ? "is-active" : ""} onClick={() => setAnalysisTab("answer")} type="button">答案分析</button><button className={analysisTab === "notes" ? "is-active" : ""} onClick={() => setAnalysisTab("notes")} type="button">笔记</button></div>
-          {analysisTab === "sentence" ? <div className="sentence-analysis">
-            <div className="analysis-kicker">QUESTION {selectedNumber} · {selectedQuestion.type === "order" ? "ORDER" : "READING"}</div><p className="analysis-korean" lang="ko">{detail?.translation || "这一题重点考查根据上下文定位信息，并排除表述范围过大的干扰项。"}</p><p className="analysis-chinese">{detail?.note || "先看题干要求，再用连接词、指代和因果关系回到原文定位。长文题不要凭常识选答案，要确认选项是否被原文完整支持。"}</p>
-            {detail?.breakdown ? <section><span>句子拆分</span><p className="analysis-detail-text">{detail.breakdown}</p></section> : null}
-            {detail?.correctReason ? <section><span>为什么选这个</span><p className="analysis-detail-text">{detail.correctReason}</p></section> : null}
-            {detail?.grammar ? <section><span>核心语法</span><strong>{detail.grammar}</strong></section> : null}
-            {detail?.traps ? <section><span>选项陷阱</span><div className="analysis-traps">{detail.traps.map((trap) => <p key={trap}>{trap}</p>)}</div></section> : null}
-            {detail?.examTip ? <section><span>考场识别</span><strong>{detail.examTip}</strong></section> : null}
-            <section><span>重点词汇</span><div className="analysis-word-list">{(detail?.words || ["문맥 根据语境", "근거 依据", "일치하다 一致"]).map((word) => <button key={word} type="button">{word}</button>)}</div></section>
-            <button className="review-action" onClick={() => setFlagged((items) => items.includes(selectedNumber) ? items : [...items, selectedNumber])} type="button">加入错题 / 重点复习</button>
-          </div> : null}
-          {analysisTab === "answer" ? <div className="answer-analysis">
-            <div className="correct-answer"><span>正确答案</span><strong>{answerLabel}</strong></div><h2>第 {selectedNumber} 题 · 判断依据</h2><p>{detail?.correctReason || detail?.note || "答案必须同时符合题干要求和原文信息。选项中只要出现原文没有支持的绝对化内容，就应优先排除。"}</p>
-            <div className="trap-list">{selectedQuestion.options.map((option, index) => <article key={option}><span>{index + 1 === selectedQuestion.answer ? "✓" : index + 1}</span><div><strong>{index + 1 === selectedQuestion.answer ? "正确选项" : "干扰项"}</strong><p>{detail?.traps?.[index] || (index + 1 === selectedQuestion.answer ? "与原文 / 题干要求完全对应。" : "信息方向、范围或逻辑关系与原文不完全一致。")}</p></div></article>)}</div>
-            <button className="mistake-action" onClick={() => toggleFlagged(selectedNumber)} type="button">{flagged.includes(selectedNumber) ? "取消重点标记" : "记录错因：需要回看原文"}</button>
-          </div> : null}
-          {analysisTab === "notes" ? <div className="note-panel"><label htmlFor="exam-note">这道题记住什么？</label><textarea id="exam-note" onChange={(event) => setNotes((items) => ({ ...items, [selectedNumber]: event.target.value.slice(0, 300) }))} placeholder="例如：온 지 表示经过的时间，后面接 일 년이 됐다。" value={note} /><div><span>{note.length}/300</span><button type="button">已自动保存</button></div></div> : null}
-          <div className="source-card"><span>原始文件</span><strong>제102회 · 읽기 · 홀수형</strong><small>已载入项目原页图片 · 当前第 {selectedNumber} 题对应第 {sourcePage} 页</small><button onClick={() => setShowPdf(true)} type="button">对照 PDF 原页</button></div>
+        <aside className={`exam-analysis ${isAnalysisOpen ? "" : "is-collapsed"}`} aria-label="题目解析">
+          <button
+            aria-expanded={isAnalysisOpen}
+            className="side-collapse-toggle"
+            onClick={() => setIsAnalysisOpen((open) => !open)}
+            type="button"
+          >
+            <span>{isAnalysisOpen ? "收起" : "解析"}</span>
+          </button>
+          {isAnalysisOpen ? <>
+            <div className="analysis-tabs"><button className={analysisTab === "sentence" ? "is-active" : ""} onClick={() => setAnalysisTab("sentence")} type="button">词汇语法</button><button className={analysisTab === "answer" ? "is-active" : ""} onClick={() => setAnalysisTab("answer")} type="button">答案分析</button><button className={analysisTab === "notes" ? "is-active" : ""} onClick={() => setAnalysisTab("notes")} type="button">笔记</button></div>
+            {analysisTab === "sentence" ? <div className="sentence-analysis">
+              <div className="analysis-kicker">QUESTION {selectedNumber} · {selectedQuestion.type === "order" ? "ORDER" : "READING"}</div><p className="analysis-korean" lang="ko">{detail?.translation || "这一题重点考查根据上下文定位信息，并排除表述范围过大的干扰项。"}</p><p className="analysis-chinese">{detail?.note || "先看题干要求，再用连接词、指代和因果关系回到原文定位。长文题不要凭常识选答案，要确认选项是否被原文完整支持。"}</p>
+              {detail?.breakdown ? <section><span>句子拆分</span><p className="analysis-detail-text">{detail.breakdown}</p></section> : null}
+              {detail?.correctReason ? <section><span>为什么选这个</span><p className="analysis-detail-text">{detail.correctReason}</p></section> : null}
+              {detail?.grammar ? <section><span>核心语法</span><strong>{detail.grammar}</strong></section> : null}
+              {detail?.traps ? <section><span>选项陷阱</span><div className="analysis-traps">{detail.traps.map((trap) => <p key={trap}>{trap}</p>)}</div></section> : null}
+              {detail?.examTip ? <section><span>考场识别</span><strong>{detail.examTip}</strong></section> : null}
+              <section><span>重点词汇</span><div className="analysis-word-list">{(detail?.words || ["문맥 根据语境", "근거 依据", "일치하다 一致"]).map((word) => <button key={word} type="button">{word}</button>)}</div></section>
+              <button className="review-action" onClick={() => setFlagged((items) => items.includes(selectedNumber) ? items : [...items, selectedNumber])} type="button">加入错题 / 重点复习</button>
+            </div> : null}
+            {analysisTab === "answer" ? <div className="answer-analysis">
+              <div className="correct-answer"><span>正确答案</span><strong>{answerLabel}</strong></div><h2>第 {selectedNumber} 题 · 判断依据</h2><p>{detail?.correctReason || detail?.note || "答案必须同时符合题干要求和原文信息。选项中只要出现原文没有支持的绝对化内容，就应优先排除。"}</p>
+              <div className="trap-list">{selectedQuestion.options.map((option, index) => <article key={option}><span>{index + 1 === selectedQuestion.answer ? "✓" : index + 1}</span><div><strong>{index + 1 === selectedQuestion.answer ? "正确选项" : "干扰项"}</strong><p>{detail?.traps?.[index] || (index + 1 === selectedQuestion.answer ? "与原文 / 题干要求完全对应。" : "信息方向、范围或逻辑关系与原文不完全一致。")}</p></div></article>)}</div>
+              <button className="mistake-action" onClick={() => toggleFlagged(selectedNumber)} type="button">{flagged.includes(selectedNumber) ? "取消重点标记" : "记录错因：需要回看原文"}</button>
+            </div> : null}
+            {analysisTab === "notes" ? <div className="note-panel"><label htmlFor="exam-note">这道题记住什么？</label><textarea id="exam-note" onChange={(event) => setNotes((items) => ({ ...items, [selectedNumber]: event.target.value.slice(0, 300) }))} placeholder="例如：온 지 表示经过的时间，后面接 일 년이 됐다。" value={note} /><div><span>{note.length}/300</span><button type="button">已自动保存</button></div></div> : null}
+            <div className="source-card"><span>原始文件</span><strong>제102회 · 읽기 · 홀수형</strong><small>已载入项目原页图片 · 当前第 {selectedNumber} 题对应第 {sourcePage} 页</small><button onClick={() => setShowPdf(true)} type="button">对照 PDF 原页</button></div>
+          </> : null}
           {showPdf ? <div className="pdf-modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setShowPdf(false); }}><section className="pdf-modal" role="dialog" aria-label={`第 ${sourcePage} 页 PDF 原页`} aria-modal="true"><div className="pdf-modal-header"><div><span>原页对照</span><strong>第 {sourcePage} 页 · 第 {selectedNumber} 题</strong></div><button aria-label="关闭 PDF 原页" onClick={() => setShowPdf(false)} type="button">×</button></div><div className="pdf-modal-page"><img alt={`第 ${sourcePage} 页 PDF 原页`} src={`/exam-assets/topik-102/page-${String(sourcePage).padStart(2, "0")}.png`} /></div></section></div> : null}
         </aside>
       </div>
