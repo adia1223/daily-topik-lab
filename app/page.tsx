@@ -1513,7 +1513,7 @@ const august3Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august4Reading: DailyReading = {
   id: "2026-08-04-out-of-school-youth",
   date: "2026-08-04",
   title: "학교 밖 청소년 지원은 왜 지역의 일이 되는가",
@@ -1578,8 +1578,74 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-05-public-library-platform",
+  date: "2026-08-05",
+  title: "공공 도서관의 디지털 서비스는 누구를 위한 것인가",
+  level: "TOPIK II 5-6级",
+  topic: "文化 / 公共政策",
+  estimatedTime: "18 分钟",
+  korean:
+    "공공 도서관은 오랫동안 책을 빌리는 장소로 이해되어 왔지만, 최근에는 전자책 대출, 온라인 강의, 지역 자료 검색과 같은 디지털 서비스까지 제공하는 기관으로 바뀌고 있다. 이러한 변화는 도서관을 더 많은 시민에게 열어 준다는 점에서 긍정적으로 평가된다. 거동이 불편한 사람이나 근무 시간이 일정하지 않은 사람도 인터넷을 통해 자료를 이용할 수 있기 때문이다. 그러나 디지털 서비스가 늘어난다고 해서 도서관의 공공성이 자동으로 강화되는 것은 아니다. 기기 사용에 익숙하지 않은 노인, 안정적인 인터넷 환경을 갖추지 못한 가정, 외국어 정보 접근에 어려움을 겪는 이주민은 오히려 새로운 서비스에서 소외될 수 있다. 또한 인기 있는 전자책과 강의에 예산이 집중되면 지역의 역사 자료나 소수 언어 자료처럼 당장 이용자 수가 많지 않은 콘텐츠는 뒤로 밀리기 쉽다. 따라서 공공 도서관의 디지털 전환은 편리한 기술을 도입하는 데 그쳐서는 안 된다. 이용 교육, 오프라인 상담, 다양한 언어와 형식의 자료 제공이 함께 이루어져야 한다. 결국 도서관의 디지털 서비스가 추구해야 할 목표는 이용 횟수를 늘리는 것이 아니라, 지식과 문화에 접근하기 어려웠던 시민에게 새로운 길을 열어 주는 데 있다.",
+  chinese:
+    "公共图书馆长期以来被理解为借书的场所，但近来正逐渐转变为同时提供电子书借阅、在线课程、地区资料检索等数字服务的机构。这种变化因为能让图书馆向更多市民开放而受到积极评价。行动不便的人或工作时间不固定的人，也可以通过网络使用资料。然而，数字服务增加并不意味着图书馆的公共性会自动增强。不熟悉设备使用的老年人、缺少稳定网络环境的家庭、难以获取外语信息的移民，反而可能在新服务中被排除在外。此外，如果预算集中在热门电子书和课程上，地区历史资料或少数语言资料等眼下使用人数不多的内容就容易被推到后面。因此，公共图书馆的数字转型不应停留在引入便利技术上。使用教育、线下咨询、多语言和多格式资料提供应同时推进。归根结底，图书馆数字服务应追求的目标不是增加使用次数，而是为那些原本难以接近知识与文化的市民打开新的通道。",
+  tokens: [
+    { korean: "이해되어 왔지만", reading: "i-hae-doe-eo wat-ji-man", meaning: "一直被理解为……但", grammar: "피동 + V-아/어 오다", note: "原形 이해되다，被动动词；说明过去到现在延续的社会认知。" },
+    { korean: "전자책 대출", reading: "jeon-ja-chaek dae-chul", meaning: "电子书借阅", note: "名词词组；说明图书馆数字化服务的具体内容。" },
+    { korean: "제공하는 기관으로", reading: "je-gong-ha-neun gi-gwa-neu-ro", meaning: "作为提供……的机构", grammar: "V-는 N으로", note: "原形 제공하다，动词；表示图书馆功能的变化方向。" },
+    { korean: "바뀌고 있다", reading: "ba-kkwi-go it-da", meaning: "正在改变", grammar: "V-고 있다", note: "原形 바뀌다，自动词；描述公共机构角色的持续变化。" },
+    { korean: "열어 준다는 점에서", reading: "yeo-reo jun-da-neun jeo-me-seo", meaning: "从打开/开放这一点来看", grammar: "V-아/어 주다 + N다는 점에서", note: "原形 열다，动词；说明积极评价的依据。" },
+    { korean: "거동이 불편한", reading: "geo-dong-i bul-pyeon-han", meaning: "行动不便的", grammar: "A-(으)ㄴ", note: "原形 불편하다，形容词；指需要远程服务的群体。" },
+    { korean: "일정하지 않은", reading: "il-jeong-ha-ji a-neun", meaning: "不固定的", grammar: "A-지 않다 + 은", note: "原形 일정하다，形容词；修饰 근무 시간，说明访问线下馆的障碍。" },
+    { korean: "이용할 수 있기 때문이다", reading: "i-yong-hal su it-gi ttae-mu-ni-da", meaning: "是因为能够使用", grammar: "V-(으)ㄹ 수 있다 + 기 때문이다", note: "原形 이용하다，动词；解释数字服务的便利性。" },
+    { korean: "늘어난다고 해서", reading: "neu-reo-nan-da-go hae-seo", meaning: "不能因为增加就……", grammar: "V-ㄴ/는다고 해서", note: "原形 늘어나다，动词；引出对简单乐观判断的反驳。" },
+    { korean: "자동으로 강화되는 것은 아니다", reading: "ja-dong-eu-ro gang-hwa-doe-neun geo-seun a-ni-da", meaning: "并不会自动被强化", grammar: "V-는 것은 아니다", note: "原形 강화되다，被动动词；否定数字化与公共性之间的必然关系。" },
+    { korean: "익숙하지 않은", reading: "ik-suk-ha-ji a-neun", meaning: "不熟悉的", grammar: "A-지 않다 + 은", note: "原形 익숙하다，形容词；指出数字服务可能排除的对象。" },
+    { korean: "소외될 수 있다", reading: "so-oe-doel su it-da", meaning: "可能被排除、被边缘化", grammar: "피동 + V-(으)ㄹ 수 있다", note: "原形 소외되다，被动动词；数字鸿沟类文章核心词。" },
+    { korean: "예산이 집중되면", reading: "ye-sa-ni jip-jung-doe-myeon", meaning: "如果预算集中", grammar: "V-(으)면", note: "原形 집중되다，被动动词；提出资源分配风险。" },
+    { korean: "뒤로 밀리기 쉽다", reading: "dwi-ro mil-li-gi swip-da", meaning: "容易被推到后面", grammar: "피동 + V-기 쉽다", note: "原形 밀리다，被动/自动词；说明非热门资料被忽视的倾向。" },
+    { korean: "도입하는 데 그쳐서는 안 된다", reading: "do-ip-ha-neun de geu-chyeo-seo-neun an doen-da", meaning: "不应停留在引入上", grammar: "N에 그치다 + V-아/어서는 안 되다", note: "原形 도입하다 / 그치다；转向作者真正的政策建议。" },
+    { korean: "열어 주는 데 있다", reading: "yeo-reo ju-neun de it-da", meaning: "在于打开……", grammar: "V-는 데 있다", note: "原形 열어 주다，动词；结论中明确数字服务的真正目标。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-아/어 오다", meaning: "一直……到现在", example: "도서관은 책을 빌리는 장소로 이해되어 왔다.", note: "表示某种认知或状态从过去持续到现在，常用于引入变化背景。" },
+    { pattern: "V-ㄴ/는다고 해서 ... 것은 아니다", meaning: "并非因为……就……", example: "서비스가 늘어난다고 해서 공공성이 자동으로 강화되는 것은 아니다.", note: "高级阅读中常见反驳结构，用来否定简单因果。" },
+    { pattern: "V-기 쉽다", meaning: "容易……", example: "소수 언어 자료는 뒤로 밀리기 쉽다.", note: "说明某种风险或倾向，不表示必然发生。" },
+    { pattern: "V-는 데 있다", meaning: "在于做某事", example: "목표는 시민에게 새로운 길을 열어 주는 데 있다.", note: "用于结论句，明确政策或制度的核心目标。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么肯定图书馆数字服务的扩大？",
+      answer:
+        "因为行动不便或工作时间不固定的人也可以通过网络使用资料，图书馆因此能向更多市民开放。",
+    },
+    {
+      question: "作者为什么说数字服务不会自动增强公共性？",
+      answer:
+        "因为不熟悉设备、缺少稳定网络或难以获取外语信息的人，反而可能在新服务中被排除。",
+    },
+    {
+      question: "文章认为公共图书馆数字转型应同时包含哪些措施？",
+      answer:
+        "应包含使用教育、线下咨询，以及多语言、多形式资料提供，不能只引入便利技术。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "공공 도서관의 디지털 서비스 확대에 대해 어떻게 생각하는지 쓰십시오. 디지털 서비스의 장점과 정보 격차의 문제를 모두 언급하고, 공공성을 높이기 위한 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["디지털 서비스 장점", "정보 격차", "노인과 이주민", "이용 교육", "자료 다양성"],
+    sentenceBank: [
+      "공공 도서관의 디지털 서비스는 시민의 자료 접근성을 높일 수 있다.",
+      "그러나 기술 사용에 익숙하지 않은 사람은 오히려 소외될 수 있다.",
+      "따라서 이용 교육과 오프라인 상담, 다양한 자료 제공이 함께 이루어져야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august4Reading,
   august3Reading,
   august2Reading,
   august1Reading,
