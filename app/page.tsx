@@ -1578,7 +1578,7 @@ const august4Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august5Reading: DailyReading = {
   id: "2026-08-05-public-library-platform",
   date: "2026-08-05",
   title: "공공 도서관의 디지털 서비스는 누구를 위한 것인가",
@@ -1643,8 +1643,78 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-06-reusable-container-policy",
+  date: "2026-08-06",
+  title: "재사용 용기는 환경 정책의 답이 될 수 있는가",
+  level: "TOPIK II 5-6级",
+  topic: "环境 / 消费政策",
+  estimatedTime: "18 分钟",
+  korean:
+    "일회용품 사용을 줄이기 위해 여러 도시가 카페와 배달 음식점에 재사용 용기를 도입하고 있다. 소비자가 음료나 음식을 받은 뒤 지정된 회수함에 용기를 반납하면 세척 업체가 이를 거두어 다시 사용할 수 있게 하는 방식이다. 이 제도는 쓰레기 배출량을 줄이고 자원 순환을 촉진한다는 점에서 기대를 받고 있다. 그러나 재사용 용기가 친환경적인 선택이 되기 위해서는 단순히 일회용품을 대체하는 것 이상의 조건이 필요하다. 회수율이 낮으면 새 용기를 계속 생산해야 하므로 오히려 비용과 탄소 배출이 늘어날 수 있다. 또한 세척 과정에서 사용되는 물과 에너지, 용기를 운반하는 차량의 이동 거리까지 고려하지 않으면 실제 환경 효과를 정확히 판단하기 어렵다. 일부 지방자치단체가 충분한 준비 없이 보조금만 지급한 결과, 매장에는 반납되지 않은 용기가 쌓이고 소비자는 반납 장소를 찾지 못해 불편을 겪기도 했다. 따라서 재사용 용기 정책은 참여 업체의 수를 늘리는 데서 끝나서는 안 된다. 시민이 쉽게 반납할 수 있는 회수망, 위생 기준을 충족하는 세척 체계, 이용자가 자신의 참여 효과를 확인할 수 있는 정보 제공이 함께 마련되어야 한다. 결국 재사용 용기의 성공 여부는 용기 자체의 친환경성보다 그것을 계속 순환시키는 도시 시스템의 정교함에 달려 있다.",
+  chinese:
+    "为了减少一次性用品的使用，许多城市正在咖啡店和外卖餐饮店引入可重复使用容器。消费者收到饮料或食物后，把容器归还到指定回收箱，清洗企业再收走并让其能够再次使用。这一制度因能够减少垃圾排放、促进资源循环而受到期待。然而，可重复使用容器要真正成为环保选择，需要的不只是替代一次性用品。若回收率低，就必须不断生产新容器，反而可能增加成本和碳排放。此外，如果不考虑清洗过程使用的水和能源，以及运输容器车辆的移动距离，就难以准确判断实际环境效果。一些地方政府在准备不足的情况下只发放补贴，结果店内堆积了未归还的容器，消费者也因找不到归还地点而感到不便。因此，可重复使用容器政策不能止步于增加参与商家的数量。必须同时建立市民容易归还的回收网络、符合卫生标准的清洗体系，以及让使用者确认自身参与效果的信息提供。归根结底，可重复使用容器能否成功，不取决于容器本身的环保性，而取决于让它持续循环的城市系统是否精密。",
+  tokens: [
+    { korean: "일회용품 사용을 줄이기 위해", reading: "il-hoe-yong-pum sa-yong-eul ju-ri-gi wi-hae", meaning: "为了减少一次性用品的使用", grammar: "V-기 위해", note: "原形 줄이다，动词；点明政策引入的目的。" },
+    { korean: "재사용 용기", reading: "jae-sa-yong yong-gi", meaning: "可重复使用容器", note: "名词词组；本文核心对象，和 일회용품 形成对比。" },
+    { korean: "도입하고 있다", reading: "do-ip-ha-go it-da", meaning: "正在引入", grammar: "V-고 있다", note: "原形 도입하다，动词；说明政策正在扩散。" },
+    { korean: "지정된 회수함", reading: "ji-jeong-doen hoe-su-ham", meaning: "指定的回收箱", grammar: "피동 관형형", note: "原形 지정되다，被动动词；说明容器归还的位置限制。" },
+    { korean: "반납하면", reading: "ban-na-pa-myeon", meaning: "如果归还", grammar: "V-(으)면", note: "原形 반납하다，动词；引出制度运行流程。" },
+    { korean: "세척 업체", reading: "se-cheok eop-che", meaning: "清洗企业", note: "名词词组；负责让容器重新进入循环的主体。" },
+    { korean: "거두어 다시 사용할 수 있게", reading: "geo-du-eo da-si sa-yong-hal su it-ge", meaning: "收走后使其能够再次使用", grammar: "V-아/어 + V-(으)ㄹ 수 있게", note: "原形 거두다 / 사용하다；说明从回收到再利用的连接环节。" },
+    { korean: "자원 순환을 촉진한다는 점에서", reading: "ja-won sun-hwa-neul chok-jin-han-da-neun jeo-me-seo", meaning: "从促进资源循环这一点来看", grammar: "V-ㄴ/는다는 점에서", note: "原形 촉진하다，动词；给出制度被期待的理由。" },
+    { korean: "친환경적인 선택", reading: "chin-hwan-gyeong-jeo-gin seon-taek", meaning: "环保的选择", note: "名词词组；作者要重新审视的判断对象。" },
+    { korean: "대체하는 것 이상의 조건", reading: "dae-che-ha-neun geot i-sang-ui jo-geon", meaning: "超过单纯替代的条件", grammar: "V-는 것 이상의 N", note: "原形 대체하다，动词；提示文章转入反驳与深化。" },
+    { korean: "회수율이 낮으면", reading: "hoe-su-yu-ri na-jeu-myeon", meaning: "如果回收率低", grammar: "A-(으)면", note: "原形 낮다，形容词；政策失败风险的核心条件。" },
+    { korean: "오히려 늘어날 수 있다", reading: "o-hi-ryeo neu-reo-nal su it-da", meaning: "反而可能增加", grammar: "오히려 + V-(으)ㄹ 수 있다", note: "原形 늘어나다，动词；表示与环保目的相反的结果。" },
+    { korean: "고려하지 않으면", reading: "go-ryeo-ha-ji a-neu-myeon", meaning: "如果不考虑", grammar: "V-지 않으면", note: "原形 고려하다，动词；指出判断环境效果时不能遗漏的变量。" },
+    { korean: "판단하기 어렵다", reading: "pan-dan-ha-gi eo-ryeop-da", meaning: "难以判断", grammar: "V-기 어렵다", note: "原形 판단하다，动词；说明政策效果评估的复杂性。" },
+    { korean: "충분한 준비 없이", reading: "chung-bun-han jun-bi eop-si", meaning: "没有充分准备地", grammar: "N 없이", note: "原形 충분하다，形容词；批评只发补贴而缺少系统设计。" },
+    { korean: "불편을 겪기도 했다", reading: "bul-pyeo-neul gyeok-gi-do haet-da", meaning: "也曾经历不便", grammar: "V-기도 하다", note: "原形 겪다，动词；说明消费者层面的副作用。" },
+    { korean: "끝나서는 안 된다", reading: "kkeut-na-seo-neun an doen-da", meaning: "不能止步于", grammar: "V-아/어서는 안 되다", note: "原形 끝나다，动词；引出作者的政策建议。" },
+    { korean: "마련되어야 한다", reading: "ma-ryeon-doe-eo-ya han-da", meaning: "必须被准备好", grammar: "피동 + V-아/어야 하다", note: "原形 마련되다，被动动词；强调回收、清洗、信息系统都要具备。" },
+    { korean: "성공 여부", reading: "seong-gong yeo-bu", meaning: "成功与否", note: "名词词组；结论句常用表达，用于判断制度成败。" },
+    { korean: "정교함에 달려 있다", reading: "jeong-gyo-ha-me dal-lyeo it-da", meaning: "取决于精密程度", grammar: "N에 달려 있다", note: "原形 달리다，自动词；结论中把重点从容器本身转向城市系统。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-기 위해", meaning: "为了做某事", example: "일회용품 사용을 줄이기 위해 재사용 용기를 도입하고 있다.", note: "用于说明政策、制度、行动的目的。" },
+    { pattern: "V-ㄴ/는다는 점에서", meaning: "从……这一点来看", example: "자원 순환을 촉진한다는 점에서 기대를 받고 있다.", note: "常用于评价某一制度的正面或负面依据。" },
+    { pattern: "V-는 것 이상의 N", meaning: "超过……的、更进一步的", example: "일회용품을 대체하는 것 이상의 조건이 필요하다.", note: "用于指出表面措施之外还需要更深层条件。" },
+    { pattern: "N에 달려 있다", meaning: "取决于……", example: "성공 여부는 도시 시스템의 정교함에 달려 있다.", note: "高级论证结论常用结构，适合写作 54 题。" },
+  ],
+  quiz: [
+    {
+      question: "文章认为 재사용 용기 制度受到期待的原因是什么？",
+      answer:
+        "因为它有望减少垃圾排放，并促进资源循环，所以被认为可能有助于环保。",
+    },
+    {
+      question: "为什么作者说 재사용 용기 不一定自动环保？",
+      answer:
+        "因为如果回收率低，就要继续生产新容器，而且清洗用水、能源和运输距离也会影响实际环境效果。",
+    },
+    {
+      question: "文章认为该政策成功需要哪些配套条件？",
+      answer:
+        "需要容易归还的回收网络、符合卫生标准的清洗体系，以及让使用者确认参与效果的信息提供。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "일회용품을 줄이기 위한 재사용 용기 정책에 대해 어떻게 생각하는지 쓰십시오. 이 정책의 장점과 한계를 모두 언급하고, 정책이 실제로 효과를 내기 위해 필요한 조건을 두 가지 이상 제시하십시오.",
+    checklist: ["일회용품 감소", "회수율", "세척과 운송", "시민 편의", "도시 시스템"],
+    sentenceBank: [
+      "재사용 용기 정책은 쓰레기 배출량을 줄이고 자원 순환을 촉진할 수 있다.",
+      "그러나 회수율이 낮거나 세척과 운송 과정이 비효율적이면 기대한 효과를 얻기 어렵다.",
+      "따라서 편리한 회수망과 투명한 정보 제공, 안정적인 세척 체계를 함께 마련해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august5Reading,
   august4Reading,
   august3Reading,
   august2Reading,
