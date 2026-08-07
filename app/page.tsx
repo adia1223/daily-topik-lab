@@ -1643,7 +1643,7 @@ const august5Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august6Reading: DailyReading = {
   id: "2026-08-06-reusable-container-policy",
   date: "2026-08-06",
   title: "재사용 용기는 환경 정책의 답이 될 수 있는가",
@@ -1712,8 +1712,76 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-07-platform-career-policy",
+  date: "2026-08-07",
+  title: "플랫폼 노동자의 경력은 어떻게 보호되어야 하는가",
+  level: "TOPIK II 5-6级",
+  topic: "经济 / 劳动政策",
+  estimatedTime: "18 分钟",
+  korean:
+    "배달, 번역, 디자인처럼 온라인 플랫폼을 통해 일을 구하는 노동자가 늘어나면서 노동 시장의 모습도 빠르게 달라지고 있다. 플랫폼 노동은 원하는 시간에 일을 선택할 수 있다는 점에서 개인에게 자유를 제공하는 것처럼 보인다. 실제로 육아나 학업 때문에 정해진 근무 시간을 지키기 어려운 사람들에게는 중요한 소득원이 되기도 한다. 그러나 이러한 유연성이 곧 안정적인 경력 형성으로 이어지는 것은 아니다. 플랫폼에서 수행한 일은 짧은 단위로 쪼개져 기록되는 경우가 많아, 노동자가 쌓아 온 경험이 공식적인 경력으로 인정받기 어렵다. 또한 평가 점수와 주문 배정 기준이 플랫폼 내부 알고리즘에 의해 결정되지만 그 과정이 충분히 공개되지 않아 노동자는 자신의 노동 조건을 개선할 근거를 찾기 힘들다. 일의 양이 줄어들거나 계정이 갑자기 정지되어도 그 이유를 설명받지 못하면, 개인의 노력만으로 다음 기회를 준비하기 어렵다. 따라서 플랫폼 노동 정책은 단순히 최저 보수나 보험 적용 여부를 논의하는 데 그쳐서는 안 된다. 노동자가 수행한 업무 이력과 기술을 표준화된 방식으로 증명할 수 있게 하고, 평가와 배정 기준에 대한 설명을 요구할 권리도 보장해야 한다. 결국 플랫폼 노동자의 보호는 현재의 소득을 보전하는 문제를 넘어, 불안정한 일 경험이 장기적인 경력 자산으로 전환될 수 있도록 사회적 장치를 마련하는 데 달려 있다.",
+  chinese:
+    "随着通过线上平台寻找配送、翻译、设计等工作的人不断增加，劳动市场的面貌也在快速变化。平台劳动从可以选择自己想工作的时间这一点来看，似乎为个人提供了自由。实际上，对于因育儿或学业而难以遵守固定工作时间的人来说，它也会成为重要收入来源。然而，这种灵活性并不意味着会自然连接到稳定的职业发展。平台上完成的工作常被拆分成很短的单位来记录，劳动者积累的经验很难被认可为正式履历。此外，评分和订单分配标准由平台内部算法决定，但其过程没有充分公开，劳动者难以找到改善自身劳动条件的依据。当工作量减少或账号突然被停用却无法得到理由说明时，个人仅靠努力很难准备下一次机会。因此，平台劳动政策不能只停留在讨论最低报酬或保险适用与否上。还应让劳动者能够用标准化方式证明自己完成过的工作经历和技能，并保障其要求解释评价与分配标准的权利。归根结底，保护平台劳动者并不只是保住当前收入的问题，而在于建立社会机制，使不稳定的工作经验能够转化为长期职业资产。",
+  tokens: [
+    { korean: "온라인 플랫폼을 통해", reading: "ol-la-in peul-laet-pom-eul tong-hae", meaning: "通过线上平台", grammar: "N을/를 통해", note: "说明劳动者获得工作的渠道，是文章讨论对象的范围限定。" },
+    { korean: "노동자가 늘어나면서", reading: "no-dong-ja-ga neu-reo-na-myeon-seo", meaning: "随着劳动者增加", grammar: "V-(으)면서", note: "原形 늘어나다，动词；引出劳动市场变化的背景。" },
+    { korean: "원하는 시간에", reading: "won-ha-neun si-ga-ne", meaning: "在想要的时间", grammar: "V-는 N", note: "原形 원하다，动词；说明平台劳动的表面优点。" },
+    { korean: "자유를 제공하는 것처럼 보인다", reading: "ja-yu-reul je-gong-ha-neun geot-cheo-reom bo-in-da", meaning: "看起来像提供自由", grammar: "V-는 것처럼 보이다", note: "原形 제공하다；暗示后文会对这种表面判断进行修正。" },
+    { korean: "중요한 소득원이 되기도 한다", reading: "jung-yo-han so-deu-gwo-ni doe-gi-do han-da", meaning: "也会成为重要收入来源", grammar: "V-기도 하다", note: "原形 되다；承认平台劳动的积极作用，形成让步。" },
+    { korean: "곧 안정적인 경력 형성으로 이어지는 것은 아니다", reading: "got an-jeong-jeo-gin gyeong-nyeok hyeong-seong-eu-ro i-eo-ji-neun geo-seun a-ni-da", meaning: "并不等于会连接到稳定职业形成", grammar: "곧 ... 것은 아니다", note: "原形 이어지다；本文核心转折句，否定简单因果。" },
+    { korean: "짧은 단위로 쪼개져", reading: "jjal-beun da-nwi-ro jjo-gae-jyeo", meaning: "被拆成很短的单位", grammar: "피동 + V-아/어", note: "原形 쪼개다；解释平台工作难以积累成正式履历的原因。" },
+    { korean: "공식적인 경력으로 인정받기 어렵다", reading: "gong-sik-jeo-gin gyeong-nyeo-geu-ro in-jeong-bat-gi eo-ryeop-da", meaning: "难以被认可为正式履历", grammar: "V-기 어렵다", note: "原形 인정받다；文章中心问题之一。" },
+    { korean: "주문 배정 기준", reading: "ju-mun bae-jeong gi-jun", meaning: "订单分配标准", note: "名词词组；平台算法影响劳动条件的关键变量。" },
+    { korean: "충분히 공개되지 않아", reading: "chung-bun-hi gong-gae-doe-ji a-na", meaning: "没有被充分公开", grammar: "피동 + V-지 않다", note: "原形 공개되다；指出算法不透明带来的制度问题。" },
+    { korean: "근거를 찾기 힘들다", reading: "geun-geo-reul chat-gi him-deul-da", meaning: "难以找到依据", grammar: "V-기 힘들다", note: "原形 찾다；说明劳动者无法改善条件的原因。" },
+    { korean: "계정이 갑자기 정지되어도", reading: "gye-jeong-i gap-ja-gi jeong-ji-doe-eo-do", meaning: "即使账号突然被停用", grammar: "V-아/어도", note: "原形 정지되다，被动动词；举出平台劳动不稳定性的具体场景。" },
+    { korean: "설명받지 못하면", reading: "seol-myeong-bat-ji mot-ha-myeon", meaning: "如果得不到说明", grammar: "V-지 못하면", note: "原形 설명받다；连接到解释权的必要性。" },
+    { korean: "논의하는 데 그쳐서는 안 된다", reading: "non-ui-ha-neun de geu-chyeo-seo-neun an doen-da", meaning: "不应止步于讨论", grammar: "V-는 데 그치다 + V-아/어서는 안 되다", note: "原形 논의하다 / 그치다；引出政策建议。" },
+    { korean: "표준화된 방식으로 증명할 수 있게", reading: "pyo-jun-hwa-doen bang-sik-eu-ro jeung-myeong-hal su it-ge", meaning: "使其能用标准化方式证明", grammar: "V-(으)ㄹ 수 있게", note: "原形 표준화되다 / 증명하다；提出履历认证机制。" },
+    { korean: "권리도 보장해야 한다", reading: "gwol-li-do bo-jang-hae-ya han-da", meaning: "也必须保障权利", grammar: "V-아/어야 하다", note: "原形 보장하다；说明政策应包含解释权。" },
+    { korean: "소득을 보전하는 문제를 넘어", reading: "so-deu-geul bo-jeon-ha-neun mun-je-reul neo-meo", meaning: "超越保全收入的问题", grammar: "N을/를 넘어", note: "原形 보전하다；把讨论从短期收入推进到长期职业。" },
+    { korean: "경력 자산으로 전환될 수 있도록", reading: "gyeong-nyeok ja-sa-neu-ro jeon-hwan-doel su it-do-rok", meaning: "使其能够转化为职业资产", grammar: "V-(으)ㄹ 수 있도록", note: "原形 전환되다；结论中的核心政策目标。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-는 것처럼 보이다", meaning: "看起来像是……", example: "플랫폼 노동은 개인에게 자유를 제공하는 것처럼 보인다.", note: "用于先呈现表面现象，后文再进行限定或反驳。" },
+    { pattern: "곧 ... 것은 아니다", meaning: "并不等于……", example: "유연성이 곧 안정적인 경력 형성으로 이어지는 것은 아니다.", note: "高级论证常用结构，用来否定过于简单的因果关系。" },
+    { pattern: "V-는 데 그쳐서는 안 된다", meaning: "不应止步于做某事", example: "최저 보수를 논의하는 데 그쳐서는 안 된다.", note: "常用于政策建议段，表示现有讨论还不充分。" },
+    { pattern: "N을/를 넘어", meaning: "超越……，不只是……", example: "현재의 소득을 보전하는 문제를 넘어 경력 자산을 보호해야 한다.", note: "适合写作 54 题中把观点从局部问题提升到结构性问题。" },
+  ],
+  quiz: [
+    {
+      question: "文章承认平台劳动有什么积极作用？",
+      answer:
+        "它可以让劳动者选择想工作的时间，对因育儿或学业难以固定上班的人来说，也可能成为重要收入来源。",
+    },
+    {
+      question: "为什么作者认为平台劳动难以形成稳定 경력？",
+      answer:
+        "因为平台工作常被拆成短单位记录，经验难以被认可为正式履历，而且算法评价和订单分配标准不透明。",
+    },
+    {
+      question: "文章提出平台劳动政策应补充哪些保护？",
+      answer:
+        "应建立标准化的工作经历与技能证明方式，并保障劳动者要求说明评价和分配标准的权利。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "플랫폼 노동자의 경력 보호에 대해 어떻게 생각하는지 쓰십시오. 플랫폼 노동의 장점과 불안정성을 모두 언급하고, 노동자의 경험이 장기적인 경력으로 인정받기 위해 필요한 제도적 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["노동 시간의 유연성", "경력 인정의 어려움", "알고리즘 투명성", "업무 이력 증명", "사회적 보호"],
+    sentenceBank: [
+      "플랫폼 노동은 시간 선택의 자유를 제공하지만 안정적인 경력 형성으로 이어지기 어렵다.",
+      "노동자가 수행한 업무와 기술을 표준화된 방식으로 증명할 수 있어야 한다.",
+      "또한 평가와 배정 기준에 대한 설명을 요구할 권리를 보장해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august6Reading,
   august5Reading,
   august4Reading,
   august3Reading,

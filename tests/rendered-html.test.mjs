@@ -31,6 +31,7 @@ test("server-renders the TOPIK reading archive", async () => {
   const html = await response.text();
   assert.match(html, /<title>Daily TOPIK Lab \| 韩语阅读训练<\/title>/i);
   assert.match(html, /每日文章归档/);
+  assert.match(html, /플랫폼 노동자의 경력은 어떻게 보호되어야 하는가/);
   assert.match(html, /재사용 용기는 환경 정책의 답이 될 수 있는가/);
   assert.match(html, /공공 도서관의 디지털 서비스는 누구를 위한 것인가/);
   assert.match(html, /학교 밖 청소년 지원은 왜 지역의 일이 되는가/);
@@ -55,7 +56,7 @@ test("server-renders the TOPIK reading archive", async () => {
   assert.match(html, /도시의 탄소 예산은 누구의 몫인가/);
   assert.match(html, /인공지능 시대의 질문하는 능력/);
   assert.match(html, /도시의 조용한 변화/);
-  assert.match(html, /24<!-- --> 篇文章/);
+  assert.match(html, /25<!-- --> 篇文章/);
   assert.match(html, /打开全文/);
 });
 
