@@ -1712,7 +1712,7 @@ const august6Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august7Reading: DailyReading = {
   id: "2026-08-07-platform-career-policy",
   date: "2026-08-07",
   title: "플랫폼 노동자의 경력은 어떻게 보호되어야 하는가",
@@ -1779,8 +1779,279 @@ const todayReading: DailyReading = {
   },
 };
 
+const august8Reading: DailyReading = {
+  id: "2026-08-08-ai-tutoring-equity",
+  date: "2026-08-08",
+  title: "인공지능 학습 도우미는 교육 격차를 줄일 수 있는가",
+  level: "TOPIK II 5-6级",
+  topic: "教育 / 科技政策",
+  estimatedTime: "18 分钟",
+  korean:
+    "최근 학교와 학원에서는 학생의 풀이 과정과 오답 유형을 분석해 맞춤형 문제를 제시하는 인공지능 학습 도우미가 빠르게 확산되고 있다. 이 기술은 학생마다 부족한 부분을 즉시 찾아내고 반복 학습을 도와준다는 점에서 긍정적인 평가를 받는다. 교사가 한 명씩 살피기 어려운 대규모 학급에서도 학생 개인의 이해 정도를 확인할 수 있다는 기대도 있다. 그러나 인공지능 학습 도우미가 교육 격차를 자동으로 줄여 줄 것이라고 단정하기는 어렵다. 우선 가정의 인터넷 환경과 기기 보유 여부에 따라 학생들이 이 서비스를 이용할 수 있는 시간이 달라진다. 또한 알고리즘이 과거의 풀이 기록만을 근거로 학습 수준을 판단하면, 일시적으로 성적이 낮았던 학생에게 쉬운 문제만 반복해서 제시할 위험이 있다. 이 경우 학생은 도전적인 과제를 경험할 기회를 잃고 자신의 가능성을 좁게 인식하게 될 수 있다. 교사의 역할도 단순히 기계가 제시한 결과를 확인하는 데 그쳐서는 안 된다. 교사는 학생의 심리 상태, 가정 배경, 수업 참여 태도처럼 데이터로 충분히 드러나지 않는 요소를 함께 고려해야 한다. 따라서 인공지능 학습 도우미를 도입할 때에는 기기 접근성을 보장하고, 알고리즘의 추천 기준을 점검하며, 교사가 최종적으로 학습 방향을 조정할 수 있는 권한을 유지해야 한다. 결국 이 기술의 가치는 교사를 대체하는 데 있는 것이 아니라, 더 많은 학생이 적절한 도움을 받을 수 있도록 교육 현장의 판단을 보조하는 데 있다.",
+  chinese:
+    "最近，学校和培训机构中能够分析学生解题过程和错题类型，并提出个性化题目的人工智能学习助手正在迅速扩散。该技术因为能够立即找出每个学生不足的部分并帮助反复练习而受到积极评价。在教师难以逐一照看的大规模班级中，它也被期待能够确认每个学生的理解程度。然而，不能断定人工智能学习助手会自动缩小教育差距。首先，根据家庭网络环境和是否拥有设备，学生能够使用该服务的时间会有所不同。此外，如果算法只以过去的解题记录为依据判断学习水平，就有可能只向曾短暂成绩较低的学生反复推荐简单题目。这样一来，学生可能会失去体验有挑战性任务的机会，并狭隘地认识自己的可能性。教师的作用也不应止步于确认机器给出的结果。教师还应同时考虑学生心理状态、家庭背景、课堂参与态度等无法由数据充分呈现的因素。因此，引入人工智能学习助手时，应保障设备可及性，检查算法推荐标准，并维持教师最终调整学习方向的权限。归根结底，该技术的价值不在于替代教师，而在于辅助教育现场的判断，使更多学生能够获得适当帮助。",
+  tokens: [
+    { korean: "풀이 과정", reading: "pu-ri gwa-jeong", meaning: "解题过程", note: "名词词组；比单纯看答案更能反映学生理解方式。" },
+    { korean: "오답 유형", reading: "o-dap yu-hyeong", meaning: "错题类型", note: "名词词组；用于说明 AI 推荐题目的分析依据。" },
+    { korean: "맞춤형 문제를 제시하는", reading: "mat-chum-hyeong mun-je-reul je-si-ha-neun", meaning: "提出个性化题目的", grammar: "V-는", note: "原形 제시하다，动词；修饰 인공지능 학습 도우미。" },
+    { korean: "빠르게 확산되고 있다", reading: "ppa-reu-ge hwak-san-doe-go it-da", meaning: "正在快速扩散", grammar: "피동 + V-고 있다", note: "原形 확산되다；说明教育现场的新趋势。" },
+    { korean: "부족한 부분을 즉시 찾아내고", reading: "bu-jo-kan bu-bu-neul jeuk-si cha-ja-nae-go", meaning: "立即找出不足部分", grammar: "V-아/어 내다", note: "原形 찾아내다；强调技术优势。" },
+    { korean: "긍정적인 평가를 받는다", reading: "geung-jeong-jeo-gin pyeong-ga-reul bat-neun-da", meaning: "受到积极评价", note: "固定搭配；用于说明社会评价。" },
+    { korean: "이해 정도를 확인할 수 있다", reading: "i-hae jeong-do-reul hwa-gin-hal su it-da", meaning: "可以确认理解程度", grammar: "V-(으)ㄹ 수 있다", note: "原形 확인하다；指出大班教学中的期待效果。" },
+    { korean: "자동으로 줄여 줄 것이라고 단정하기는 어렵다", reading: "ja-dong-eu-ro ju-ryeo jul geo-si-ra-go dan-jeong-ha-gi-neun eo-ryeop-da", meaning: "难以断定会自动减少", grammar: "V-기 어렵다", note: "原形 단정하다；文章核心反驳句，否定技术决定论。" },
+    { korean: "기기 보유 여부", reading: "gi-gi bo-yu yeo-bu", meaning: "是否拥有设备", note: "名词词组；教育差距的物质条件之一。" },
+    { korean: "근거로 판단하면", reading: "geun-geo-ro pan-dan-ha-myeon", meaning: "如果以……为依据判断", grammar: "N을/를 근거로 + V-(으)면", note: "原形 판단하다；引出算法误判风险。" },
+    { korean: "쉬운 문제만 반복해서 제시할 위험", reading: "swi-un mun-je-man ban-bok-hae-seo je-si-hal wi-heom", meaning: "只反复提出简单题目的风险", grammar: "V-(으)ㄹ 위험", note: "说明个性化推荐可能固化低期待。" },
+    { korean: "도전적인 과제", reading: "do-jeon-jeo-gin gwa-je", meaning: "有挑战性的任务", note: "名词词组；与 쉬운 문제 对比。" },
+    { korean: "가능성을 좁게 인식하게 될 수 있다", reading: "ga-neung-seong-eul jop-ge in-sik-ha-ge doel su it-da", meaning: "可能狭隘地认识可能性", grammar: "V-게 되다 + V-(으)ㄹ 수 있다", note: "原形 인식하다；指出教育影响不只是分数。" },
+    { korean: "확인하는 데 그쳐서는 안 된다", reading: "hwa-gin-ha-neun de geu-chyeo-seo-neun an doen-da", meaning: "不应止步于确认", grammar: "V-는 데 그치다 + V-아/어서는 안 되다", note: "原形 확인하다 / 그치다；转向教师角色。" },
+    { korean: "데이터로 충분히 드러나지 않는 요소", reading: "de-i-teo-ro chung-bun-hi deu-reo-na-ji an-neun yo-so", meaning: "不能由数据充分呈现的因素", grammar: "V-지 않다 + N", note: "强调教师判断不能被数据完全替代。" },
+    { korean: "기기 접근성을 보장하고", reading: "gi-gi jeop-geun-seong-eul bo-jang-ha-go", meaning: "保障设备可及性", grammar: "V-고", note: "原形 보장하다；政策建议之一。" },
+    { korean: "추천 기준을 점검하며", reading: "chu-cheon gi-jun-eul jeom-geom-ha-myeo", meaning: "检查推荐标准", grammar: "V-(으)며", note: "原形 점검하다；政策建议之二，指向算法监督。" },
+    { korean: "권한을 유지해야 한다", reading: "gwon-ha-neul yu-ji-hae-ya han-da", meaning: "必须维持权限", grammar: "V-아/어야 하다", note: "原形 유지하다；强调教师最终调整权。" },
+    { korean: "교사를 대체하는 데 있는 것이 아니라", reading: "gyo-sa-reul dae-che-ha-neun de it-neun geo-si a-ni-ra", meaning: "不在于替代教师", grammar: "V-는 데 있다 + 것이 아니라", note: "原形 대체하다；结论中的对比结构。" },
+    { korean: "판단을 보조하는 데 있다", reading: "pan-da-neul bo-jo-ha-neun de it-da", meaning: "在于辅助判断", grammar: "V-는 데 있다", note: "原形 보조하다；说明技术的合理定位。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-아/어 내다", meaning: "做出、找出、完成某动作", example: "부족한 부분을 즉시 찾아낸다.", note: "强调通过努力或能力得到结果，常用于 분석하다、찾다 等动词后。" },
+    { pattern: "V-기 어렵다", meaning: "难以做某事", example: "교육 격차를 자동으로 줄여 줄 것이라고 단정하기는 어렵다.", note: "用于谨慎反驳，避免绝对化判断。" },
+    { pattern: "V-는 데 그쳐서는 안 된다", meaning: "不应止步于……", example: "교사의 역할은 결과를 확인하는 데 그쳐서는 안 된다.", note: "政策论证常用，表示现有做法不充分。" },
+    { pattern: "V-는 데 있다", meaning: "在于做某事", example: "기술의 가치는 판단을 보조하는 데 있다.", note: "适合结论句，明确制度或技术的真正目标。" },
+  ],
+  quiz: [
+    {
+      question: "文章认为 인공지능 학습 도우미 为什么受到积极评价？",
+      answer:
+        "因为它能分析学生的解题过程和错题类型，立即找出不足并提供个性化练习，也能帮助教师了解学生理解程度。",
+    },
+    {
+      question: "作者为什么说它不一定自动减少教育差距？",
+      answer:
+        "因为家庭网络和设备条件不同会影响使用时间，算法若只依据过去记录判断水平，也可能让学生反复做简单题。",
+    },
+    {
+      question: "文章认为引入该技术时应保障哪些条件？",
+      answer:
+        "应保障设备可及性，检查算法推荐标准，并保持教师最终调整学习方向的权限。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "교육 현장에서 인공지능 학습 도우미를 활용하는 것에 대해 어떻게 생각하는지 쓰십시오. 이 기술의 장점과 교육 격차를 심화시킬 가능성을 모두 언급하고, 바람직한 활용 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["맞춤형 학습", "교육 격차", "기기 접근성", "알고리즘 점검", "교사의 역할"],
+    sentenceBank: [
+      "인공지능 학습 도우미는 학생의 부족한 부분을 빠르게 파악해 맞춤형 학습을 도울 수 있다.",
+      "그러나 기기 접근성과 알고리즘 추천 기준이 공정하지 않으면 교육 격차가 오히려 커질 수 있다.",
+      "따라서 기술 도입과 함께 교사의 판단 권한과 학생 지원 체계를 유지해야 한다.",
+    ],
+  },
+};
+
+const august9Reading: DailyReading = {
+  id: "2026-08-09-heritage-restoration-memory",
+  date: "2026-08-09",
+  title: "문화재 복원은 누구의 기억을 되살리는가",
+  level: "TOPIK II 5-6级",
+  topic: "文化 / 公共政策",
+  estimatedTime: "18 分钟",
+  korean:
+    "오래된 문화재를 복원하는 일은 단순히 낡은 건물을 새롭게 고치는 작업으로 이해되기 쉽다. 그러나 문화재 복원은 한 지역이 어떤 과거를 기억하고 어떤 이야기를 다음 세대에 전할 것인지를 결정하는 공공적 행위에 가깝다. 최근 여러 지방자치단체가 관광객을 유치하기 위해 성곽, 옛 관청, 전통 가옥을 복원하고 있지만, 그 과정에서 역사적 정확성과 지역 주민의 생활이 충분히 고려되지 않는다는 지적도 나온다. 예를 들어 사진이 많이 남아 있지 않은 건축물을 화려하게 재현하면 방문객의 관심은 끌 수 있지만, 실제 모습과 다른 이미지를 역사로 받아들이게 할 위험이 있다. 또한 복원 구역 주변이 관광지로 바뀌면서 임대료가 오르고 오랫동안 그곳에서 살아온 주민들이 밀려나는 경우도 발생한다. 문화재가 지역 경제를 살리는 수단이 될 수 있다는 점은 부정하기 어렵다. 다만 경제적 효과만을 앞세우면 문화재는 공동의 기억을 담은 장소가 아니라 소비를 위한 배경으로 축소될 수 있다. 따라서 복원 사업은 전문가의 고증, 주민의 의견 수렴, 복원 이후의 생활 환경 대책을 함께 포함해야 한다. 특히 어떤 부분을 원형에 가깝게 남기고 어떤 부분을 현대적으로 활용할 것인지에 대해 공개적으로 논의할 필요가 있다. 결국 문화재 복원의 가치는 과거를 보기 좋게 재현하는 데 있는 것이 아니라, 과거와 현재의 삶이 충돌하지 않도록 조정하며 지역 사회가 자신의 기억을 스스로 해석할 수 있게 하는 데 있다.",
+  chinese:
+    "修复古老文化遗产的工作，容易被理解为只是把破旧建筑重新修好的作业。然而，文化遗产修复更接近一种公共行为，它决定一个地区要记住怎样的过去，以及要把怎样的故事传给下一代。最近，许多地方政府为了吸引游客，正在修复城墙、旧官署、传统住宅，但也有人指出，在这一过程中历史准确性和当地居民生活没有得到充分考虑。比如，把留下照片不多的建筑物复原得过于华丽，虽然能吸引游客关注，却有让人们把与真实面貌不同的形象当作历史接受的风险。此外，修复区域周边转变为旅游地后，租金上涨，长期居住在那里的居民被挤出的情况也会发生。文化遗产能够成为振兴地区经济的手段，这一点难以否认。但是，如果只把经济效果放在前面，文化遗产就可能不再是承载共同记忆的场所，而被缩小为用于消费的背景。因此，修复项目应同时包含专家考证、居民意见收集，以及修复后的生活环境对策。尤其需要公开讨论哪些部分应尽量保留原貌，哪些部分可以现代化利用。归根结底，文化遗产修复的价值不在于把过去复现得好看，而在于协调过去与当下生活不发生冲突，并让地区社会能够自主解释自己的记忆。",
+  tokens: [
+    { korean: "문화재를 복원하는 일", reading: "mun-hwa-jae-reul bok-won-ha-neun il", meaning: "修复文化遗产这件事", grammar: "V-는 N", note: "原形 복원하다，动词；文章核心议题。" },
+    { korean: "낡은 건물을 새롭게 고치는 작업", reading: "nal-geun geon-mu-reul sae-rop-ge go-chi-neun ja-geop", meaning: "把旧建筑重新修好的作业", grammar: "A/V-는 N", note: "用于说明一般人对 복원 的表面理解。" },
+    { korean: "이해되기 쉽다", reading: "i-hae-doe-gi swip-da", meaning: "容易被理解为", grammar: "피동 + V-기 쉽다", note: "原形 이해되다；引出需要修正的常见看法。" },
+    { korean: "공공적 행위에 가깝다", reading: "gong-gong-jeok haeng-wi-e ga-kkap-da", meaning: "接近公共行为", grammar: "N에 가깝다", note: "原形 가깝다；把修复从技术问题提升为公共政策问题。" },
+    { korean: "관광객을 유치하기 위해", reading: "gwan-gwang-gae-geul yu-chi-ha-gi wi-hae", meaning: "为了吸引游客", grammar: "V-기 위해", note: "原形 유치하다；说明地方政府推动修复的现实目的。" },
+    { korean: "역사적 정확성", reading: "yeok-sa-jeok jeong-hwak-seong", meaning: "历史准确性", note: "名词词组；评价修复项目的核心标准之一。" },
+    { korean: "충분히 고려되지 않는다", reading: "chung-bun-hi go-ryeo-doe-ji an-neun-da", meaning: "没有被充分考虑", grammar: "피동 + V-지 않다", note: "原形 고려되다；批评修复过程中的缺口。" },
+    { korean: "지적도 나온다", reading: "ji-jeok-do na-on-da", meaning: "也出现批评指出", grammar: "N도 나오다", note: "新闻论证常用表达，提示反对意见。" },
+    { korean: "화려하게 재현하면", reading: "hwa-ryeo-ha-ge jae-hyeon-ha-myeon", meaning: "如果华丽地再现", grammar: "A-게 + V-(으)면", note: "原形 재현하다；举例说明错误复原的诱惑。" },
+    { korean: "관심은 끌 수 있지만", reading: "gwan-si-meun kkeul su it-ji-man", meaning: "虽然能吸引关注", grammar: "V-(으)ㄹ 수 있지만", note: "原形 끌다；让步后接风险。" },
+    { korean: "역사로 받아들이게 할 위험", reading: "yeok-sa-ro ba-da-deu-ri-ge hal wi-heom", meaning: "使人当作历史接受的风险", grammar: "V-게 하다 + N", note: "原形 받아들이다；说明复原失真会影响历史认知。" },
+    { korean: "관광지로 바뀌면서", reading: "gwan-gwang-ji-ro ba-kkwi-myeon-seo", meaning: "随着变成旅游地", grammar: "V-(으)면서", note: "原形 바뀌다；引出居民生活层面的副作用。" },
+    { korean: "밀려나는 경우", reading: "mil-lyeo-na-neun gyeong-u", meaning: "被挤出的情况", grammar: "피동 + V-는 N", note: "原形 밀려나다；描述原住民因租金和开发压力离开。" },
+    { korean: "부정하기 어렵다", reading: "bu-jeong-ha-gi eo-ryeop-da", meaning: "难以否认", grammar: "V-기 어렵다", note: "原形 부정하다；承认经济效果，构成平衡论证。" },
+    { korean: "경제적 효과만을 앞세우면", reading: "gyeong-je-jeok hyo-gwa-ma-neul ap-se-u-myeon", meaning: "如果只把经济效果放在前面", grammar: "N만을 + V-(으)면", note: "原形 앞세우다；作者批评的政策偏向。" },
+    { korean: "공동의 기억을 담은 장소", reading: "gong-dong-ui gi-eo-geul da-meun jang-so", meaning: "承载共同记忆的场所", grammar: "V-(으)ㄴ N", note: "原形 담다；文化类文章高频抽象表达。" },
+    { korean: "소비를 위한 배경으로 축소될 수 있다", reading: "so-bi-reul wi-han bae-gyeong-eu-ro chuk-so-doel su it-da", meaning: "可能被缩小为消费背景", grammar: "피동 + V-(으)ㄹ 수 있다", note: "原形 축소되다；指出旅游化的风险。" },
+    { korean: "의견 수렴", reading: "ui-gyeon su-ryeom", meaning: "意见收集", note: "名词词组；公共政策程序中的必要环节。" },
+    { korean: "원형에 가깝게 남기고", reading: "won-hyeong-e ga-kkap-ge nam-gi-go", meaning: "尽量接近原貌地保留", grammar: "N에 가깝게 + V-고", note: "原形 남기다；对应修复方案中的保留原则。" },
+    { korean: "스스로 해석할 수 있게 하는 데 있다", reading: "seu-seu-ro hae-seok-hal su it-ge ha-neun de it-da", meaning: "在于使其能够自主解释", grammar: "V-(으)ㄹ 수 있게 하다 + V-는 데 있다", note: "原形 해석하다；结论中明确修复的公共价值。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-기 쉽다", meaning: "容易……", example: "복원은 낡은 건물을 고치는 작업으로 이해되기 쉽다.", note: "用于提出容易出现的误解或倾向。" },
+    { pattern: "N에 가깝다", meaning: "接近于……", example: "문화재 복원은 공공적 행위에 가깝다.", note: "用于重新界定某个概念的性质。" },
+    { pattern: "V-(으)ㄹ 수 있지만", meaning: "虽然能够……但是……", example: "방문객의 관심은 끌 수 있지만 실제 모습과 다를 위험이 있다.", note: "让步结构，适合 TOPIK 高级论证。" },
+    { pattern: "V-는 데 있다", meaning: "在于做某事", example: "복원의 가치는 지역 사회가 기억을 해석할 수 있게 하는 데 있다.", note: "常用于结论句，明确政策价值。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么说 문화재 복원 不只是修建筑？",
+      answer:
+        "因为它决定地区如何记忆过去、向下一代传递什么故事，是涉及公共记忆和地区生活的公共行为。",
+    },
+    {
+      question: "作者指出过度 관광 중심 복원 可能带来哪些问题？",
+      answer:
+        "可能让游客把不符合真实历史的华丽形象当作历史，也可能因旅游化导致租金上涨、原住民被挤出。",
+    },
+    {
+      question: "文章认为复原项目应包括哪些程序或对策？",
+      answer:
+        "应包括专家考证、居民意见收集、修复后的生活环境对策，并公开讨论原貌保留与现代利用的范围。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "문화재 복원 사업을 추진할 때 무엇을 가장 중요하게 고려해야 하는지에 대해 쓰십시오. 관광 활성화의 장점과 역사 왜곡 및 주민 생활 침해의 문제를 모두 언급하고, 바람직한 복원 방향을 두 가지 이상 제시하십시오.",
+    checklist: ["역사적 정확성", "관광 활성화", "주민 의견", "생활 환경", "공동의 기억"],
+    sentenceBank: [
+      "문화재 복원은 지역 경제를 살리는 계기가 될 수 있지만 역사적 정확성을 잃어서는 안 된다.",
+      "복원 과정에서 주민의 생활과 의견이 배제되면 문화재는 소비를 위한 배경으로 축소될 수 있다.",
+      "따라서 전문가의 고증과 주민 의견 수렴, 복원 이후의 생활 대책이 함께 마련되어야 한다.",
+    ],
+  },
+};
+
+const august10Reading: DailyReading = {
+  id: "2026-08-10-disaster-alert-action",
+  date: "2026-08-10",
+  title: "재난 문자는 시민을 움직이게 하는가",
+  level: "TOPIK II 5-6级",
+  topic: "公共政策 / 社会安全",
+  estimatedTime: "18 分钟",
+  korean:
+    "폭염, 폭우, 산불처럼 일상 속 재난이 잦아지면서 지방자치단체가 시민에게 보내는 재난 문자의 역할도 커지고 있다. 재난 문자는 위험을 빠르게 알리고 시민이 즉시 대피하거나 행동을 바꾸게 한다는 점에서 중요한 안전 장치이다. 특히 텔레비전이나 인터넷을 확인하기 어려운 상황에서도 휴대전화만 있으면 정보를 받을 수 있다는 장점이 있다. 그러나 재난 문자가 많이 발송된다고 해서 시민의 안전 행동이 자동으로 강화되는 것은 아니다. 내용이 지나치게 길거나 추상적이면 수신자는 무엇을 먼저 해야 하는지 판단하기 어렵다. 또한 같은 수준의 경고가 반복되면 사람들은 실제 위험의 크기를 구분하지 못하고 결국 문자를 무시하게 될 수 있다. 일부 지역에서는 폭우 경보와 교통 통제 안내가 동시에 보내졌지만 대피 장소와 이동 경로가 명확히 제시되지 않아 혼란이 커지기도 했다. 따라서 재난 문자는 빠른 발송보다 정확한 행동 지침을 제공하는 데 초점을 맞추어야 한다. 위험 지역, 필요한 행동, 도움을 받을 수 있는 연락처를 짧고 구체적으로 제시하고, 외국인과 노인을 위해 쉬운 표현과 다국어 안내도 함께 마련해야 한다. 결국 재난 문자의 가치는 많은 정보를 보내는 데 있는 것이 아니라, 위기 상황에서 시민이 망설이지 않고 적절한 행동을 선택할 수 있게 하는 데 있다.",
+  chinese:
+    "随着酷暑、暴雨、山火等日常灾害频繁发生，地方政府发送给市民的灾害短信作用也在变大。灾害短信能够快速告知危险，并让市民立即避难或改变行动，因此是重要的安全装置。尤其是在难以查看电视或网络的情况下，只要有手机就能接收信息，这是它的优点。然而，并不能因为灾害短信发送得多，市民的安全行动就会自动加强。如果内容过长或过于抽象，接收者就难以判断首先应做什么。此外，如果同等程度的警报反复出现，人们就无法区分真实危险的大小，最终可能忽视短信。一些地区曾同时发送暴雨警报和交通管制通知，但没有明确提示避难场所和移动路线，反而加大了混乱。因此，灾害短信应把重点放在提供准确行动指南上，而不是单纯快速发送。应简短具体地提示危险区域、必要行动和求助联系方式，并为外国人和老年人准备易懂表达与多语言通知。归根结底，灾害短信的价值不在于发送大量信息，而在于让市民在危机中不犹豫地选择适当行动。",
+  tokens: [
+    { korean: "일상 속 재난", reading: "il-sang sok jae-nan", meaning: "日常中的灾害", note: "指暴雨、酷暑等越来越常态化的风险。" },
+    { korean: "역할도 커지고 있다", reading: "yeok-hal-do keo-ji-go it-da", meaning: "作用也正在变大", grammar: "V-아/어지다 + V-고 있다", note: "原形 커지다；说明政策工具重要性上升。" },
+    { korean: "위험을 빠르게 알리고", reading: "wi-heo-meul ppa-reu-ge al-li-go", meaning: "快速告知危险", grammar: "V-고", note: "原形 알리다；灾害短信的基本功能。" },
+    { korean: "안전 장치", reading: "an-jeon jang-chi", meaning: "安全装置", note: "抽象名词，用于评价制度功能。" },
+    { korean: "확인하기 어려운 상황", reading: "hwa-gin-ha-gi eo-ryeo-un sang-hwang", meaning: "难以确认信息的情况", grammar: "V-기 어렵다", note: "说明手机短信的优势场景。" },
+    { korean: "자동으로 강화되는 것은 아니다", reading: "ja-dong-eu-ro gang-hwa-doe-neun geo-seun a-ni-da", meaning: "并不会自动加强", grammar: "V-는 것은 아니다", note: "否定数量增加与效果提升的简单因果。" },
+    { korean: "추상적이면", reading: "chu-sang-jeo-gi-myeon", meaning: "如果抽象", grammar: "A-(으)면", note: "说明信息表达不清会削弱行动效果。" },
+    { korean: "판단하기 어렵다", reading: "pan-dan-ha-gi eo-ryeop-da", meaning: "难以判断", grammar: "V-기 어렵다", note: "原形 판단하다；对应市民行动困难。" },
+    { korean: "구분하지 못하고", reading: "gu-bun-ha-ji mot-ha-go", meaning: "无法区分", grammar: "V-지 못하다", note: "指重复警告导致风险感知下降。" },
+    { korean: "무시하게 될 수 있다", reading: "mu-si-ha-ge doel su it-da", meaning: "可能变得忽视", grammar: "V-게 되다 + V-(으)ㄹ 수 있다", note: "说明过度发送的副作用。" },
+    { korean: "대피 장소와 이동 경로", reading: "dae-pi jang-so-wa i-dong gyeong-ro", meaning: "避难场所和移动路线", note: "行动指南中必须明确的内容。" },
+    { korean: "초점을 맞추어야 한다", reading: "cho-jeo-meul mat-chu-eo-ya han-da", meaning: "必须聚焦于", grammar: "V-아/어야 하다", note: "提出政策方向。" },
+    { korean: "짧고 구체적으로 제시하고", reading: "jjalp-go gu-che-jeo-geu-ro je-si-ha-go", meaning: "简短且具体地提出", grammar: "A-고 + V-고", note: "说明有效短信的表达原则。" },
+    { korean: "망설이지 않고", reading: "mang-seo-ri-ji an-ko", meaning: "不犹豫地", grammar: "V-지 않고", note: "结论中说明短信应达成的行动效果。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-ㄴ/는다고 해서 ... 것은 아니다", meaning: "并非因为……就……", example: "문자가 많이 발송된다고 해서 안전 행동이 자동으로 강화되는 것은 아니다.", note: "用于反驳简单因果，是高级阅读常见结构。" },
+    { pattern: "V-기 어렵다", meaning: "难以做某事", example: "무엇을 먼저 해야 하는지 판단하기 어렵다.", note: "用于说明制度设计不足造成的行动困难。" },
+    { pattern: "V-게 될 수 있다", meaning: "可能变得……", example: "사람들은 문자를 무시하게 될 수 있다.", note: "表示某种结果可能逐渐形成。" },
+    { pattern: "V-는 데 있다", meaning: "在于做某事", example: "가치는 적절한 행동을 선택할 수 있게 하는 데 있다.", note: "适合结论句，明确政策工具的真正目标。" },
+  ],
+  quiz: [
+    {
+      question: "文章认为 재난 문자 的主要优点是什么？",
+      answer:
+        "它可以快速告知危险，即使无法查看电视或网络，只要有手机也能接收必要信息。",
+    },
+    {
+      question: "为什么灾害短信发得多不一定能提高安全行动？",
+      answer:
+        "因为内容过长或抽象会让人难以判断行动顺序，重复警告也会使人无法区分真实风险并逐渐忽视短信。",
+    },
+    {
+      question: "文章提出灾害短信应如何改善？",
+      answer:
+        "应简短具体地提供危险区域、必要行动、求助联系方式，并为外国人和老年人准备易懂表达和多语言通知。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "재난 문자의 효과를 높이기 위해 어떤 점을 개선해야 하는지에 대해 쓰십시오. 재난 문자의 장점과 과도하거나 불명확한 안내의 문제를 모두 언급하고, 시민의 행동을 돕기 위한 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["빠른 정보 전달", "구체적 행동 지침", "반복 경고의 문제", "대피 장소", "다국어 안내"],
+    sentenceBank: [
+      "재난 문자는 위험 정보를 빠르게 전달한다는 점에서 중요한 안전 장치이다.",
+      "그러나 내용이 추상적이거나 반복되면 시민이 실제 위험을 제대로 판단하기 어렵다.",
+      "따라서 위험 지역과 행동 지침, 도움을 받을 수 있는 연락처를 구체적으로 제시해야 한다.",
+    ],
+  },
+};
+
+const todayReading: DailyReading = {
+  id: "2026-08-11-vacant-house-local-asset",
+  date: "2026-08-11",
+  title: "빈집은 지역의 부담인가 자원인가",
+  level: "TOPIK II 5-6级",
+  topic: "社会 / 도시정책",
+  estimatedTime: "18 分钟",
+  korean:
+    "인구가 줄어드는 지역에서는 사람이 살지 않는 빈집이 빠르게 늘고 있다. 빈집은 관리되지 않을 경우 화재나 범죄의 위험을 높이고 주변 주거 환경을 악화시키기 때문에 오랫동안 지역의 부담으로 여겨져 왔다. 그러나 최근 일부 지방자치단체는 빈집을 철거 대상으로만 보지 않고 지역 자산으로 활용하려는 시도를 하고 있다. 청년 창업 공간, 마을 도서관, 단기 체류 주택으로 고쳐 쓰면 새로운 인구를 끌어들이고 주민에게 필요한 서비스를 제공할 수 있기 때문이다. 문제는 빈집 활용이 겉보기 좋은 공간 조성 사업으로 끝날 가능성이 있다는 데 있다. 소유권이 복잡하거나 수리 비용이 지나치게 높으면 사업은 시작 단계에서 멈추기 쉽다. 또한 외부 방문객을 위한 공간만 늘어나고 기존 주민의 생활 문제는 해결되지 않는다면 지역 공동체는 오히려 소외감을 느낄 수 있다. 따라서 빈집 정책은 철거와 활용 중 하나를 선택하는 방식이 아니라 집의 상태, 소유 관계, 주민 수요를 함께 조사하는 것에서 출발해야 한다. 공공기관은 안전상 위험한 빈집은 신속히 정비하되, 활용 가능한 집은 주민이 실제로 필요로 하는 기능과 연결해야 한다. 결국 빈집의 가치는 건물 자체에 있는 것이 아니라 지역이 줄어든 공간을 어떻게 다시 사회적 관계와 생활 서비스로 채워 넣을 것인지에 달려 있다.",
+  chinese:
+    "在人口减少的地区，无人居住的空房正在快速增加。如果空房无人管理，就会提高火灾或犯罪风险，并恶化周边居住环境，因此长期以来被视为地区负担。然而，最近一些地方政府不再只把空房看作拆除对象，而是尝试将其作为地区资产利用。如果改造成青年创业空间、村庄图书馆、短期停留住房，就能吸引新人口，并为居民提供所需服务。问题在于，空房利用可能止步于表面好看的空间营造项目。如果所有权复杂或修缮费用过高，项目容易在开始阶段就停滞。此外，如果只增加面向外来访客的空间，而原有居民的生活问题没有解决，地区共同体反而可能感到被排除。因此，空房政策不应是在拆除与利用之间二选一，而应从同时调查房屋状态、所有关系和居民需求开始。公共机构应迅速整治存在安全风险的空房，而可利用的房屋则应连接到居民真正需要的功能。归根结底，空房的价值不在建筑本身，而在于地区如何把减少后留下的空间重新填入社会关系与生活服务。",
+  tokens: [
+    { korean: "인구가 줄어드는 지역", reading: "in-gu-ga ju-reo-deu-neun ji-yeok", meaning: "人口减少的地区", grammar: "V-는 N", note: "说明 빈집 增加的结构背景。" },
+    { korean: "빈집이 빠르게 늘고 있다", reading: "bin-ji-bi ppa-reu-ge neul-go it-da", meaning: "空房正在快速增加", grammar: "V-고 있다", note: "原形 늘다；引出问题现象。" },
+    { korean: "관리되지 않을 경우", reading: "gwal-li-doe-ji a-neul gyeong-u", meaning: "在无人管理的情况下", grammar: "피동 + V-지 않다", note: "说明风险发生条件。" },
+    { korean: "주거 환경을 악화시키다", reading: "ju-geo hwan-gyeong-eul ak-hwa-si-ki-da", meaning: "恶化居住环境", grammar: "사동", note: "原形 악화시키다；描述空房的负面影响。" },
+    { korean: "부담으로 여겨져 왔다", reading: "bu-da-meu-ro yeo-gyeo-jyeo wat-da", meaning: "一直被视为负担", grammar: "피동 + V-아/어 오다", note: "说明过去持续到现在的社会认知。" },
+    { korean: "철거 대상으로만 보지 않고", reading: "cheol-geo dae-sang-eu-ro-man bo-ji an-ko", meaning: "不只看作拆除对象", grammar: "N만 + V-지 않고", note: "引出政策视角变化。" },
+    { korean: "고쳐 쓰면", reading: "go-chyeo sseu-myeon", meaning: "如果修好再用", grammar: "V-아/어 + V-(으)면", note: "原形 고치다 / 쓰다；说明 활용 的具体方式。" },
+    { korean: "서비스를 제공할 수 있다", reading: "seo-bi-seu-reul je-gong-hal su it-da", meaning: "可以提供服务", grammar: "V-(으)ㄹ 수 있다", note: "说明空房转化后的公共价值。" },
+    { korean: "겉보기 좋은 공간 조성 사업", reading: "geot-bo-gi jo-eun gong-gan jo-seong sa-eop", meaning: "表面好看的空间营造项目", note: "批评形式主义政策。" },
+    { korean: "끝날 가능성", reading: "kkeut-nal ga-neung-seong", meaning: "止步的可能性", grammar: "V-(으)ㄹ 가능성", note: "指出政策风险。" },
+    { korean: "소유권이 복잡하다", reading: "so-yu-gwo-ni bok-jap-ha-da", meaning: "所有权复杂", note: "空房政策的现实障碍。" },
+    { korean: "멈추기 쉽다", reading: "meom-chu-gi swip-da", meaning: "容易停滞", grammar: "V-기 쉽다", note: "原形 멈추다；说明项目执行风险。" },
+    { korean: "소외감을 느낄 수 있다", reading: "so-oe-ga-meul neu-kkil su it-da", meaning: "可能感到被排除", grammar: "V-(으)ㄹ 수 있다", note: "指出忽略原居民需求的后果。" },
+    { korean: "주민 수요", reading: "ju-min su-yo", meaning: "居民需求", note: "政策设计的核心依据。" },
+    { korean: "신속히 정비하되", reading: "sin-so-ki jeong-bi-ha-doe", meaning: "迅速整治，但", grammar: "V-되", note: "原形 정비하다；表示同时保留两个政策原则。" },
+    { korean: "기능과 연결해야 한다", reading: "gi-neung-gwa yeon-gyeol-hae-ya han-da", meaning: "必须与功能连接", grammar: "V-아/어야 하다", note: "提出可利用空房的方向。" },
+    { korean: "채워 넣을 것인지에 달려 있다", reading: "chae-wo neo-eul geo-sin-ji-e dal-lyeo it-da", meaning: "取决于如何填入", grammar: "N에 달려 있다", note: "结论句，强调空间再组织能力。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-아/어 오다", meaning: "一直……到现在", example: "빈집은 지역의 부담으로 여겨져 왔다.", note: "用于描述长期形成的社会认知。" },
+    { pattern: "V-는 것이 아니라", meaning: "不是……而是……", example: "철거와 활용 중 하나를 선택하는 것이 아니라 수요 조사에서 출발해야 한다.", note: "用于纠正二分法思维。" },
+    { pattern: "V-되", meaning: "……但同时……", example: "위험한 빈집은 정비하되 활용 가능한 집은 기능과 연결해야 한다.", note: "正式书面语连接结构，常用于政策原则并列。" },
+    { pattern: "N에 달려 있다", meaning: "取决于……", example: "빈집의 가치는 공간을 어떻게 채울 것인지에 달려 있다.", note: "适合 54 题结论句。" },
+  ],
+  quiz: [
+    {
+      question: "文章为什么说 빈집 长期被视为地区负担？",
+      answer:
+        "因为无人管理的空房会提高火灾和犯罪风险，并恶化周边居住环境。",
+    },
+    {
+      question: "作者认为 빈집 可以怎样转化为地区资源？",
+      answer:
+        "可以改造成青年创业空间、村庄图书馆或短期停留住房，从而吸引新人口并提供居民所需服务。",
+    },
+    {
+      question: "文章认为空房政策应从什么开始？",
+      answer:
+        "应从同时调查房屋状态、所有关系和居民需求开始，再区分安全整治和可利用空间的功能连接。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "인구 감소 지역의 빈집 문제를 해결하기 위해 어떤 정책이 필요한지에 대해 쓰십시오. 빈집이 가져오는 위험과 활용 가능성을 모두 언급하고, 지역 주민에게 도움이 되는 활용 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["인구 감소", "안전 위험", "소유권 문제", "주민 수요", "공공 서비스"],
+    sentenceBank: [
+      "빈집은 관리되지 않을 경우 안전 위험을 높이고 주거 환경을 악화시킬 수 있다.",
+      "그러나 지역 수요와 연결하면 빈집은 새로운 공공 자원으로 활용될 수 있다.",
+      "따라서 집의 상태와 소유 관계, 주민 수요를 먼저 조사한 뒤 활용 방향을 정해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august10Reading,
+  august9Reading,
+  august8Reading,
+  august7Reading,
   august6Reading,
   august5Reading,
   august4Reading,
