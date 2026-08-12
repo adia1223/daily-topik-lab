@@ -1980,7 +1980,7 @@ const august10Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august11Reading: DailyReading = {
   id: "2026-08-11-vacant-house-local-asset",
   date: "2026-08-11",
   title: "빈집은 지역의 부담인가 자원인가",
@@ -2046,8 +2046,75 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-12-carbon-label-consumption",
+  date: "2026-08-12",
+  title: "탄소 라벨은 소비를 바꿀 수 있는가",
+  level: "TOPIK II 5-6级",
+  topic: "经济 / 环境",
+  estimatedTime: "18 分钟",
+  korean:
+    "기후 위기에 대한 관심이 높아지면서 제품이 만들어지고 운송되며 폐기되는 과정에서 얼마나 많은 탄소가 배출되는지를 표시하는 탄소 라벨 제도가 주목받고 있다. 소비자는 가격과 품질뿐만 아니라 환경 부담까지 비교할 수 있게 되고, 기업은 생산 과정을 개선해야 한다는 압력을 받게 된다. 특히 같은 종류의 제품이라도 원료의 조달 방식, 포장재, 운송 거리 등에 따라 탄소 배출량이 크게 달라질 수 있으므로, 탄소 라벨은 보이지 않던 비용을 드러내는 역할을 한다. 그러나 라벨이 붙어 있다고 해서 소비자의 선택이 곧바로 바뀌는 것은 아니다. 숫자가 지나치게 전문적으로 제시되면 일반 소비자는 그 의미를 이해하기 어렵고, 친환경 제품의 가격이 높을 경우 실제 구매로 이어지지 않을 수도 있다. 또한 기업이 일부 공정만 강조해 전체 배출량이 적은 것처럼 홍보한다면 탄소 라벨은 정보 제공 수단이 아니라 또 다른 마케팅 문구로 전락할 위험이 있다. 따라서 탄소 라벨 제도는 표시 자체보다 신뢰할 수 있는 산정 기준과 쉬운 설명을 마련하는 데 초점을 맞추어야 한다. 정부는 제품군별 비교 기준을 공개하고, 기업은 원료 생산부터 폐기까지의 배출 정보를 투명하게 제공해야 한다. 학교와 언론 역시 탄소 배출 수치를 생활 속 선택과 연결해 설명할 필요가 있다. 결국 탄소 라벨의 목적은 소비자에게 죄책감을 주는 데 있는 것이 아니라, 시장 안에서 환경 비용이 제대로 보이도록 만들어 기업과 소비자가 함께 더 나은 선택을 하게 하는 데 있다.",
+  chinese:
+    "随着人们对气候危机的关注提高，标示产品在制造、运输和废弃过程中排放多少碳的碳标签制度受到关注。消费者不仅可以比较价格和质量，也可以比较环境负担；企业则会受到改善生产过程的压力。尤其是同类产品也会因原料采购方式、包装材料、运输距离等不同而产生很大碳排放差异，因此碳标签起到揭示原本看不见的成本的作用。然而，并不能因为贴上了标签，消费者的选择就会立刻改变。如果数字呈现得过于专业，普通消费者就难以理解其意义；如果环保产品价格较高，也可能无法转化为实际购买。此外，如果企业只强调部分工序，宣传得像整体排放量很少一样，碳标签就有沦为另一种营销文案的风险。因此，碳标签制度应把重点放在可信的计算标准和易懂说明上，而不是标示本身。政府应公开不同产品类别的比较标准，企业应透明提供从原料生产到废弃为止的排放信息。学校和媒体也有必要把碳排放数值与生活中的选择连接起来说明。归根结底，碳标签的目的不在于给消费者罪恶感，而在于让市场中的环境成本被正确看见，使企业和消费者共同作出更好的选择。",
+  tokens: [
+    { korean: "기후 위기", reading: "gi-hu wi-gi", meaning: "气候危机", note: "文章的宏观背景；常见社会议题词。" },
+    { korean: "만들어지고 운송되며 폐기되는 과정", reading: "man-deu-reo-ji-go un-song-doe-myeo pye-gi-doe-neun gwa-jeong", meaning: "被制造、运输并废弃的过程", grammar: "피동 + V-며", note: "连续列举产品生命周期。" },
+    { korean: "탄소가 배출되다", reading: "tan-so-ga bae-chul-doe-da", meaning: "碳被排放", grammar: "피동", note: "原形 배출하다；环境政策高频表达。" },
+    { korean: "주목받고 있다", reading: "ju-mok-bat-go it-da", meaning: "正在受到关注", grammar: "V-고 있다", note: "说明制度热度上升。" },
+    { korean: "환경 부담까지 비교할 수 있게 되다", reading: "hwan-gyeong bu-dam-kka-ji bi-gyo-hal su it-ge doe-da", meaning: "变得连环境负担也能比较", grammar: "V-(으)ㄹ 수 있게 되다", note: "说明标签给消费者带来的新能力。" },
+    { korean: "압력을 받게 된다", reading: "ap-ryeo-geul bat-ge doen-da", meaning: "会受到压力", grammar: "V-게 되다", note: "企业因信息公开而改变行为。" },
+    { korean: "원료의 조달 방식", reading: "wol-lyo-ui jo-dal bang-sik", meaning: "原料采购方式", note: "影响碳排放差异的因素。" },
+    { korean: "보이지 않던 비용을 드러내다", reading: "bo-i-ji an-teon bi-yong-eul deu-reo-nae-da", meaning: "揭示原本看不见的成本", grammar: "V-던 + V", note: "文章核心观点：环境成本显性化。" },
+    { korean: "라벨이 붙어 있다고 해서", reading: "ra-bel-i bu-teo it-da-go hae-seo", meaning: "并不是因为贴着标签就", grammar: "V-ㄴ/는다고 해서", note: "引出对简单因果的反驳。" },
+    { korean: "곧바로 바뀌는 것은 아니다", reading: "got-ba-ro ba-kwi-neun geo-seun a-ni-da", meaning: "并不会马上改变", grammar: "V-는 것은 아니다", note: "说明政策效果不是自动发生。" },
+    { korean: "구매로 이어지지 않을 수도 있다", reading: "gu-mae-ro i-eo-ji-ji a-neul su-do it-da", meaning: "也可能无法转化为购买", grammar: "V-지 않을 수도 있다", note: "价格因素导致行为转化失败。" },
+    { korean: "전체 배출량이 적은 것처럼", reading: "jeon-che bae-chul-lyang-i jeo-geun geot-cheo-reom", meaning: "像整体排放量很少一样", grammar: "A-(으)ㄴ 것처럼", note: "批评企业选择性宣传。" },
+    { korean: "전락할 위험이 있다", reading: "jeol-lak-hal wi-heo-mi it-da", meaning: "有沦为……的风险", grammar: "V-(으)ㄹ 위험이 있다", note: "正式书面语，用于负面结果预测。" },
+    { korean: "산정 기준", reading: "san-jeong gi-jun", meaning: "计算标准", note: "制度可信度的关键。" },
+    { korean: "투명하게 제공해야 한다", reading: "tu-myeong-ha-ge je-gong-hae-ya han-da", meaning: "必须透明提供", grammar: "V-아/어야 하다", note: "提出企业责任。" },
+    { korean: "생활 속 선택과 연결하다", reading: "saeng-hwal sok seon-taek-gwa yeon-gyeol-ha-da", meaning: "与生活中的选择连接", note: "说明教育和媒体的解释任务。" },
+    { korean: "죄책감을 주는 데 있는 것이 아니라", reading: "joe-chaek-ga-meul ju-neun de it-neun geo-si a-ni-ra", meaning: "不在于给予罪恶感", grammar: "V-는 데 있다 + N이/가 아니라", note: "结论中重新界定制度目的。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-ㄴ/는다고 해서 ... 것은 아니다", meaning: "并非因为……就……", example: "라벨이 붙어 있다고 해서 소비자의 선택이 곧바로 바뀌는 것은 아니다.", note: "高级阅读常见反驳结构，用于否定单一因果。" },
+    { pattern: "V-(으)ㄹ 수 있게 되다", meaning: "变得能够……", example: "소비자는 환경 부담까지 비교할 수 있게 된다.", note: "表示制度或条件变化带来的新可能。" },
+    { pattern: "A-(으)ㄴ 것처럼", meaning: "像……一样", example: "전체 배출량이 적은 것처럼 홍보한다.", note: "用于批评表象与实际不一致。" },
+    { pattern: "N이/가 아니라 ... V-는 데 있다", meaning: "不是……而在于……", example: "목적은 죄책감을 주는 것이 아니라 환경 비용이 보이도록 하는 데 있다.", note: "适合 54 题结论段，明确真正目的。" },
+  ],
+  quiz: [
+    {
+      question: "文章认为 탄소 라벨 的基本作用是什么？",
+      answer:
+        "它让消费者可以比较产品的环境负担，也让企业受到改善生产过程的压力，并揭示原本看不见的环境成本。",
+    },
+    {
+      question: "为什么碳标签不一定马上改变消费者选择？",
+      answer:
+        "因为数字可能过于专业而难以理解，环保产品价格较高时也未必能转化为实际购买。",
+    },
+    {
+      question: "文章认为怎样才能避免碳标签沦为营销文案？",
+      answer:
+        "需要可信的计算标准、易懂说明、公开的产品类别比较基准，以及企业从原料生产到废弃全过程的透明排放信息。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "탄소 라벨 제도가 소비와 기업 활동에 어떤 영향을 줄 수 있는지에 대해 쓰십시오. 탄소 라벨의 장점과 한계를 모두 언급하고, 제도의 신뢰성을 높이기 위한 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["환경 비용", "소비자 이해", "가격 부담", "산정 기준", "기업 투명성"],
+    sentenceBank: [
+      "탄소 라벨은 제품의 보이지 않는 환경 비용을 드러낸다는 점에서 의미가 있다.",
+      "그러나 정보가 어렵거나 가격 부담이 크면 소비자의 행동 변화로 이어지기 어렵다.",
+      "따라서 신뢰할 수 있는 산정 기준과 쉬운 설명, 기업의 투명한 정보 공개가 함께 필요하다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august11Reading,
   august10Reading,
   august9Reading,
   august8Reading,
