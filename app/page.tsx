@@ -2046,7 +2046,7 @@ const august11Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august12Reading: DailyReading = {
   id: "2026-08-12-carbon-label-consumption",
   date: "2026-08-12",
   title: "탄소 라벨은 소비를 바꿀 수 있는가",
@@ -2112,8 +2112,76 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-13-workplace-ai-evaluation",
+  date: "2026-08-13",
+  title: "직장 내 인공지능 평가는 공정한가",
+  level: "TOPIK II 5-6级",
+  topic: "职场 / 科技",
+  estimatedTime: "18 分钟",
+  korean:
+    "채용과 인사 평가 과정에 인공지능을 도입하는 기업이 늘고 있다. 인공지능은 많은 지원자의 이력서와 면접 자료를 짧은 시간 안에 분석할 수 있고, 평가자의 감정이나 피로에 따른 차이를 줄일 수 있다는 점에서 효율적인 도구로 여겨진다. 특히 반복적인 업무 성과 자료를 수집해 승진이나 교육 대상자를 선별할 때 인공지능은 관리자보다 더 일관된 기준을 적용할 수 있다는 기대를 받는다. 그러나 인공지능 평가가 항상 공정성을 보장하는 것은 아니다. 알고리즘은 과거 데이터를 바탕으로 학습하기 때문에, 그 데이터 안에 특정 학교, 성별, 연령, 근무 형태에 대한 편견이 들어 있다면 기존의 불평등을 그대로 반복할 가능성이 있다. 또한 평가 기준이 공개되지 않으면 직원은 자신이 왜 낮은 점수를 받았는지 이해하기 어렵고, 이의를 제기할 기회도 제한된다. 실제로 일부 기업에서는 고객 응대 속도나 온라인 접속 시간처럼 측정하기 쉬운 지표만 지나치게 강조되어 협업 능력이나 문제 해결 과정은 제대로 반영되지 않는다는 비판이 제기되었다. 따라서 직장 내 인공지능 평가는 사람의 판단을 완전히 대체하는 방식이 아니라 판단을 보조하는 장치로 설계되어야 한다. 기업은 평가에 사용되는 데이터와 기준을 설명하고, 직원이 결과를 확인하고 수정 요청을 할 수 있는 절차를 마련해야 한다. 또한 최종 결정 단계에서는 관리자와 동료의 질적 평가를 함께 반영해야 한다. 결국 인공지능 평가의 가치는 빠른 결정을 내리는 데 있는 것이 아니라, 평가 과정에서 보이지 않던 편향을 드러내고 더 설득력 있는 기준을 만드는 데 있다.",
+  chinese:
+    "越来越多企业在招聘和人事评价过程中引入人工智能。人工智能能够在短时间内分析大量应聘者的简历和面试资料，也能减少因评价者情绪或疲劳造成的差异，因此被视为高效工具。尤其是在收集重复性的工作成果资料，并筛选晋升或培训对象时，人们期待人工智能能比管理者应用更一致的标准。然而，人工智能评价并不总是保证公正性。算法基于过去数据学习，因此如果数据中包含对特定学校、性别、年龄、工作形态的偏见，就可能原样重复既有不平等。此外，如果评价标准不公开，员工就难以理解自己为什么得到低分，提出异议的机会也会受到限制。实际上，一些企业过度强调客户响应速度、在线连接时间等容易测量的指标，导致协作能力或解决问题的过程无法被充分反映，这引发了批评。因此，职场中的人工智能评价不应设计成完全替代人的判断，而应作为辅助判断的装置。企业应说明评价使用的数据和标准，并建立员工可确认结果、提出修正请求的程序。同时，在最终决定阶段，也应结合管理者和同事的质性评价。归根结底，人工智能评价的价值不在于快速做出决定，而在于揭示评价过程中原本看不见的偏向，并建立更有说服力的标准。",
+  tokens: [
+    { korean: "인사 평가 과정", reading: "in-sa pyeong-ga gwa-jeong", meaning: "人事评价过程", note: "文章讨论的职场制度场景。" },
+    { korean: "도입하는 기업이 늘고 있다", reading: "do-ip-ha-neun gi-eo-bi neul-go it-da", meaning: "引入的企业正在增加", grammar: "V-는 N + V-고 있다", note: "说明现象扩大。" },
+    { korean: "짧은 시간 안에 분석할 수 있다", reading: "jjal-beun si-gan a-ne bun-seok-hal su it-da", meaning: "能在短时间内分析", grammar: "V-(으)ㄹ 수 있다", note: "人工智能的效率优势。" },
+    { korean: "피로에 따른 차이", reading: "pi-ro-e tta-reun cha-i", meaning: "由疲劳造成的差异", grammar: "N에 따른 N", note: "说明人工评价的不稳定因素。" },
+    { korean: "일관된 기준을 적용하다", reading: "il-gwan-doen gi-jun-eul jeok-yong-ha-da", meaning: "适用一致标准", note: "评价制度核心词组。" },
+    { korean: "공정성을 보장하는 것은 아니다", reading: "gong-jeong-seong-eul bo-jang-ha-neun geo-seun a-ni-da", meaning: "并不保证公正性", grammar: "V-는 것은 아니다", note: "转折后提出文章核心问题。" },
+    { korean: "과거 데이터를 바탕으로", reading: "gwa-geo de-i-teo-reul ba-tang-eu-ro", meaning: "以过去数据为基础", grammar: "N을/를 바탕으로", note: "解释算法偏见来源。" },
+    { korean: "편견이 들어 있다면", reading: "pyeon-gyeo-ni deu-reo it-da-myeon", meaning: "如果包含偏见", grammar: "V-아/어 있다 + A/V-(으)면", note: "提出风险条件。" },
+    { korean: "불평등을 그대로 반복할 가능성", reading: "bul-pyeong-deung-eul geu-dae-ro ban-bok-hal ga-neung-seong", meaning: "原样重复不平等的可能性", grammar: "V-(으)ㄹ 가능성", note: "算法评价的主要风险。" },
+    { korean: "평가 기준이 공개되지 않다", reading: "pyeong-ga gi-ju-ni gong-gae-doe-ji an-ta", meaning: "评价标准未公开", grammar: "피동 + V-지 않다", note: "透明度不足。" },
+    { korean: "이의를 제기하다", reading: "i-ui-reul je-gi-ha-da", meaning: "提出异议", note: "员工救济程序相关词组。" },
+    { korean: "측정하기 쉬운 지표", reading: "cheuk-jeong-ha-gi swi-un ji-pyo", meaning: "容易测量的指标", grammar: "V-기 쉽다/쉽게 + N", note: "批评量化指标偏差。" },
+    { korean: "제대로 반영되지 않다", reading: "je-dae-ro ban-yeong-doe-ji an-ta", meaning: "没有被充分反映", grammar: "피동 + V-지 않다", note: "协作和过程性能力被忽略。" },
+    { korean: "완전히 대체하는 방식이 아니라", reading: "wan-jeon-hi dae-che-ha-neun bang-si-gi a-ni-ra", meaning: "不是完全替代的方式", grammar: "N이/가 아니라", note: "提出制度设计原则。" },
+    { korean: "판단을 보조하는 장치", reading: "pan-dan-eul bo-jo-ha-neun jang-chi", meaning: "辅助判断的装置", note: "作者对 AI 的定位。" },
+    { korean: "수정 요청을 할 수 있는 절차", reading: "su-jeong yo-cheong-eul hal su it-neun jeol-cha", meaning: "能够请求修正的程序", grammar: "V-(으)ㄹ 수 있는 N", note: "保障员工权利的具体对策。" },
+    { korean: "질적 평가", reading: "jil-jeok pyeong-ga", meaning: "质性评价", note: "与量化指标相对，补充人的判断。" },
+    { korean: "편향을 드러내고", reading: "pyeon-hyang-eul deu-reo-nae-go", meaning: "揭示偏向", grammar: "V-고", note: "结论中说明 AI 评价真正价值。" },
+  ],
+  grammarPoints: [
+    { pattern: "N에 따른 N", meaning: "由……导致的 / 根据……产生的", example: "평가자의 감정이나 피로에 따른 차이를 줄일 수 있다.", note: "常用于原因、条件和分类依据。" },
+    { pattern: "N을/를 바탕으로", meaning: "以……为基础", example: "알고리즘은 과거 데이터를 바탕으로 학습한다.", note: "科技、教育、政策类文章高频结构。" },
+    { pattern: "V-(으)ㄹ 가능성이 있다", meaning: "有可能……", example: "기존의 불평등을 반복할 가능성이 있다.", note: "用于客观提出风险。" },
+    { pattern: "N이/가 아니라 ... V-아/어야 한다", meaning: "不是……而应该……", example: "대체하는 방식이 아니라 보조하는 장치로 설계되어야 한다.", note: "适合观点文中提出替代方案。" },
+  ],
+  quiz: [
+    {
+      question: "文章认为企业引入 인공지능 평가 的主要优点是什么？",
+      answer:
+        "它能快速分析大量资料，减少评价者情绪或疲劳造成的差异，并在重复性成果评价中应用更一致的标准。",
+    },
+    {
+      question: "为什么人工智能评价可能重复既有不平等？",
+      answer:
+        "因为算法以过去数据为基础学习，如果数据中包含对学校、性别、年龄或工作形态的偏见，评价结果也可能继承这些偏见。",
+    },
+    {
+      question: "作者提出企业应如何设计职场人工智能评价？",
+      answer:
+        "应把 AI 作为辅助判断工具，公开数据和评价标准，提供结果确认和修正请求程序，并在最终决定中加入管理者和同事的质性评价。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "직장 내 인공지능 평가를 확대하는 것에 대해 어떻게 생각하는지 쓰십시오. 인공지능 평가의 효율성과 공정성 문제를 모두 언급하고, 직원의 권리를 보호하기 위한 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["효율성", "과거 데이터", "평가 기준 공개", "이의 제기", "질적 평가"],
+    sentenceBank: [
+      "인공지능 평가는 많은 자료를 빠르게 분석하고 일관된 기준을 적용할 수 있다는 장점이 있다.",
+      "그러나 과거 데이터에 편견이 포함되어 있다면 기존의 불평등이 반복될 수 있다.",
+      "따라서 평가 기준을 공개하고 직원이 결과에 대해 이의를 제기할 수 있는 절차를 마련해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august12Reading,
   august11Reading,
   august10Reading,
   august9Reading,
