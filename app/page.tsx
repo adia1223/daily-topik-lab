@@ -2112,7 +2112,7 @@ const august12Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august13Reading: DailyReading = {
   id: "2026-08-13-workplace-ai-evaluation",
   date: "2026-08-13",
   title: "직장 내 인공지능 평가는 공정한가",
@@ -2179,8 +2179,75 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-14-local-museum-education",
+  date: "2026-08-14",
+  title: "지역 박물관은 살아 있는 교실이 될 수 있는가",
+  level: "TOPIK II 5-6级",
+  topic: "文化 / 教育",
+  estimatedTime: "18 分钟",
+  korean:
+    "지역 박물관은 오랫동안 유물을 보관하고 전시하는 공간으로 이해되어 왔다. 그러나 최근에는 박물관을 단순한 관람 시설이 아니라 학생과 주민이 지역의 역사와 생활을 직접 배우는 교육 공간으로 활용하려는 움직임이 커지고 있다. 교과서에 실린 사건이나 인물을 박물관의 자료와 연결하면 학습자는 추상적인 지식을 구체적인 장소와 경험 속에서 이해할 수 있다. 예를 들어 오래된 시장의 사진, 산업 현장에서 쓰이던 도구, 주민의 구술 기록은 한 지역이 어떻게 변화해 왔는지를 보여 주는 살아 있는 자료가 된다. 이러한 교육은 학생에게 지역에 대한 소속감을 길러 줄 뿐만 아니라, 주민에게도 자신의 일상과 기억이 역사적 의미를 가질 수 있다는 인식을 제공한다. 그렇다고 해서 모든 박물관 교육이 자동으로 효과적인 것은 아니다. 전시 설명이 지나치게 전문적이거나 체험 활동이 단순한 기념품 만들기에 그친다면 학습자는 지역의 문제와 현재의 삶을 깊이 생각하기 어렵다. 또한 학교와 박물관의 협력이 일회성 방문 행사로 끝나면 교육 효과는 지속되기 힘들다. 따라서 지역 박물관은 전시 자료를 교육 과정과 연결하고, 학생이 자료를 해석하며 질문을 만들 수 있는 활동을 설계해야 한다. 지방자치단체와 학교는 정기적인 방문 프로그램을 마련하고, 주민 해설사나 지역 연구자를 수업에 참여시켜 다양한 관점을 제공할 필요가 있다. 결국 지역 박물관의 가치는 과거를 조용히 보존하는 데만 있는 것이 아니라, 그 과거를 현재의 질문과 연결해 지역 사회가 스스로를 이해하도록 돕는 데 있다.",
+  chinese:
+    "长期以来，地区博物馆被理解为保管和展示文物的空间。然而，最近人们越来越希望把博物馆不仅作为参观设施，而是作为学生和居民直接学习地区历史与生活的教育空间。把教科书中的事件或人物与博物馆资料连接起来，学习者就能在具体场所和经验中理解抽象知识。例如，旧市场的照片、产业现场使用过的工具、居民口述记录，都能成为展示一个地区如何变化而来的鲜活资料。这种教育不仅能培养学生对地区的归属感，也能让居民认识到自己的日常和记忆也可能具有历史意义。尽管如此，并不是所有博物馆教育都会自动有效。如果展览说明过于专业，或体验活动停留在简单制作纪念品，学习者就难以深入思考地区问题和当下生活。此外，如果学校和博物馆的合作止步于一次性参观活动，教育效果也难以持续。因此，地区博物馆应把展览资料与课程连接起来，并设计让学生解释资料、提出问题的活动。地方政府和学校应准备定期访问项目，并让居民讲解员或地区研究者参与课程，提供多样视角。归根结底，地区博物馆的价值不只在于安静保存过去，而在于把过去与当下的问题连接起来，帮助地区社会理解自身。",
+  tokens: [
+    { korean: "유물을 보관하고 전시하는 공간", reading: "yu-mu-reul bo-gwan-ha-go jeon-si-ha-neun gong-gan", meaning: "保管并展示文物的空间", grammar: "V-고 + V-는 N", note: "说明传统博物馆功能。" },
+    { korean: "이해되어 왔다", reading: "i-hae-doe-eo wat-da", meaning: "一直被理解为", grammar: "피동 + V-아/어 오다", note: "表示过去到现在持续的认知。" },
+    { korean: "교육 공간으로 활용하려는 움직임", reading: "gyo-yuk gong-gan-eu-ro hwal-yong-ha-ryeo-neun um-ji-gim", meaning: "试图作为教育空间利用的趋势", grammar: "V-(으)려는 N", note: "引出新变化。" },
+    { korean: "교과서에 실린 사건", reading: "gyo-gwa-seo-e sil-lin sa-geon", meaning: "教材中收录的事件", grammar: "피동 관형형", note: "原形 싣다；说明课堂内容。" },
+    { korean: "구체적인 장소와 경험 속에서", reading: "gu-che-jeo-gin jang-so-wa gyeong-heom so-ge-seo", meaning: "在具体地点和经验中", note: "与抽象知识形成对比。" },
+    { korean: "구술 기록", reading: "gu-sul gi-rok", meaning: "口述记录", note: "地方史、文化教育常用词。" },
+    { korean: "살아 있는 자료가 된다", reading: "sa-ra it-neun ja-ryo-ga doen-da", meaning: "成为鲜活资料", grammar: "V-아/어 있다 + N이/가 되다", note: "强调资料的教育价值。" },
+    { korean: "소속감을 길러 주다", reading: "so-sok-ga-meul gil-leo ju-da", meaning: "培养归属感", grammar: "V-아/어 주다", note: "教育效果之一。" },
+    { korean: "역사적 의미를 가질 수 있다", reading: "yeok-sa-jeok ui-mi-reul ga-jil su it-da", meaning: "可能具有历史意义", grammar: "V-(으)ㄹ 수 있다", note: "让居民日常进入公共记忆。" },
+    { korean: "자동으로 효과적인 것은 아니다", reading: "ja-dong-eu-ro hyo-gwa-jeo-gin geo-seun a-ni-da", meaning: "并不会自动有效", grammar: "A/V-는 것은 아니다", note: "转折后提示限制。" },
+    { korean: "기념품 만들기에 그치다", reading: "gi-nyeom-pum man-deul-gi-e geu-chi-da", meaning: "止步于制作纪念品", grammar: "V-기에 그치다", note: "批评浅层体验活动。" },
+    { korean: "일회성 방문 행사", reading: "il-hoe-seong bang-mun haeng-sa", meaning: "一次性参观活动", note: "说明合作不可持续的问题。" },
+    { korean: "지속되기 힘들다", reading: "ji-sok-doe-gi him-deul-da", meaning: "难以持续", grammar: "V-기 힘들다", note: "评价教育效果。" },
+    { korean: "교육 과정과 연결하다", reading: "gyo-yuk gwa-jeong-gwa yeon-gyeol-ha-da", meaning: "与课程连接", note: "作者提出的核心对策。" },
+    { korean: "자료를 해석하며 질문을 만들다", reading: "ja-ryo-reul hae-seok-ha-myeo jil-mun-eul man-deul-da", meaning: "解释资料并提出问题", grammar: "V-며", note: "高阶学习活动。" },
+    { korean: "다양한 관점을 제공하다", reading: "da-yang-han gwan-jeo-meul je-gong-ha-da", meaning: "提供多样视角", note: "居民讲解员和研究者参与的意义。" },
+    { korean: "현재의 질문과 연결해", reading: "hyeon-jae-ui jil-mun-gwa yeon-gyeol-hae", meaning: "与当下的问题连接", grammar: "V-아/어", note: "结论中的核心价值。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-아/어 오다", meaning: "一直……到现在", example: "박물관은 전시 공간으로 이해되어 왔다.", note: "用于说明长期形成的社会认知。" },
+    { pattern: "V-(으)려는 움직임", meaning: "试图……的趋势 / 动向", example: "교육 공간으로 활용하려는 움직임이 커지고 있다.", note: "新闻和政策类阅读常见表达。" },
+    { pattern: "V-기에 그치다", meaning: "仅止步于……", example: "체험 활동이 기념품 만들기에 그친다.", note: "用于批评活动层次不够。" },
+    { pattern: "N이/가 아니라 ... V-는 데 있다", meaning: "不是……而在于……", example: "가치는 과거를 보존하는 데만 있는 것이 아니라 현재의 질문과 연결하는 데 있다.", note: "适合 54 题结论句。" },
+  ],
+  quiz: [
+    {
+      question: "文章认为 지역 박물관 可以怎样改变学生的学习？",
+      answer:
+        "它能把教科书中的事件和人物与具体资料、地点和经验连接起来，使学生更具体地理解抽象知识。",
+    },
+    {
+      question: "为什么文章批评某些博物馆教育活动？",
+      answer:
+        "因为说明过于专业或体验活动停留在制作纪念品时，学生难以深入思考地区问题；一次性参观也难以产生持续教育效果。",
+    },
+    {
+      question: "文章提出学校和地方政府应如何合作？",
+      answer:
+        "应建立定期访问项目，把展览资料与课程连接，并让居民讲解员或地区研究者参与课程，提供多样视角。",
+    },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "지역 박물관을 교육 공간으로 활용하는 것에 대해 쓰십시오. 박물관 교육의 장점과 한계를 모두 언급하고, 학생과 주민에게 도움이 되도록 운영하는 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["지역 역사", "구체적 경험", "일회성 행사", "교육 과정", "주민 참여"],
+    sentenceBank: [
+      "지역 박물관은 교과서의 지식을 구체적인 장소와 자료 속에서 이해하게 해 준다.",
+      "그러나 방문이 일회성 행사로 끝나거나 체험이 단순하면 교육 효과는 제한될 수 있다.",
+      "따라서 학교 교육 과정과 전시 자료를 연결하고 주민과 연구자가 참여하는 프로그램을 마련해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august13Reading,
   august12Reading,
   august11Reading,
   august10Reading,
