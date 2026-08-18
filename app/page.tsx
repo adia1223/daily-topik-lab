@@ -2337,7 +2337,7 @@ const august16Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august17Reading: DailyReading = {
   id: "2026-08-17-food-delivery-algorithm",
   date: "2026-08-17",
   title: "배달 알고리즘은 누구의 시간을 절약하는가",
@@ -2383,8 +2383,61 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-18-river-restoration-policy",
+  date: "2026-08-18",
+  title: "도시 하천 복원은 누구를 위한 정책인가",
+  level: "TOPIK II 5-6级",
+  topic: "环境 / 公共政策",
+  estimatedTime: "18 分钟",
+  korean:
+    "도시 하천은 오랫동안 물을 빠르게 흘려보내 홍수를 막기 위한 시설로 관리되어 왔다. 그러나 최근에는 콘크리트로 덮인 하천을 자연형 공간으로 되돌리고, 시민이 걷고 쉬며 생태를 관찰할 수 있는 장소로 만들려는 복원 사업이 늘고 있다. 하천 복원은 도시의 열기를 낮추고 빗물을 머금는 공간을 늘리며, 주민에게 가까운 휴식처를 제공한다는 점에서 긍정적으로 평가된다. 특히 자동차 도로와 주차장으로 끊어졌던 물길을 다시 연결하면 새와 곤충이 돌아오고, 주변 상권도 살아날 수 있다는 기대가 크다. 그러나 하천 복원이 항상 지역 주민 모두에게 이익이 되는 것은 아니다. 산책로와 카페가 들어서면서 임대료가 오르면 오랫동안 그 지역에서 살아온 주민과 작은 가게가 밀려날 수 있다. 또한 겉으로 보기 좋은 조경에 예산이 집중되고 수질 관리나 홍수 대비가 소홀해지면 복원 사업은 환경 정책이라기보다 도시 이미지 개선 사업에 그칠 위험이 있다. 따라서 도시 하천 복원은 자연을 되살린다는 구호만으로 추진되어서는 안 된다. 지방자치단체는 복원 전부터 주민 의견을 듣고, 임대료 상승에 대한 대책과 장기적인 수질 관리 계획을 함께 세워야 한다. 전문가 역시 생태적 효과와 안전성을 지속적으로 점검해야 한다. 결국 하천 복원의 가치는 물길을 아름답게 꾸미는 데 있는 것이 아니라, 도시의 자연과 주민의 생활이 서로 밀려나지 않고 공존할 수 있는 조건을 만드는 데 있다.",
+  chinese:
+    "城市河流长期以来被作为快速排水、防止洪水的设施来管理。然而，最近把被混凝土覆盖的河流恢复为自然型空间，并使其成为市民散步、休息、观察生态场所的修复项目正在增加。河流修复能降低城市热度、增加吸收雨水的空间，并为居民提供近处休息地，因此受到积极评价。尤其是重新连接曾被汽车道路和停车场切断的水流后，人们期待鸟类和昆虫回归，周边商圈也可能恢复活力。然而，河流修复并不总是让所有当地居民受益。随着散步道和咖啡馆进入，如果租金上涨，长期居住在该地区的居民和小店可能被挤出。此外，如果预算集中在表面好看的景观上，而忽视水质管理或防洪准备，修复项目就有可能止步于城市形象改善，而不是环境政策。因此，城市河流修复不应只凭“恢复自然”的口号推进。地方政府应从修复前就听取居民意见，同时制定应对租金上涨的对策和长期水质管理计划。专家也应持续检查生态效果和安全性。归根结底，河流修复的价值不在于把水道装点得漂亮，而在于创造城市自然与居民生活不互相排挤、能够共存的条件。",
+  tokens: [
+    { korean: "도시 하천", reading: "do-si ha-cheon", meaning: "城市河流", grammar: "명사", note: "환경/도시政策核心名词。" },
+    { korean: "흘려보내다", reading: "heul-lyeo-bo-nae-da", meaning: "使流走、排走", grammar: "동사", note: "说明过去治水功能。" },
+    { korean: "관리되어 왔다", reading: "gwal-li-doe-eo wat-da", meaning: "一直被管理", grammar: "피동 + V-아/어 오다", note: "表示长期延续的管理方式。" },
+    { korean: "자연형 공간", reading: "ja-yeon-hyeong gong-gan", meaning: "自然型空间", grammar: "명사", note: "复原政策目标。" },
+    { korean: "빗물을 머금는 공간", reading: "bin-mu-reul meo-geum-neun gong-gan", meaning: "蓄含雨水的空间", grammar: "V-는 N", note: "머금다 原形；说明防洪和生态功能。" },
+    { korean: "긍정적으로 평가되다", reading: "geung-jeong-jeo-geu-ro pyeong-ga-doe-da", meaning: "被积极评价", grammar: "피동", note: "引出政策优点。" },
+    { korean: "물길을 다시 연결하다", reading: "mul-gi-reul da-si yeon-gyeol-ha-da", meaning: "重新连接水道", grammar: "동사구", note: "说明生态恢复方式。" },
+    { korean: "모두에게 이익이 되는 것은 아니다", reading: "mo-du-e-ge i-i-gi doe-neun geo-seun a-ni-da", meaning: "并非对所有人都有利", grammar: "V-는 것은 아니다", note: "文章转折核心句。" },
+    { korean: "임대료가 오르다", reading: "im-dae-ryo-ga o-reu-da", meaning: "租金上涨", grammar: "동사", note: "城市更新副作用。" },
+    { korean: "밀려날 수 있다", reading: "mil-lyeo-nal su it-da", meaning: "可能被挤出", grammar: "피동 + V-(으)ㄹ 수 있다", note: "说明原住民和小店风险。" },
+    { korean: "소홀해지다", reading: "so-hol-hae-ji-da", meaning: "变得疏忽", grammar: "A-아/어지다", note: "管理弱化表达。" },
+    { korean: "그칠 위험이 있다", reading: "geu-chil wi-heo-mi it-da", meaning: "有止步于……的风险", grammar: "V-(으)ㄹ 위험이 있다", note: "批评表面化项目。" },
+    { korean: "구호만으로 추진되다", reading: "gu-ho-man-eu-ro chu-jin-doe-da", meaning: "只凭口号推进", grammar: "N만으로 + 피동", note: "警惕政策口号化。" },
+    { korean: "대책을 세우다", reading: "dae-chae-geul se-u-da", meaning: "制定对策", grammar: "동사구", note: "政策方案表达。" },
+    { korean: "지속적으로 점검하다", reading: "ji-sok-jeo-geu-ro jeom-geom-ha-da", meaning: "持续检查", grammar: "부사 + 동사", note: "专家责任。" },
+    { korean: "공존할 수 있는 조건", reading: "gong-jon-hal su it-neun jo-geon", meaning: "能够共存的条件", grammar: "V-(으)ㄹ 수 있는 N", note: "结论中的规范目标。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-아/어 오다", meaning: "一直……到现在", example: "하천은 홍수를 막기 위한 시설로 관리되어 왔다.", note: "用于说明长期制度或认知。" },
+    { pattern: "V-는 것은 아니다", meaning: "并不是……", example: "하천 복원이 모두에게 이익이 되는 것은 아니다.", note: "用于反驳单一正面评价。" },
+    { pattern: "V-(으)ㄹ 위험이 있다", meaning: "有……的风险", example: "이미지 개선 사업에 그칠 위험이 있다.", note: "正式书面语风险表达。" },
+    { pattern: "N이/가 아니라 ... V-는 데 있다", meaning: "不是……而在于……", example: "가치는 물길을 꾸미는 것이 아니라 공존 조건을 만드는 데 있다.", note: "适合 TOPIK 54 题结论。" },
+  ],
+  quiz: [
+    { question: "文章认为 도시 하천 복원 的积极作用是什么？", answer: "它可以降低城市热度、增加蓄含雨水的空间、提供休息场所，并恢复生态连接。" },
+    { question: "为什么河流修复可能不一定惠及所有居民？", answer: "因为散步道和咖啡馆进入后可能推高租金，使长期居民和小店被挤出。" },
+    { question: "作者认为地方政府应怎样推进河流修复？", answer: "应提前听取居民意见，同时制定租金上涨对策、长期水质管理计划，并持续检查生态效果和安全性。" },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt: "도시 하천 복원 사업을 추진할 때 무엇을 고려해야 하는지 쓰십시오. 생태 회복의 장점과 임대료 상승 및 안전 관리 문제를 모두 언급하고, 주민에게 도움이 되는 추진 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["생태 회복", "휴식 공간", "임대료 상승", "수질 관리", "주민 의견"],
+    sentenceBank: [
+      "도시 하천 복원은 생태를 회복하고 주민에게 가까운 휴식 공간을 제공한다는 장점이 있다.",
+      "그러나 임대료 상승이나 수질 관리 부족이 발생하면 주민 생활에 부담이 될 수 있다.",
+      "따라서 지방자치단체는 주민 의견을 듣고 장기적인 관리 계획과 생활 대책을 함께 마련해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august17Reading,
   august16Reading,
   august15Reading,
   august14Reading,
