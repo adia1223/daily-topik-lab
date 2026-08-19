@@ -2383,7 +2383,7 @@ const august17Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august18Reading: DailyReading = {
   id: "2026-08-18-river-restoration-policy",
   date: "2026-08-18",
   title: "도시 하천 복원은 누구를 위한 정책인가",
@@ -2435,8 +2435,60 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-19-youth-financial-literacy",
+  date: "2026-08-19",
+  title: "청소년 금융 교육은 왜 생활 수업이 되어야 하는가",
+  level: "TOPIK II 5-6级",
+  topic: "社会 / 教育",
+  estimatedTime: "18 分钟",
+  korean:
+    "모바일 결제와 소액 투자 서비스가 일상화되면서 청소년도 이전보다 훨씬 이른 시기에 돈을 쓰고 관리하는 경험을 하게 되었다. 간편 결제는 소비를 편리하게 만들지만, 실제로 지갑에서 현금이 사라지는 과정을 보지 않기 때문에 지출의 무게를 느끼기 어렵게 만든다. 또한 온라인 광고와 친구들 사이의 소비 문화가 결합되면 필요하지 않은 물건도 즉시 사야 할 것처럼 느껴질 수 있다. 이런 상황에서 금융 교육은 단순히 저축의 중요성을 가르치는 수준에 머물러서는 안 된다. 학생은 이자, 할부, 신용, 개인정보, 투자 위험이 자신의 생활과 어떻게 연결되는지 구체적으로 배워야 한다. 특히 수익률만 강조하는 정보에 노출될 경우 손실 가능성을 충분히 판단하지 못하고 충동적으로 투자에 참여할 위험이 있다. 그러나 학교 금융 교육이 시험용 개념 암기나 일회성 특강으로 끝난다면 실제 행동을 바꾸기 어렵다. 따라서 금융 교육은 가계부 작성, 광고 분석, 모의 예산 계획처럼 생활 속 선택을 직접 다루는 방식으로 설계되어야 한다. 교사는 학생이 소비 결정을 내릴 때 어떤 정보가 필요하고 어떤 감정이 판단을 흔드는지 토론하게 할 수 있다. 가정과 학교 역시 용돈 사용을 단순히 통제하기보다 실패 경험을 안전하게 돌아볼 수 있는 기회를 제공해야 한다. 결국 청소년 금융 교육의 목적은 돈을 많이 모으는 방법을 알려 주는 데 있는 것이 아니라, 스스로의 선택이 미래의 생활 조건에 어떤 영향을 미치는지 이해하고 책임 있게 결정하도록 돕는 데 있다.",
+  chinese:
+    "随着移动支付和小额投资服务日常化，青少年也比过去更早经历花钱和管理金钱。便捷支付让消费更方便，但由于看不到现金从钱包里消失的过程，也让人难以感受到支出的重量。此外，当网络广告与朋友之间的消费文化结合时，即使是不需要的东西，也可能让人觉得应该立刻购买。在这种情况下，金融教育不能只停留在教授储蓄重要性的层面。学生应具体学习利息、分期、信用、个人信息、投资风险如何与自己的生活相连。尤其是接触只强调收益率的信息时，学生可能无法充分判断亏损可能性，并冲动参与投资。然而，如果学校金融教育止步于考试概念背诵或一次性讲座，就很难改变实际行为。因此，金融教育应设计成直接处理生活选择的方式，例如记账、分析广告、模拟预算计划等。教师可以让学生讨论，在做出消费决定时需要哪些信息、哪些情绪会动摇判断。家庭和学校也不应只是控制零花钱使用，而应提供能安全回顾失败经验的机会。归根结底，青少年金融教育的目的不在于告诉学生如何多攒钱，而在于帮助他们理解自己的选择会如何影响未来生活条件，并负责任地作出决定。",
+  tokens: [
+    { korean: "모바일 결제", reading: "mo-ba-il gyeol-je", meaning: "移动支付", grammar: "명사", note: "文章现实背景。" },
+    { korean: "일상화되다", reading: "il-sang-hwa-doe-da", meaning: "日常化", grammar: "피동 동사", note: "原形 일상화하다；说明环境变化。" },
+    { korean: "돈을 쓰고 관리하는 경험", reading: "do-neul sseu-go gwal-li-ha-neun gyeong-heom", meaning: "花钱并管理金钱的经验", grammar: "V-고 + V-는 N", note: "金融教育对象。" },
+    { korean: "지출의 무게를 느끼기 어렵다", reading: "ji-chu-rui mu-ge-reul neu-kki-gi eo-ryeop-da", meaning: "难以感到支出的重量", grammar: "V-기 어렵다", note: "解释无现金消费的问题。" },
+    { korean: "소비 문화가 결합되다", reading: "so-bi mun-hwa-ga gyeol-hap-doe-da", meaning: "消费文化被结合", grammar: "피동", note: "广告和同伴影响相互作用。" },
+    { korean: "머물러서는 안 된다", reading: "meo-mul-leo-seo-neun an doen-da", meaning: "不能停留在", grammar: "V-아/어서는 안 되다", note: "提出教育内容需升级。" },
+    { korean: "생활과 연결되다", reading: "saeng-hwal-gwa yeon-gyeol-doe-da", meaning: "与生活相连", grammar: "피동", note: "强调实际应用。" },
+    { korean: "수익률만 강조하는 정보", reading: "su-ik-ryul-man gang-jo-ha-neun jeong-bo", meaning: "只强调收益率的信息", grammar: "N만 + V-는 N", note: "投资风险来源。" },
+    { korean: "충동적으로 참여하다", reading: "chung-dong-jeo-geu-ro cham-yeo-ha-da", meaning: "冲动地参与", grammar: "부사 + 동사", note: "不充分判断后的行为。" },
+    { korean: "일회성 특강", reading: "il-hoe-seong teuk-gang", meaning: "一次性专题讲座", grammar: "명사", note: "批评形式化教育。" },
+    { korean: "가계부 작성", reading: "ga-gye-bu jak-seong", meaning: "记账、 작성 家计簿", grammar: "명사", note: "生活化练习。" },
+    { korean: "모의 예산 계획", reading: "mo-ui ye-san gye-hoek", meaning: "模拟预算计划", grammar: "명사", note: "实践型金融教育方式。" },
+    { korean: "판단을 흔들다", reading: "pan-dan-eul heun-deul-da", meaning: "动摇判断", grammar: "동사구", note: "描述情绪对决策的影响。" },
+    { korean: "통제하기보다", reading: "tong-je-ha-gi-bo-da", meaning: "比起控制", grammar: "V-기보다", note: "引出更合适的家庭/学校做法。" },
+    { korean: "책임 있게 결정하다", reading: "chaek-im it-ge gyeol-jeong-ha-da", meaning: "负责任地决定", grammar: "부사구 + 동사", note: "结论中的教育目标。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-게 만들다", meaning: "使……", example: "간편 결제는 지출의 무게를 느끼기 어렵게 만든다.", note: "用于说明制度或工具带来的影响。" },
+    { pattern: "V-아/어서는 안 되다", meaning: "不应该…… / 不能……", example: "저축의 중요성을 가르치는 수준에 머물러서는 안 된다.", note: "提出规范性判断。" },
+    { pattern: "V-기보다", meaning: "与其……不如……", example: "용돈 사용을 통제하기보다 실패 경험을 돌아볼 기회를 제공해야 한다.", note: "用于比较两种做法并提出优先方案。" },
+    { pattern: "N이/가 아니라 ... V-는 데 있다", meaning: "不是……而在于……", example: "목적은 돈을 모으는 방법이 아니라 책임 있게 결정하도록 돕는 데 있다.", note: "适合 TOPIK 54 题结论。" },
+  ],
+  quiz: [
+    { question: "文章认为移动支付为什么会影响青少年的消费判断？", answer: "因为它让消费更方便，但学生看不到现金减少的过程，容易难以感受到支出的实际重量。" },
+    { question: "作者认为金融教育不应停留在哪个层面？", answer: "不应只停留在储蓄重要性或考试概念背诵、一次性讲座，而应联系实际生活选择。" },
+    { question: "文章提出哪些生活化金融教育方式？", answer: "包括记账、广告分析、模拟预算计划、讨论消费决策所需信息和影响判断的情绪。" },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt: "청소년 금융 교육을 강화해야 하는 이유와 방법에 대해 쓰십시오. 모바일 결제와 소액 투자 환경의 장단점을 모두 언급하고, 학교와 가정에서 실천할 수 있는 교육 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["모바일 결제", "지출 관리", "투자 위험", "광고 분석", "예산 계획"],
+    sentenceBank: [
+      "청소년은 모바일 결제와 소액 투자 서비스를 통해 이전보다 이른 시기에 금융 선택을 경험하고 있다.",
+      "그러나 편리한 결제 방식은 지출의 무게를 느끼기 어렵게 만들고 충동적인 소비로 이어질 수 있다.",
+      "따라서 학교와 가정은 가계부 작성, 광고 분석, 모의 예산 계획과 같은 생활 중심 교육을 제공해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august18Reading,
   august17Reading,
   august16Reading,
   august15Reading,
