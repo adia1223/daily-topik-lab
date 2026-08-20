@@ -2435,7 +2435,7 @@ const august18Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august19Reading: DailyReading = {
   id: "2026-08-19-youth-financial-literacy",
   date: "2026-08-19",
   title: "청소년 금융 교육은 왜 생활 수업이 되어야 하는가",
@@ -2486,8 +2486,59 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-20-digital-archive-access",
+  date: "2026-08-20",
+  title: "디지털 아카이브는 누구의 기억을 보존하는가",
+  level: "TOPIK II 5-6级",
+  topic: "文化 / 科技",
+  estimatedTime: "18 分钟",
+  korean:
+    "도서관과 박물관이 오래된 사진, 편지, 신문, 구술 자료를 디지털 아카이브로 전환하는 일이 늘고 있다. 디지털 아카이브는 자료가 훼손되는 것을 막고, 연구자뿐만 아니라 일반 시민도 시간과 장소의 제약 없이 과거의 기록에 접근할 수 있게 한다는 점에서 의미가 크다. 특히 지역의 작은 사건이나 평범한 사람들의 생활 기록은 공식 역사에서 쉽게 사라지기 때문에, 이를 온라인으로 모아 공개하는 일은 공동체의 기억을 넓히는 방식이 될 수 있다. 그러나 자료를 디지털화한다고 해서 모든 기억이 공평하게 보존되는 것은 아니다. 어떤 자료를 먼저 수집하고 어떤 설명을 붙일 것인지는 기관의 기준과 예산, 담당자의 관점에 영향을 받는다. 또한 인터넷 사용이 익숙하지 않은 노인이나 장애인은 온라인 공개 자료가 늘어나도 실제로 이용하기 어려울 수 있다. 저작권과 개인정보 문제도 중요하다. 가족 사진이나 인터뷰 기록을 공개할 때 당사자와 후손의 동의가 충분히 확인되지 않으면 보존이라는 이름으로 사적인 기억이 소비될 위험이 있다. 따라서 디지털 아카이브는 자료를 많이 올리는 사업으로만 이해되어서는 안 된다. 기관은 수집 기준을 공개하고, 지역 주민이 직접 자료를 설명하거나 수정 의견을 낼 수 있는 절차를 마련해야 한다. 동시에 오프라인 열람 지원과 쉬운 검색 방식도 제공해야 한다. 결국 디지털 아카이브의 가치는 과거를 저장하는 기술에 있는 것이 아니라, 누구의 기억이 기록되고 누구의 접근이 보장되는지를 계속 묻는 데 있다.",
+  chinese:
+    "图书馆和博物馆把旧照片、信件、报纸、口述资料转换成数字档案的工作正在增加。数字档案能够防止资料损坏，并让研究者以及普通市民不受时间和地点限制地接触过去记录，因此意义重大。尤其是地区小事件和平凡人的生活记录容易从官方历史中消失，把这些资料在线收集并公开，可以成为扩展共同体记忆的方式。然而，并不是把资料数字化就能公平保存所有记忆。先收集哪些资料、附上怎样的说明，会受到机构标准、预算和负责人员视角的影响。此外，不熟悉网络使用的老人或残障人士，即使在线公开资料增加，也可能难以实际利用。版权和个人信息问题也很重要。公开家庭照片或采访记录时，如果没有充分确认当事人及后代的同意，私人记忆就可能以保存之名被消费。因此，数字档案不应只被理解为上传大量资料的项目。机构应公开收集标准，并建立让地区居民直接说明资料或提出修改意见的程序。同时，也应提供线下查阅支持和易用的搜索方式。归根结底，数字档案的价值不在于保存过去的技术，而在于持续追问谁的记忆被记录、谁的访问权得到保障。",
+  tokens: [
+    { korean: "디지털 아카이브", reading: "di-ji-teol a-ka-i-beu", meaning: "数字档案", grammar: "명사", note: "文章核心概念。" },
+    { korean: "전환하는 일이 늘고 있다", reading: "jeon-hwan-ha-neun i-ri neul-go it-da", meaning: "转换的工作正在增加", grammar: "V-는 N + V-고 있다", note: "说明趋势。" },
+    { korean: "훼손되는 것을 막다", reading: "hwe-son-doe-neun geo-seul mak-da", meaning: "防止被损坏", grammar: "피동 + V-는 것", note: "说明数字化的保存功能。" },
+    { korean: "제약 없이 접근하다", reading: "je-yak eop-si jeop-geun-ha-da", meaning: "不受限制地访问", grammar: "부사구 + 동사", note: "说明开放性优点。" },
+    { korean: "공식 역사에서 사라지다", reading: "gong-sik yeok-sa-e-seo sa-ra-ji-da", meaning: "从官方历史中消失", grammar: "동사", note: "强调边缘记忆的重要性。" },
+    { korean: "공평하게 보존되다", reading: "gong-pyeong-ha-ge bo-jon-doe-da", meaning: "被公平保存", grammar: "피동", note: "文章转折核心。" },
+    { korean: "영향을 받다", reading: "yeong-hyang-eul bat-da", meaning: "受到影响", grammar: "동사구", note: "说明选择标准并非中立。" },
+    { korean: "실제로 이용하기 어렵다", reading: "sil-je-ro i-yong-ha-gi eo-ryeop-da", meaning: "实际难以使用", grammar: "V-기 어렵다", note: "数字鸿沟问题。" },
+    { korean: "동의가 충분히 확인되다", reading: "dong-ui-ga chung-bun-hi hwa-gin-doe-da", meaning: "同意被充分确认", grammar: "피동", note: "隐私和伦理要求。" },
+    { korean: "사적인 기억이 소비되다", reading: "sa-jeo-gin gi-eo-gi so-bi-doe-da", meaning: "私人记忆被消费", grammar: "피동", note: "指出公开风险。" },
+    { korean: "수집 기준을 공개하다", reading: "su-jip gi-ju-neul gong-gae-ha-da", meaning: "公开收集标准", grammar: "동사구", note: "制度透明化对策。" },
+    { korean: "수정 의견을 내다", reading: "su-jeong ui-gyeo-neul nae-da", meaning: "提出修改意见", grammar: "동사구", note: "居民参与程序。" },
+    { korean: "오프라인 열람 지원", reading: "o-peu-ra-in yeol-lam ji-won", meaning: "线下阅览支持", grammar: "명사", note: "避免数字排除的补充措施。" },
+    { korean: "접근이 보장되다", reading: "jeop-geu-ni bo-jang-doe-da", meaning: "访问得到保障", grammar: "피동", note: "结论中强调权利。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-게 하다", meaning: "使……能够……", example: "시민도 기록에 접근할 수 있게 한다.", note: "说明制度或技术带来的可能性。" },
+    { pattern: "V-다고 해서 ... 것은 아니다", meaning: "并非因为……就……", example: "자료를 디지털화한다고 해서 모든 기억이 공평하게 보존되는 것은 아니다.", note: "用于反驳技术万能论。" },
+    { pattern: "V-(으)면 ... 위험이 있다", meaning: "如果……就有……风险", example: "동의가 확인되지 않으면 사적인 기억이 소비될 위험이 있다.", note: "正式风险分析结构。" },
+    { pattern: "N이/가 아니라 ... V-는 데 있다", meaning: "不是……而在于……", example: "가치는 기술이 아니라 누구의 기억이 기록되는지를 묻는 데 있다.", note: "适合 TOPIK 54 题结论。" },
+  ],
+  quiz: [
+    { question: "文章认为 디지털 아카이브 的主要优点是什么？", answer: "它能防止资料损坏，并让研究者和普通市民不受时间地点限制地接触过去记录。" },
+    { question: "为什么数字化不一定能公平保存所有记忆？", answer: "因为资料选择和说明会受到机构标准、预算和负责人视角影响，且部分群体可能难以实际使用在线资料。" },
+    { question: "作者提出数字档案机构应采取哪些措施？", answer: "应公开收集标准，让居民参与说明或提出修改意见，并提供线下阅览支持和易用搜索方式。" },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt: "디지털 아카이브가 지역의 기억을 보존하는 데 어떤 역할을 할 수 있는지 쓰십시오. 자료 보존과 접근성의 장점, 개인정보 및 대표성 문제를 모두 언급하고, 바람직한 운영 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["자료 보존", "접근성", "대표성", "개인정보", "주민 참여"],
+    sentenceBank: [
+      "디지털 아카이브는 훼손되기 쉬운 자료를 보존하고 시민의 접근성을 높인다는 장점이 있다.",
+      "그러나 수집 기준이 불투명하면 일부 기억만 기록되고 다른 기억은 배제될 수 있다.",
+      "따라서 기관은 수집 기준을 공개하고 개인정보 동의 절차와 주민 참여 방식을 마련해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august19Reading,
   august18Reading,
   august17Reading,
   august16Reading,
