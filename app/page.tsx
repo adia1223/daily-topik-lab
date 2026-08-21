@@ -2486,7 +2486,7 @@ const august19Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august20Reading: DailyReading = {
   id: "2026-08-20-digital-archive-access",
   date: "2026-08-20",
   title: "디지털 아카이브는 누구의 기억을 보존하는가",
@@ -2536,8 +2536,57 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-08-21-local-currency-policy",
+  date: "2026-08-21",
+  title: "지역 화폐는 소비를 지역에 묶어 둘 수 있는가",
+  level: "TOPIK II 5-6级",
+  topic: "经济 / 公共政策",
+  estimatedTime: "18 分钟",
+  korean:
+    "지역 경제를 살리기 위해 여러 지방자치단체가 지역 화폐를 발행하고 있다. 지역 화폐는 특정 지역 안에서만 사용할 수 있기 때문에 대형 온라인 플랫폼이나 외부 상권으로 빠져나가던 소비를 동네 가게로 돌리는 효과가 있다고 평가된다. 소비자는 할인이나 캐시백 혜택을 받을 수 있고, 작은 가게는 단골 손님을 늘릴 기회를 얻는다. 특히 경기 침체나 재난 상황에서 지역 화폐는 긴급 지원금을 빠르게 생활 소비로 연결하는 수단이 되기도 한다. 그러나 지역 화폐가 항상 지역 경제의 근본적인 해결책이 되는 것은 아니다. 혜택이 클 때만 사용자가 몰리고 지원이 줄어들면 사용량도 함께 감소한다면, 이는 지역 상권의 경쟁력이 높아진 것이 아니라 보조금에 의존한 소비가 늘어난 것일 수 있다. 또한 모바일 사용이 익숙하지 않은 노인이나 작은 점포는 지역 화폐 시스템에 참여하기 어렵고, 행정 비용이 커지면 정책 효과보다 운영 부담이 더 커질 위험도 있다. 따라서 지역 화폐 정책은 발행 규모를 늘리는 데만 집중해서는 안 된다. 지방자치단체는 실제로 어떤 업종과 지역에 소비가 늘어나는지 공개하고, 디지털 이용이 어려운 주민과 점포를 위한 현장 지원을 마련해야 한다. 더 나아가 지역 상품의 품질 개선, 공동 배송, 상인 교육과 같은 장기 전략과 연결될 때 지역 화폐는 일시적인 할인 수단을 넘어 지역 경제의 관계망을 강화하는 도구가 될 수 있다.",
+  chinese:
+    "为振兴地区经济，许多地方政府正在发行地区货币。地区货币只能在特定地区内使用，因此被评价为能把原本流向大型线上平台或外部商圈的消费转回本地小店。消费者可以获得折扣或返现优惠，小店则获得增加熟客的机会。尤其是在经济低迷或灾害情况下，地区货币也能成为把紧急补助快速连接到生活消费的手段。然而，地区货币并不总是地区经济的根本解决方案。如果只有在优惠大时用户涌入、支持减少后使用量也一起下降，那么这可能不是本地商圈竞争力提高，而是依赖补贴的消费增加。此外，不熟悉移动使用的老人或小店难以参与地区货币系统；如果行政成本变大，运营负担也可能超过政策效果。因此，地区货币政策不应只集中于增加发行规模。地方政府应公开实际哪些行业和地区的消费增加，并为数字使用困难的居民和店铺提供现场支持。进一步说，只有与地区商品质量改善、共同配送、商户教育等长期战略连接起来，地区货币才能超越一时折扣手段，成为强化地区经济关系网的工具。",
+  tokens: [
+    { korean: "지역 화폐", reading: "ji-yeok hwa-pye", meaning: "地区货币", grammar: "명사", note: "文章核心政策工具。" },
+    { korean: "발행하다", reading: "bal-haeng-ha-da", meaning: "发行", grammar: "동사", note: "政策实施动作。" },
+    { korean: "소비를 돌리다", reading: "so-bi-reul dol-li-da", meaning: "转移消费", grammar: "동사구", note: "说明政策目的。" },
+    { korean: "혜택을 받을 수 있다", reading: "hye-tae-geul ba-deul su it-da", meaning: "可以获得优惠", grammar: "V-(으)ㄹ 수 있다", note: "消费者端动机。" },
+    { korean: "긴급 지원금", reading: "gin-geup ji-won-geum", meaning: "紧急补助金", grammar: "명사", note: "公共政策语境词。" },
+    { korean: "근본적인 해결책", reading: "geun-bon-jeo-gin hae-gyeol-chaek", meaning: "根本解决方案", grammar: "명사", note: "文章转折对象。" },
+    { korean: "보조금에 의존한 소비", reading: "bo-jo-geum-e ui-jon-han so-bi", meaning: "依赖补贴的消费", grammar: "N에 의존한 N", note: "指出短期效果问题。" },
+    { korean: "운영 부담", reading: "un-yeong bu-dam", meaning: "运营负担", grammar: "명사", note: "行政成本风险。" },
+    { korean: "발행 규모", reading: "bal-haeng gyu-mo", meaning: "发行规模", grammar: "명사", note: "政策数量指标。" },
+    { korean: "현장 지원", reading: "hyeon-jang ji-won", meaning: "现场支持", grammar: "명사", note: "解决数字排除的措施。" },
+    { korean: "장기 전략", reading: "jang-gi jeon-ryak", meaning: "长期战略", grammar: "명사", note: "避免短期化。" },
+    { korean: "관계망을 강화하다", reading: "gwan-gye-mang-eul gang-hwa-ha-da", meaning: "强化关系网", grammar: "동사구", note: "结论中的政策价值。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-기 때문에", meaning: "因为……", example: "지역 안에서만 사용할 수 있기 때문에 소비를 동네 가게로 돌린다.", note: "说明政策机制。" },
+    { pattern: "V-는 것은 아니다", meaning: "并不是……", example: "지역 화폐가 항상 근본적인 해결책이 되는 것은 아니다.", note: "反驳单一正面评价。" },
+    { pattern: "V-(으)면 ... 위험이 있다", meaning: "如果……就有……风险", example: "행정 비용이 커지면 운영 부담이 더 커질 위험이 있다.", note: "正式风险分析结构。" },
+    { pattern: "N을/를 넘어", meaning: "超越……", example: "일시적인 할인 수단을 넘어 관계망을 강화하는 도구가 된다.", note: "用于提出更高层次价值。" },
+  ],
+  quiz: [
+    { question: "文章认为 지역 화폐 的主要积极作用是什么？", answer: "它可以把流向外部平台或商圈的消费转回本地小店，并通过优惠吸引消费者。" },
+    { question: "为什么地区货币不一定是根本解决方案？", answer: "如果使用量依赖优惠和补贴，一旦支持减少就下降，说明本地商圈竞争力未真正提高。" },
+    { question: "作者认为地方政府应怎样改进地区货币政策？", answer: "应公开消费增加的行业和地区，支持数字使用困难者，并连接商品质量、共同配送和商户教育等长期战略。" },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt: "지역 화폐 정책이 지역 경제에 미치는 영향에 대해 쓰십시오. 소비 활성화의 장점과 보조금 의존 및 디지털 격차 문제를 모두 언급하고, 지속 가능한 운영 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["지역 소비", "할인 혜택", "보조금 의존", "디지털 격차", "장기 전략"],
+    sentenceBank: [
+      "지역 화폐는 소비를 지역 상권으로 돌려 작은 가게에 도움을 줄 수 있다.",
+      "그러나 혜택이 줄어들 때 사용량도 감소한다면 정책 효과는 보조금에 의존한 것일 수 있다.",
+      "따라서 지방자치단체는 소비 데이터를 공개하고 디지털 이용 지원과 상인 교육을 함께 추진해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august20Reading,
   august19Reading,
   august18Reading,
   august17Reading,
