@@ -70,7 +70,7 @@ test("server-renders the TOPIK reading archive", async () => {
   assert.match(html, /도시의 탄소 예산은 누구의 몫인가/);
   assert.match(html, /인공지능 시대의 질문하는 능력/);
   assert.match(html, /도시의 조용한 변화/);
-  assert.match(html, /39<!-- --> 篇文章/);
+  assert.match(html, /41<!-- --> 篇文章/);
   assert.match(html, /打开全文/);
 });
 
@@ -101,6 +101,10 @@ test("keeps complete archived reading data in the client", async () => {
   );
 
   assert.match(page, /const readingArchive: DailyReading\[\]/);
+  assert.match(page, /업무 자동화는 직원을 성장시키는가 밀어내는가/);
+  assert.match(page, /야간 공공 진료는 지역 의료 공백을 메울 수 있는가/);
+  assert.match(page, /august22Reading/);
+  assert.match(page, /august21Reading/);
   assert.match(page, /openArchivedReading/);
   assert.match(page, /activeReading\.tokens/);
   assert.match(page, /activeReading\.grammarPoints/);
