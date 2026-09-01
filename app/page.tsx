@@ -2634,7 +2634,7 @@ const august22Reading: DailyReading = {
   },
 };
 
-const todayReading: DailyReading = {
+const august31Reading: DailyReading = {
   id: "2026-08-31-workplace-automation-growth",
   date: "2026-08-31",
   title: "업무 자동화는 직원을 성장시키는가 밀어내는가",
@@ -2684,8 +2684,59 @@ const todayReading: DailyReading = {
   },
 };
 
+const todayReading: DailyReading = {
+  id: "2026-09-01-ai-feedback-classroom",
+  date: "2026-09-01",
+  title: "인공지능 피드백은 학생의 생각을 깊게 만드는가",
+  level: "TOPIK II 5-6级",
+  topic: "教育 / 科技",
+  estimatedTime: "18 分钟",
+  korean:
+    "최근 학교와 학원에서는 글쓰기 과제나 발표 준비에 인공지능 피드백 도구를 활용하는 사례가 늘고 있다. 학생은 문법 오류나 어색한 표현을 빠르게 확인할 수 있고, 교사는 반복적인 첨삭 부담을 줄여 개별 지도에 더 많은 시간을 쓸 수 있다. 특히 한국어를 배우는 외국인 학습자에게 즉각적인 피드백은 학습 의욕을 유지하게 하는 데 도움이 된다. 그러나 인공지능 피드백이 학생의 사고력을 자동으로 깊게 만들어 주는 것은 아니다. 도구가 제시한 수정안을 이유 없이 그대로 받아들이면 학생은 자신의 표현이 왜 부족했는지 이해하지 못한 채 결과만 고치게 된다. 또한 인공지능은 문장의 자연스러움에는 민감하지만 글의 주장, 근거의 타당성, 독자의 관점과 같은 깊은 요소를 충분히 평가하지 못할 수 있다. 이런 상황에서 교사가 피드백 과정을 점검하지 않으면 학생은 더 나은 글을 쓰는 법을 배우기보다 기계가 좋아할 만한 문장을 맞추는 데 익숙해질 위험이 있다. 따라서 인공지능 피드백은 정답을 대신 주는 장치가 아니라 질문을 만들어 내는 도구로 사용되어야 한다. 교사는 학생에게 어떤 제안을 받아들였고 어떤 제안을 거절했는지 설명하게 하며, 수정 전후의 차이를 스스로 비교하도록 해야 한다. 또한 학습자는 인공지능의 조언을 최종 판단이 아니라 자신의 생각을 다시 검토하는 출발점으로 삼아야 한다. 결국 교육에서 중요한 것은 빠른 수정이 아니라, 수정의 이유를 이해하고 더 설득력 있는 표현을 선택하는 능력을 기르는 것이다.",
+  chinese:
+    "最近，学校和补习机构越来越多地在写作作业或发表准备中使用人工智能反馈工具。学生可以快速确认语法错误或不自然的表达，教师也能减少重复批改负担，把更多时间用于个别指导。尤其对学习韩语的外国学习者来说，即时反馈有助于维持学习动力。然而，人工智能反馈并不会自动让学生的思考变得更深入。如果学生不理解理由就直接接受工具提出的修改案，就只是在改结果，而不能明白自己的表达为什么不足。此外，人工智能对句子自然度较敏感，却未必能充分评价文章主张、论据合理性、读者视角等更深层因素。在这种情况下，如果教师不检查反馈过程，学生可能不是学会写出更好的文章，而是习惯于迎合机器偏好的句子。因此，人工智能反馈不应作为代替给出答案的装置，而应作为生成问题的工具来使用。教师应让学生说明接受了哪些建议、拒绝了哪些建议，并让他们自行比较修改前后的差异。学习者也应把人工智能建议当作重新检查自己想法的起点，而不是最终判断。归根结底，教育中重要的不是快速修改，而是理解修改理由，并培养选择更有说服力表达的能力。",
+  tokens: [
+    { korean: "피드백 도구", reading: "pi-deu-baek do-gu", meaning: "反馈工具", grammar: "명사", note: "文章讨论对象。" },
+    { korean: "활용하는 사례", reading: "hwal-yong-ha-neun sa-rye", meaning: "使用的案例", grammar: "V-는 N", note: "引出现象。" },
+    { korean: "문법 오류", reading: "mun-beop o-ryu", meaning: "语法错误", grammar: "명사구", note: "反馈可处理的表层问题。" },
+    { korean: "첨삭 부담을 줄이다", reading: "cheom-sak bu-da-meul ju-ri-da", meaning: "减少批改负担", grammar: "동사구", note: "教师端优势。" },
+    { korean: "개별 지도", reading: "gae-byeol ji-do", meaning: "个别指导", grammar: "명사", note: "教育场景常用词。" },
+    { korean: "즉각적인 피드백", reading: "jeuk-gak-jeo-gin pi-deu-baek", meaning: "即时反馈", grammar: "명사구", note: "保持学习动力的条件。" },
+    { korean: "사고력", reading: "sa-go-ryeok", meaning: "思考力", grammar: "명사", note: "文章核心评价标准。" },
+    { korean: "수정안", reading: "su-jeong-an", meaning: "修改方案", grammar: "명사", note: "AI 给出的建议。" },
+    { korean: "그대로 받아들이다", reading: "geu-dae-ro ba-da-deu-ri-da", meaning: "原样接受", grammar: "부사+동사", note: "指出机械依赖。" },
+    { korean: "근거의 타당성", reading: "geun-geo-ui ta-dang-seong", meaning: "论据的合理性", grammar: "명사구", note: "深层写作评价要素。" },
+    { korean: "점검하다", reading: "jeom-geom-ha-da", meaning: "检查、核查", grammar: "동사", note: "教师应做的管理动作。" },
+    { korean: "출발점으로 삼다", reading: "chul-bal-jeo-meu-ro sam-da", meaning: "作为出发点", grammar: "N으로 삼다", note: "说明正确使用方式。" },
+    { korean: "설득력 있는 표현", reading: "seol-deuk-ryeok it-neun pyo-hyeon", meaning: "有说服力的表达", grammar: "관형 표현", note: "结论中的学习目标。" },
+  ],
+  grammarPoints: [
+    { pattern: "V-는 사례가 늘고 있다", meaning: "……的案例正在增加", example: "인공지능 피드백 도구를 활용하는 사례가 늘고 있다.", note: "用于描述社会/教育现象。" },
+    { pattern: "V-게 하다", meaning: "使……、让……", example: "즉각적인 피드백은 학습 의욕을 유지하게 한다.", note: "说明工具产生的效果。" },
+    { pattern: "V-(으)면 ... 채", meaning: "如果……就带着……状态", example: "수정안을 그대로 받아들이면 이유를 이해하지 못한 채 결과만 고치게 된다.", note: "批判表面修改。" },
+    { pattern: "N이/가 아니라 ... 으로 사용되어야 한다", meaning: "不应作为……，而应作为……使用", example: "정답을 대신 주는 장치가 아니라 질문을 만들어 내는 도구로 사용되어야 한다.", note: "提出规范性观点。" },
+  ],
+  quiz: [
+    { question: "文章中提到 인공지능 피드백 的优点有哪些？", answer: "学生能快速发现语法和表达问题，教师能减少重复批改负担，并把更多时间用于个别指导。" },
+    { question: "作者为什么担心学生直接接受 AI 的修改案？", answer: "因为学生可能只改结果，却不理解原表达为什么不足，也无法提升自己的思考和判断能力。" },
+    { question: "作者认为 AI 反馈在教育中应该如何使用？", answer: "它应作为生成问题和重新检查想法的工具，学生要说明取舍理由并比较修改前后的差异。" },
+  ],
+  writingDrill: {
+    type: "54 题观点写作",
+    prompt:
+      "인공지능 피드백 도구를 교육 현장에서 사용하는 것에 대해 쓰십시오. 빠른 오류 수정과 교사의 부담 감소라는 장점, 사고력 약화와 과도한 의존 문제를 모두 언급하고, 바람직한 활용 방안을 두 가지 이상 제시하십시오.",
+    checklist: ["인공지능 피드백", "오류 수정", "첨삭 부담", "사고력", "수정 이유"],
+    sentenceBank: [
+      "인공지능 피드백은 학생이 오류를 빠르게 확인하고 교사의 첨삭 부담을 줄이는 데 도움이 된다.",
+      "그러나 학생이 제안을 그대로 받아들이면 수정의 이유를 이해하지 못해 사고력이 약해질 수 있다.",
+      "따라서 교사는 학생에게 수정 전후를 비교하게 하고 제안을 받아들이거나 거절한 이유를 설명하게 해야 한다.",
+    ],
+  },
+};
+
 const readingArchive: DailyReading[] = [
   todayReading,
+  august31Reading,
   august22Reading,
   august21Reading,
   august20Reading,
