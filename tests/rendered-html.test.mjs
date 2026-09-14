@@ -100,7 +100,13 @@ test("keeps complete archived reading data in the client", async () => {
   );
 
   assert.match(page, /const readingArchive: DailyReading\[\]/);
+  assert.match(page, /직장 내 사소한 대화는 조직 문화를 바꿀 수 있는가/);
+  assert.match(page, /september13Reading/);
+  assert.match(page, /도시 나무 관리는 환경 정책인가 생활 안전 정책인가/);
+  assert.match(page, /지역 돌봄 포인트는 선의만으로 지속될 수 있는가/);
+  assert.match(page, /september12Reading/);
   assert.match(page, /디지털 교과서는 학생의 자기 주도 학습을 돕는가/);
+  assert.match(page, /september11Reading/);
   assert.match(page, /september10Reading/);
   assert.match(page, /직무 능력 여권은 채용의 불공정을 줄일 수 있는가/);
   assert.match(page, /september9Reading/);
