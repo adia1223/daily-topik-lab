@@ -31,6 +31,8 @@ test("server-renders the TOPIK reading archive", async () => {
   const html = await response.text();
   assert.match(html, /<title>Daily TOPIK Lab \| 韩语阅读训练<\/title>/i);
   assert.match(html, /每日文章归档/);
+  assert.match(html, /못난이 농산물 유통은 음식물 낭비를 줄일 수 있는가/);
+  assert.match(html, /도시 디지털 트윈은 재난 대응을 개선할 수 있는가/);
   assert.match(html, /지역 화폐는 소비를 지역에 묶어 둘 수 있는가/);
   assert.match(html, /디지털 아카이브는 누구의 기억을 보존하는가/);
   assert.match(html, /청소년 금융 교육은 왜 생활 수업이 되어야 하는가/);
@@ -100,6 +102,9 @@ test("keeps complete archived reading data in the client", async () => {
   );
 
   assert.match(page, /const readingArchive: DailyReading\[\]/);
+  assert.match(page, /september29Reading/);
+  assert.match(page, /도시 디지털 트윈은 재난 대응을 개선할 수 있는가/);
+  assert.match(page, /september28Reading/);
   assert.match(page, /성인 문해 교육은 디지털 행정의 격차를 줄일 수 있는가/);
   assert.match(page, /september27Reading/);
   assert.match(page, /직무 공유제는 경력 단절을 줄일 수 있는가/);
